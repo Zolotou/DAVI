@@ -1,0 +1,24 @@
+//стили для логотипа
+.welcome-image {
+    background-image: url(../../assets/welcomeimage-1024x1024.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.welcome-logo {
+    width: 40%;
+    background-color: rgba(200, 200, 200, 0.2);
+}
+.logo {
+    background-image: url('../src/assets/DAVI.png');
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 10px;
+    top: 10px
+}

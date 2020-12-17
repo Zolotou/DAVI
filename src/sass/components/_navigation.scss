@@ -1,0 +1,23 @@
+nav {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.nav-wrapper {
+    padding-top: 10px;
+}
+
+.nav-wrapper > a {
+    text-decoration: none;
+    color:$footer-color ;
+    font-size: 2rem;
+}
+
+.nav-wrapper:hover{
+    background-color:$second-header-color;
+}
+
+.nav-wrapper > a:hover {
+    color:$main-color;
+}
