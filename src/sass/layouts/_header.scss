@@ -1,9 +1,10 @@
-header {
-    display: flex;
-    background-color:$main-header-color;
-    height: 60px;
-    position: sticky;
-    top: 0;
-    justify-content: center;
-    z-index: 100;
-}
+ .header{
+    background-color: $main-header-color;
+ }
+ .header-wrapper{
+ color:$main-color;
+     height: 100px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
