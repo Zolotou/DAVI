@@ -1,0 +1,18 @@
+.section-card{
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0px;
+    width: 100vw;
+    padding: 40px;
+    box-shadow: 10px 5px 5px $footer-color;
+}
+.section__img{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.section__text{
+    padding: 10px 20px;
+    font-size: 2rem;
+    text-align: center;
+}

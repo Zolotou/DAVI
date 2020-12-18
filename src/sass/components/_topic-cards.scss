@@ -1,0 +1,14 @@
+.cards-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.topic-card {
+    box-shadow: 10px 5px 5px $footer-color;
+    margin: 20px;
+>img{
+     width: 150px;
+    height: 100px;
+    margin: auto 0;
+}
+}
+
