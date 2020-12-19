@@ -1,1 +1,10 @@
 // стили для кнопок
+.button{
+    width: 90px;
+    height: 35px;
+    border-radius: 27px;
+    @extend %transition;
+    &:hover{
+        background-color: bisque;
+    }
+}

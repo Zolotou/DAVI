@@ -417,7 +417,7 @@ ul {
   box-sizing: border-box;
 }
 
-.navigation__link {
+.navigation__link, .button {
   transition: all 0.3s ease-out;
 }
 
@@ -432,6 +432,15 @@ body {
 .logo_img {
   width: 100px;
   height: 100px;
+}
+
+.button {
+  width: 90px;
+  height: 35px;
+  border-radius: 27px;
+}
+.button:hover {
+  background-color: bisque;
 }
 
 .welcom-img {
