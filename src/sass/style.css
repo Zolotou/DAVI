@@ -474,6 +474,8 @@ h2 {
 
 .header {
   background-color: #011D33;
+  position: sticky;
+  top: 0;
 }
 
 .header-wrapper {
@@ -563,6 +565,7 @@ footer {
 }
 
 .header__navigation {
+  margin-right: 150px;
   width: 700px;
 }
 @media (max-width: 768px) {

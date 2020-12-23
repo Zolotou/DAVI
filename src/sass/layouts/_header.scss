@@ -1,5 +1,7 @@
  .header{
     background-color: $main-header-color;
+    position: sticky;
+    top: 0;
  }
  .header-wrapper{
  color:$color-light;
