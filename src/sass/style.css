@@ -623,20 +623,18 @@ footer {
 
 .cards-wrapper {
   display: flex;
+  width: 100vw;
+  overflow: auto;
   justify-content: space-between;
 }
 @media (max-width: 768px) {
   .cards-wrapper {
-    width: 700px;
     height: 369px;
-    overflow: hidden;
   }
 }
 @media (max-width: 414px) {
   .cards-wrapper {
-    width: 380px;
     height: 369px;
-    overflow: hidden;
   }
 }
 

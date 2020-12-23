@@ -1,16 +1,18 @@
 .cards-wrapper{
     display: flex;
+    width: 100vw;
+overflow:auto;
     justify-content: space-between;
     @include media-tablet{
-        width: 700px;
+        
         height: 369px;
-        overflow: hidden;
+        // overflow: hidden;
     }
 
     @include media-mobile{
-        width: 380px;
+      
         height: 369px;
-        overflow: hidden;
+      
     }
 }
 .topic-card {
