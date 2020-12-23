@@ -3,11 +3,15 @@
     justify-content: space-between;
 }
 .topic-card {
-    box-shadow: 10px 5px 5px $footer-color;
-    margin: 20px;
+    max-width: 370px;
+    height: 342px;
+    box-shadow: $shadow;
+    margin: 9px;
+    box-shadow: $shadow;
+
 >img{
-     width: 150px;
-    height: 100px;
+    max-width: 370px;
+    height: 230px;
     margin: auto 0;
 }
 }

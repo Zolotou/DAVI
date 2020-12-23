@@ -6,6 +6,7 @@ html {
 
 body {
     font-family: 'Roboto',Verdana, sans-serif;
+    color:$color-text;
   //  @extend %font-prim;
    // @include font($size: 1.6rem, $height: 2.6rem, $weight: normal);
 }
@@ -19,6 +20,8 @@ h1 {
 }
 
 h2 {
+    font-size:4rem;
+    color: $color-title;
     // @include font($size: 3.4rem, $height: 4.6rem);
     // @include media-mobile {
     //     @include font($height: 3.3rem, $size: 2.4rem);

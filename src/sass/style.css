@@ -427,6 +427,12 @@ html {
 
 body {
   font-family: "Roboto", Verdana, sans-serif;
+  color: #333333;
+}
+
+h2 {
+  font-size: 4rem;
+  color: #0F119E;
 }
 
 .logo_img {
@@ -435,12 +441,21 @@ body {
 }
 
 .button {
-  width: 90px;
-  height: 35px;
-  border-radius: 27px;
+  width: 198px;
+  height: 41px;
+  background-color: #ffffff;
+  border: 1px solid #0F119E;
+  color: #0F119E;
+  font-size: 17px;
+  margin-top: 98px;
 }
 .button:hover {
-  background-color: bisque;
+  background-color: #F1F6FA;
+  transform: scale(1.02);
+}
+
+.sectionBlue_button {
+  background-color: #F1F6FA;
 }
 
 .welcom-img {
@@ -458,11 +473,11 @@ body {
 }
 
 .header {
-  background-color: #113d23;
+  background-color: #011D33;
 }
 
 .header-wrapper {
-  color: #FEFAE0;
+  color: #ffffff;
   height: 100px;
   display: flex;
   justify-content: space-between;
@@ -470,7 +485,7 @@ body {
 }
 
 footer {
-  background-color: #D4A373;
+  background-color: #011D33;
   height: 60px;
   display: flex;
   justify-content: center;
@@ -483,17 +498,37 @@ footer {
 }
 
 .hello-text {
+  max-width: 760px;
+  width: 100%;
   text-align: center;
   font-size: 2.5rem;
+  padding: 0px 20px 30px 20px;
+}
+@media (max-width: 768px) {
+  .hello-text {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 414px) {
+  .hello-text {
+    font-size: 1.5rem;
+  }
+}
+
+.sectionBlue {
+  background-color: #F1F6FA;
 }
 
 .section-card {
   display: flex;
   flex-direction: column;
-  margin: 50px 0px;
-  width: 100vw;
-  padding: 40px;
-  box-shadow: 10px 5px 5px #D4A373;
+  padding: 30px 10px;
+  height: 946px;
+  align-items: center;
+}
+
+.section-image {
+  max-width: 50px;
 }
 
 .section__img {
@@ -503,9 +538,11 @@ footer {
 }
 
 .section__text {
+  width: 100%;
+  text-align: left;
   padding: 10px 20px;
   font-size: 2rem;
-  text-align: center;
+  text-align: left;
 }
 
 .navigation {
@@ -522,7 +559,7 @@ footer {
   cursor: pointer;
 }
 .navigation__link:hover {
-  color: red;
+  color: #1c9954;
 }
 
 .header__navigation {
@@ -540,12 +577,15 @@ footer {
 }
 
 .topic-card {
-  box-shadow: 10px 5px 5px #D4A373;
-  margin: 20px;
+  max-width: 370px;
+  height: 342px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 9px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .topic-card > img {
-  width: 150px;
-  height: 100px;
+  max-width: 370px;
+  height: 230px;
   margin: auto 0;
 }
 

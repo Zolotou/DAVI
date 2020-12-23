@@ -1,18 +1,28 @@
+.sectionBlue{
+    background-color: $color-section;
+}
 .section-card{
     display: flex;
     flex-direction: column;
-    margin: 50px 0px;
-    width: 100vw;
-    padding: 40px;
-    box-shadow: 10px 5px 5px $footer-color;
+   padding: 30px 10px;
+    height: 946px;
+   align-items: center;
+
 }
+   .section-image{
+        max-width: 50px;
+  }
 .section__img{
     display: flex;
     align-items: center;
     padding: 10px;
 }
 .section__text{
+    //max-width: 700px;
+    width: 100%;
+    text-align: left;
     padding: 10px 20px;
     font-size: 2rem;
-    text-align: center;
+    text-align: left;
+
 }

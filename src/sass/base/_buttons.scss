@@ -1,10 +1,21 @@
 // стили для кнопок
 .button{
-    width: 90px;
-    height: 35px;
-    border-radius: 27px;
+    width: 198px;
+    height: 41px;
+background-color: $color-light;
+border: 1px solid $color-title;
+    color: $color-title;
+    font-size: 17px;
+   margin-top: 98px;
     @extend %transition;
     &:hover{
-        background-color: bisque;
+        background-color: $color-section;
+        transform: scale(1.02)
+    }
+
+}
+.sectionBlue{
+    &_button{
+        background-color: $color-section;
     }
 }
