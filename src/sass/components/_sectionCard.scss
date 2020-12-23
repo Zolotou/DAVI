@@ -6,23 +6,37 @@
     flex-direction: column;
    padding: 30px 10px;
     height: 946px;
-   align-items: center;
+ //  align-items: center;
 
 }
    .section-image{
-        max-width: 50px;
+        max-width: 150px;
+        >img{
+            width: 150px;
+            @include media-mobile{
+                display: none;
+            }
+        }
   }
 .section__img{
     display: flex;
     align-items: center;
     padding: 10px;
+    
 }
 .section__text{
-    //max-width: 700px;
+    max-width: 800px;
     width: 100%;
     text-align: left;
-    padding: 10px 20px;
-    font-size: 2rem;
+    padding: 10px 0px;
+    font-size: 1.8rem;
     text-align: left;
-
+    @include media-tablet{
+        max-width: 570px;
+    }
+    @include media-mobile{
+        max-width: 345px;
+        height: 96px;
+        overflow: hidden;
+    }
 }

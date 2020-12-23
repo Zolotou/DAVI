@@ -1,6 +1,17 @@
 .cards-wrapper{
     display: flex;
     justify-content: space-between;
+    @include media-tablet{
+        width: 700px;
+        height: 369px;
+        overflow: hidden;
+    }
+
+    @include media-mobile{
+        width: 380px;
+        height: 369px;
+        overflow: hidden;
+    }
 }
 .topic-card {
     max-width: 370px;

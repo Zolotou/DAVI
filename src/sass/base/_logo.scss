@@ -2,5 +2,22 @@
 .logo_img{
 width: 100px;
 height: 100px;
+@include media-mobile{
+    >img{
+    width: 60px;
+}
+}
+
 
 }
+.imgDavi{
+    width: 200px;
+    height: 200px;
+    @include media-mobile{
+        >img{
+        width: 60px;
+    }
+    }
+    
+    
+    }

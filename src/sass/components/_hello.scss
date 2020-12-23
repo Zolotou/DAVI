@@ -2,6 +2,17 @@
     flex-direction: column;
     align-items: center;
 }
+.imgDavi{
+    width: 200px;
+    height: 200px;
+    @include media-mobile{
+        >img{
+        width: 60px;
+    }
+    }
+    
+    
+    }
 .hello-text{
     max-width: 760px;
     width: 100%;
