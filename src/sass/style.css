@@ -417,7 +417,7 @@ ul {
   box-sizing: border-box;
 }
 
-.navigation__link, .button {
+.navigation__link::after, .navigation__link, .button {
   transition: all 0.3s ease-out;
 }
 
@@ -633,7 +633,18 @@ footer {
   cursor: pointer;
 }
 .navigation__link:hover {
-  color: #1c9954;
+  color: #F1F6FA;
+}
+.navigation__link::after {
+  content: "";
+  display: block;
+  width: 100%;
+  background-color: #F1F6FA;
+  height: 2px;
+  transform: scale(0);
+}
+.navigation__link:hover::after {
+  transform: scale(1);
 }
 
 .header__navigation {

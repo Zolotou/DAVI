@@ -14,11 +14,22 @@ font-weight: bold;
     cursor: pointer;
     @extend %transition;
     &:hover {
-    color: #1c9954;
-
-
+    color: $color-section;
     }
+   &::after{
+   content: '';
+   display: block;
+   width: 100%;
+   background-color:$color-section ;
+   height: 2px;
+   transform: scale(0);
+   @extend %transition;
 }
+&:hover::after{
+   transform: scale(1);
+}
+}
+
 
  .header__navigation {
     margin-right: 150px;
