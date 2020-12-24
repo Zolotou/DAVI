@@ -10,14 +10,3 @@ height: 100px;
 
 
 }
-.imgDavi{
-    width: 200px;
-    height: 200px;
-    @include media-mobile{
-        >img{
-        width: 60px;
-    }
-    }
-    
-    
-    }

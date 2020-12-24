@@ -445,18 +445,9 @@ h2 {
   }
 }
 
-.imgDavi {
-  width: 200px;
-  height: 200px;
-}
-@media (max-width: 414px) {
-  .imgDavi > img {
-    width: 60px;
-  }
-}
-
 .button {
-  width: 198px;
+  margin-left: 40%;
+  max-width: 198px;
   height: 41px;
   background-color: #ffffff;
   border: 1px solid #0F119E;
@@ -467,6 +458,17 @@ h2 {
 .button:hover {
   background-color: #F1F6FA;
   transform: scale(1.02);
+}
+@media (max-width: 526px) {
+  .button {
+    margin-left: 20%;
+  }
+}
+@media (max-width: 320px) {
+  .button {
+    max-width: 120px;
+    margin-left: 5px;
+  }
 }
 
 .sectionBlue_button {
@@ -517,8 +519,7 @@ footer {
 }
 
 .imgDavi {
-  width: 200px;
-  height: 200px;
+  padding-top: 30px;
 }
 @media (max-width: 414px) {
   .imgDavi > img {
@@ -535,12 +536,14 @@ footer {
 }
 @media (max-width: 768px) {
   .hello-text {
+    text-align: justify;
     font-size: 2rem;
   }
 }
 @media (max-width: 414px) {
   .hello-text {
     font-size: 1.5rem;
+    text-align: justify;
   }
 }
 
@@ -551,11 +554,11 @@ footer {
 .section-card {
   display: flex;
   flex-direction: column;
-  padding: 30px 10px;
-  height: 946px;
+  padding: 50px 10px;
 }
 
 .section-image {
+  margin: 0px 10px;
   max-width: 150px;
 }
 .section-image > img {
@@ -572,18 +575,30 @@ footer {
   align-items: center;
   padding: 10px;
 }
+@media (max-width: 526px) {
+  .section__img {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+}
 
 .section__text {
   max-width: 800px;
   width: 100%;
   text-align: left;
-  padding: 10px 0px;
+  padding: 10px 10px 10px 0px;
   font-size: 1.8rem;
   text-align: left;
 }
 @media (max-width: 768px) {
   .section__text {
     max-width: 570px;
+    text-align: justify;
+  }
+}
+@media (max-width: 526px) {
+  .section__text {
+    padding-right: 20px;
   }
 }
 @media (max-width: 414px) {
@@ -591,6 +606,16 @@ footer {
     max-width: 345px;
     height: 96px;
     overflow: hidden;
+    text-align: justify;
+  }
+}
+
+.section-title {
+  margin: 0;
+}
+@media (max-width: 414px) {
+  .section-title {
+    font-size: 2.3rem;
   }
 }
 
@@ -623,6 +648,7 @@ footer {
 
 .cards-wrapper {
   display: flex;
+  max-width: 1197px;
   width: 100vw;
   overflow: auto;
   justify-content: space-between;
