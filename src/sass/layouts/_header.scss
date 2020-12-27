@@ -2,6 +2,7 @@
     background-color: $main-header-color;
     position: sticky;
     top: 0;
+    z-index: 90;
  }
  .header-wrapper{
  color:$color-light;
