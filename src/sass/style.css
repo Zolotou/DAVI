@@ -445,18 +445,23 @@ h2 {
   }
 }
 
+.sectionBlue button {
+  background-color: #ffffff;
+}
+
 button {
+  border: 1px solid #b6c6ce;
   font-size: 17px;
-  margin-left: 200px;
   max-width: 132px;
-  border: 0;
-  background: #9eb6ca;
+  position: absolute;
+  right: 15px;
+  bottom: 60px;
+  background: #ffff;
   border-radius: 4px;
-  box-shadow: 0 5px 0 #6a7e88;
-  color: #fff;
+  box-shadow: 0 5px 0 #b6c6ce;
+  color: #0F119E;
   cursor: pointer;
-  margin-top: 98px;
-  margin: 0;
+  margin-top: 14px;
   outline: 0;
   padding: 12px 20px;
   transition: all 0.1s linear;
@@ -474,7 +479,7 @@ button {
 }
 
 button:active {
-  box-shadow: 0 2px 0 #6a7e88;
+  box-shadow: 0 2px 0 #b6c6ce;
   transform: translateY(3px);
 }
 
@@ -483,7 +488,6 @@ button:active {
   text-decoration: none;
   font-size: 2.8rem;
   padding: 20px 40px;
-  border-top: 1px solid #c5dce8;
   border-top: 1px solid #c5dce8;
 }
 .burger-menu_link:hover {
@@ -546,7 +550,7 @@ button:active {
   .burger-menu {
     top: 10px;
     position: absolute;
-    left: -100%;
+    left: -100vw;
     width: 100vw;
     background-color: #011D33;
     z-index: 2;
@@ -658,9 +662,10 @@ footer {
 }
 
 .section-card {
+  position: relative;
   display: flex;
   flex-direction: column;
-  padding: 50px 10px;
+  padding: 50px 10px 120px 10px;
 }
 
 .section-image {

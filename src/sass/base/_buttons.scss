@@ -22,23 +22,26 @@
 //     }
 
 // }
-// .sectionBlue{
-//     &_button{
-//         background-color: $color-section;
-//     }
-// }
+.sectionBlue{
+    button{
+        background-color: $color-light;
+    }
+}
 button {
+  border: 1px solid #b6c6ce;
     font-size: 17px;
-    margin-left: 200px;
+
      max-width: 132px;
-    border: 0;
-    background:#9eb6ca;
+position: absolute;
+right: 15px;
+bottom: 60px;
+    background: #ffff;
     border-radius: 4px;
-    box-shadow: 0 5px 0#6a7e88;
-    color: #fff;
+    box-shadow: 0 5px 0#b6c6ce;
+    color: $color-title;
     cursor: pointer;
-    margin-top: 98px;
-    margin: 0;
+    margin-top: 14px;
+
     outline: 0;
     padding: 12px 20px;
     transition: all .1s linear;
@@ -52,6 +55,6 @@ button {
 
   }
   button:active {
-    box-shadow: 0 2px 0 #6a7e88;
+    box-shadow: 0 2px 0 #b6c6ce;
     transform: translateY(3px);
   }
