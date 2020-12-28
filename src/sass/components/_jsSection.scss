@@ -1,0 +1,83 @@
+textarea {
+    display: block;
+    flex: 1 1 auto;
+    margin: 0 0 10px 0;
+}
+.jsPlayground {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    height: 332px;
+    font-size: 1.5rem;
+    align-items: flex-start;
+}
+.source {
+    margin: 5px;
+    flex: 1 1 48%;
+    height: 100%;
+    min-width: 300px; 
+    text-align: left;
+    /*display:flex;
+    flex-direction: column;
+    justify-content: space-between; */
+}
+.sandbox {
+    margin: 5px;
+    flex: 1 1 48%;
+    height: 100%;
+    min-width: 300px;
+    text-align: left;
+    display:flex;
+    flex-direction:column;
+    overflow: hidden;
+    align-items: flex-start;
+}
+.iframe {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border-width: 0px;
+}
+input {
+    display: none;
+  }
+.source label, .sandbox button {
+    padding: .2em .5em;
+    font-size: 2rem;
+    border: none;
+    display: inline-block;
+    outline: 0;
+  }
+.source label:hover {
+    background: #4e4e4e;
+    cursor: pointer;
+    color: whitesmoke;
+  }
+  .sandbox button {
+    background: #4caf50;
+    color: whitesmoke;
+    transition: background-color .5s;
+  }
+  .sandbox button:hover {
+    background: #4e4e4e;
+    cursor: pointer;
+    color: whitesmoke;
+  }
+  
+input:checked + label {
+    font-weight: bold;
+    background: #212121;
+    color: whitesmoke;
+  }
+  .flex {
+    display: flex;
+    background: #9ba5b3;
+    padding: 5px;
+    flex-wrap: wrap;
+  }
+  #htmlEditor:not(:checked)~#htmlarea + div,  #cssEditor:not(:checked)~#cssarea + div, #jsEditor:not(:checked)~#jsarea + div{
+    display: none;
+  } 
+  #htmlEditor:checked~#htmlarea + div, #cssEditor:checked~#cssarea + div, #jsEditor:checked~#jsarea + div {
+    display: block;
+  }

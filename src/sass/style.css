@@ -417,7 +417,7 @@ ul {
   box-sizing: border-box;
 }
 
-.navigation__link::after, .navigation__link, .burger-menu__active .burger-menu_nav, .button {
+.navigation__link::after, .navigation__link, .burger-menu__active .burger-menu_nav, .fire, .button {
   transition: all 0.3s ease-out;
 }
 
@@ -473,6 +473,32 @@ h2 {
 
 .sectionBlue_button {
   background-color: #F1F6FA;
+}
+
+.fire {
+  margin-left: 40%;
+  max-width: 198px;
+  height: 41px;
+  background-color: #ffffff;
+  border: 1px solid #0F119E;
+  color: #0F119E;
+  font-size: 17px;
+  margin-top: 98px;
+}
+.fire:hover {
+  background-color: #F1F6FA;
+  transform: scale(1.02);
+}
+@media (max-width: 526px) {
+  .fire {
+    margin-left: 20%;
+  }
+}
+@media (max-width: 320px) {
+  .fire {
+    max-width: 120px;
+    margin-left: 5px;
+  }
 }
 
 .burger-menu {
@@ -611,6 +637,7 @@ h2 {
   background-color: #011D33;
   position: sticky;
   top: 0;
+  z-index: 5;
 }
 
 .header-wrapper {
@@ -671,6 +698,8 @@ footer {
   display: flex;
   flex-direction: column;
   padding: 50px 10px;
+  width: 100%;
+  text-align: center;
 }
 
 .section-image {
@@ -771,6 +800,102 @@ footer {
   .header__navigation {
     display: none;
   }
+}
+
+textarea {
+  display: block;
+  flex: 1 1 auto;
+  margin: 0 0 10px 0;
+}
+
+.jsPlayground {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  height: 332px;
+  font-size: 1.5rem;
+  align-items: flex-start;
+}
+
+.source {
+  margin: 5px;
+  flex: 1 1 48%;
+  height: 100%;
+  min-width: 300px;
+  text-align: left;
+  /*display:flex;
+  flex-direction: column;
+  justify-content: space-between; */
+}
+
+.sandbox {
+  margin: 5px;
+  flex: 1 1 48%;
+  height: 100%;
+  min-width: 300px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: flex-start;
+}
+
+.iframe {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  border-width: 0px;
+}
+
+input {
+  display: none;
+}
+
+.source label, .sandbox button {
+  padding: 0.2em 0.5em;
+  font-size: 2rem;
+  border: none;
+  display: inline-block;
+  outline: 0;
+}
+
+.source label:hover {
+  background: #4e4e4e;
+  cursor: pointer;
+  color: whitesmoke;
+}
+
+.sandbox button {
+  background: #4caf50;
+  color: whitesmoke;
+  transition: background-color 0.5s;
+}
+
+.sandbox button:hover {
+  background: #4e4e4e;
+  cursor: pointer;
+  color: whitesmoke;
+}
+
+input:checked + label {
+  font-weight: bold;
+  background: #212121;
+  color: whitesmoke;
+}
+
+.flex {
+  display: flex;
+  background: #9ba5b3;
+  padding: 5px;
+  flex-wrap: wrap;
+}
+
+#htmlEditor:not(:checked) ~ #htmlarea + div, #cssEditor:not(:checked) ~ #cssarea + div, #jsEditor:not(:checked) ~ #jsarea + div {
+  display: none;
+}
+
+#htmlEditor:checked ~ #htmlarea + div, #cssEditor:checked ~ #cssarea + div, #jsEditor:checked ~ #jsarea + div {
+  display: block;
 }
 
 .cards-wrapper {

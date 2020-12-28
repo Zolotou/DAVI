@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0 user-scalable=0">
     <link rel="stylesheet" href="src/sass/style.css">
+    <link rel="stylesheet" href="src/sass/codemirror.css">
+    <link rel="stylesheet" href="src/sass/material-darker.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="icon" href="./src/assets/favicon.ico">
     <link
@@ -54,7 +56,7 @@
             <div class="section-card">
                 <div class="section__img">
                     <div class="descriptionSection">
-                        <h2 class="section-title">HTML - sceleton of your page</h2>
+                        <h2 class="section-title">JavaScript Playground</h2>
 
                         <p class="section__text">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, rem explicabo architecto
@@ -70,20 +72,54 @@
 
                     <div class="section-image"> <img src="../src/assets/jslogo.png"></div>
                 </div>
-                <div class="cards-wrapper">
-                    <div class="topic-card">
-                        <img src="../src/assets/sec3-1.jpg" alt="">
-                        <h3>this</h3>
+                <div class="jsPlayground">
+                    <div class="source">
+
+                        <input type="radio" name="radiotabs" id="htmlEditor" checked><label
+                            for="htmlEditor">HTML</label>
+                        <input type="radio" name="radiotabs" id="cssEditor"><label for="cssEditor">CSS</label>
+                        <input type="radio" name="radiotabs" id="jsEditor"><label for="jsEditor">JavaScript</label>
+
+                        <textarea id="htmlarea" class="html">
+<p>К блоку ниже применятся анимации для свойств: width, height, background-color, transform. Наведите на него, чтоб увидеть, как они анимируются.</p>
+<p>Клик по элементу приведёт к срабатыванию EventListener и обработке события 'click'. </p>
+<div class="box"></div></textarea>
+
+                        <textarea id="cssarea" class="css">
+.box {
+      border-style: solid;
+      border-width: 1px;
+      display: block;
+      margin: 20px;
+      width: 100px;
+      height: 100px;
+      background-color: #0000FF;
+    -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+      transition: width 2s, height 2s, background-color 2s, transform 2s;
+        }
+                        
+.box:hover {
+      background-color: #FFCCCC;
+      width: 200px;
+      height: 200px;
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+      }</textarea>
+
+                        <textarea id="jsarea" class="js">
+const box = document.querySelector('.box');
+box.onclick = () => { 
+box.style.backgroundColor = 'green';
+box.innerHTML = '<span style="color:white; font-size: 1.7rem">Зеленый квадрат Залевского</span>';
+ }</textarea>
                     </div>
-                    <div class="topic-card"> <img src="../src/assets/sec3-2.jpg" alt="">
-                        <h3>And this</h3>
-                    </div>
-                    <div class="topic-card"><img src="../src/assets/sec3-3.png" alt="">
-                        <h3>Also this</h3>
+                    <div class="sandbox">
+                        <button id="run">Run the code »</button>
+                        <iframe class="iframe" sandbox="allow-scripts allow-same-origin"></iframe>
                     </div>
 
                 </div>
-                <button class="button hover__light">Learn more</button>
+
             </div>
         </div>
     </section>
@@ -92,6 +128,11 @@
             2020 Minsk (c) All Rights reseved
         </div>
     </footer>
+    <script src="./src/js/codemirror/codemirror.js"></script>
+    <script src="./src/js/codemirror/mode/javascript/javascript.js"></script>
+    <script src="./src/js/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+    <script src="./src/js/codemirror/mode/css/css.js"></script>
+    <script src="./src/js/codemirror/mode/xml/xml.js"></script>
     <script src="./src/js/js.js"></script>
 </body>
 
