@@ -42,11 +42,18 @@ input {
     display: none;
   }
 .source label, .sandbox button {
-    padding: .2em .5em;
+    padding: 0.2em 0.5em;
     font-size: 2rem;
     border: none;
     display: inline-block;
     outline: 0;
+    position: relative;
+    right: 0;
+    top: 0;
+    margin: 0;
+    border-radius: unset;
+    width: auto;
+    max-width: none;
   }
 .source label:hover {
     background: #4e4e4e;
