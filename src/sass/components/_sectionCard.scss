@@ -2,11 +2,13 @@
     background-color: $color-section;
 }
 .section-card{
+    position: relative;
     display: flex;
     flex-direction: column;
    padding: 50px 10px;
    width: 100%;
    text-align: center;
+   // padding: 50px 10px 120px 10px;
 
  //  align-items: center;
 

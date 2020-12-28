@@ -1,19 +1,10 @@
-function burgerMenu(selector) {
-  const menu = document.querySelector(selector);
-  const button = document.querySelector('.burger-menu_button');
-  const links = document.querySelectorAll('.burger-menu_link');
-  const overlay = document.querySelector('.burger-menu_overlay');
-  button.addEventListener('click', (e) => {
-    e.preventDefault();
-    toggleMenu();
-  });
-  links.forEach((e) => e.addEventListener('click', () => toggleMenu()));
-  overlay.addEventListener('click', () => toggleMenu());
-  function toggleMenu() {
-    menu.classList.toggle('burger-menu__active');
-  }
-}
-burgerMenu('.burger-menu');
+const btn = document.querySelector('.header__burger');
+const menu = document.querySelector('.burger-menu')
+btn.addEventListener('click', function () {
+  btn.classList.toggle('active');
+  menu.classList.toggle('active');
+  document.body.classList.toggle('lock')
+})
 
 const [myTextArea, myCssArea, myJsArea] = document.querySelectorAll('.html, .css, .js');
 let htmlEditor = CodeMirror.fromTextArea(myTextArea, {
