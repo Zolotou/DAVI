@@ -48,7 +48,7 @@
                 </ul>
             </nav>
         </div>
-        </div>
+
     </header>
     <section class="hello">
         <div class="wrapper wrapper-hello">
@@ -72,11 +72,17 @@
                         <h2 class="section-title">HTML </h2>
 
                         <p class="section__text">
-                           <b>  Hypertext Markup Language (HTML)</b> is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.
+                            <b> Hypertext Markup Language (HTML)</b> is the standard markup language for documents
+                            designed to be displayed in a web browser. It can be assisted by technologies such as
+                            Cascading Style Sheets (CSS) and scripting languages such as JavaScript.
 
-                           Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
+                            Web browsers receive HTML documents from a web server or from local storage and render the
+                            documents into multimedia web pages. HTML describes the structure of a web page semantically
+                            and originally included cues for the appearance of the document.
 
-                           HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects such as interactive forms may be embedded into the rendered page.      </p>
+                            HTML elements are the building blocks of HTML pages. With HTML constructs, images and other
+                            objects such as interactive forms may be embedded into the rendered page.
+                        </p>
                     </div>
                     <div class="section-image"> <img src="../src/assets/html-logo.png"></div>
 
@@ -86,7 +92,7 @@
                     <div class="topic-card" data-modal-btn="my_modal1">
 
                         <img src="../src/assets/sect1-1.jpg" alt="">
-                        <h3>What is  &lt;!DOCTYPE&gt;</h3>
+                        <h3>What is &lt;!DOCTYPE&gt;</h3>
                     </div>
                     <div class="topic-card" data-modal-btn="my_modal2"><img src="../src/assets/sec1-2.png" alt="">
                         <h3>Сomment in code</h3>
@@ -170,7 +176,7 @@
                     </div>
 
                 </div>
-                <button class="button hover__light">Learn more</button>
+                <button class="button hover__light" onclick="location.href='js.html'">Learn more</button>
             </div>
         </div>
     </section>
@@ -217,40 +223,49 @@
     </footer>
     <div data-modal-window="my_modal1" class="modal">
         <div class="modal_content">
-<div class="modal_inner">
-    <div class="modal_title"> <code>Элемент !DOCTYPE</code></div>
-    <div class="close_modal_window">&times;</div>
-</div>
-<p>
-    Элемент !DOCTYPE  предназначен для указания типа текущего документа — DTD (document type definition, описание типа документа). Это необходимо, чтобы браузер понимал, как следует интерпретировать текущую веб-страницу, поскольку HTML существует в нескольких версиях, кроме того, имеется XHTML (EXtensible HyperText Markup Language, расширенный язык разметки гипертекста), похожий на HTML, но различающийся с ним по синтаксису. Чтобы браузер «не путался» и понимал, согласно какому стандарту отображать веб-страницу и необходимо в первой строке кода задавать <!DOCTYPE>.
+            <div class="modal_inner">
+                <div class="modal_title"> <code>Элемент !DOCTYPE</code></div>
+                <div class="close_modal_window">&times;</div>
+            </div>
+            <p>
+                Элемент !DOCTYPE предназначен для указания типа текущего документа — DTD (document type definition,
+                описание типа документа). Это необходимо, чтобы браузер понимал, как следует интерпретировать текущую
+                веб-страницу, поскольку HTML существует в нескольких версиях, кроме того, имеется XHTML (EXtensible
+                HyperText Markup Language, расширенный язык разметки гипертекста), похожий на HTML, но различающийся с
+                ним по синтаксису. Чтобы браузер «не путался» и понимал, согласно какому стандарту отображать
+                веб-страницу и необходимо в первой строке кода задавать
+                <!DOCTYPE>.
 
-        Существует несколько видов   !DOCTYPE  , они различаются в зависимости от версии языка, на которого ориентированы.
+                Существует несколько видов !DOCTYPE , они различаются в зависимости от версии языка, на которого
+                ориентированы.
 
 
-</p>
+            </p>
         </div>
     </div>
     <div data-modal-window="my_modal2" class="modal">
         <div class="modal_content">
-<div class="modal_inner">
-    <div class="modal_title"> Тег <span> &lt;!-- --&gt </span></div>
-    <div class="close_modal_window">&times;</div>
-</div>
-<p>
-    Тег <span> &lt;!-- --&gt </span> добавляет комментарий в код документа. Текст комментария не отображается на странице. Разрешается внутрь комментария добавлять другие теги, вложенные комментарии (когда один комментарий расположен внутри другого) недопустимы.
+            <div class="modal_inner">
+                <div class="modal_title"> Тег <span> &lt;!-- --&gt </span></div>
+                <div class="close_modal_window">&times;</div>
+            </div>
+            <p>
+                Тег <span> &lt;!-- --&gt </span> добавляет комментарий в код документа. Текст комментария не
+                отображается на странице. Разрешается внутрь комментария добавлять другие теги, вложенные комментарии
+                (когда один комментарий расположен внутри другого) недопустимы.
 
-</p>
+            </p>
         </div>
     </div>
     <div data-modal-window="my_modal3" class="modal">
         <div class="modal_content">
-<div class="modal_inner">
-    <div class="modal_title"> Simplest markup</div>
-    <div class="close_modal_window">&times;</div>
-</div>
-<p>
+            <div class="modal_inner">
+                <div class="modal_title"> Simplest markup</div>
+                <div class="close_modal_window">&times;</div>
+            </div>
+            <p>
 
-    <pre>&lt;!DOCTYPE html&gt;
+            <pre>&lt;!DOCTYPE html&gt;
         &lt;html&gt;
           &lt;head&gt;
             &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -265,7 +280,7 @@
 
 
 
-</p>
+            </p>
         </div>
     </div>
     <script src="./src/js/index.js"></script>
