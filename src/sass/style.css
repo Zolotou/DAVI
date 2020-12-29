@@ -584,6 +584,64 @@ body.lock {
   overflow: hidden;
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 3;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+.modal_content {
+  background-color: #F1F6FA;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #a5a1a1;
+  width: 60%;
+  z-index: 9999;
+  font-size: 2rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 400px;
+  overflow-y: auto;
+  text-align: left;
+}
+.modal_content span {
+  color: #1a7c3f;
+}
+@media (max-width: 768px) {
+  .modal_content {
+    margin-top: 120px;
+    width: 80%;
+    height: 500px;
+  }
+}
+@media (max-width: 526px) {
+  .modal_content {
+    font-size: 1.8rem;
+    width: 90%;
+    height: 500px;
+  }
+}
+.modal_content .close_modal_window {
+  color: #eb1414;
+  cursor: pointer;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 30px;
+}
+.modal_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.modal_title {
+  font-size: 25px;
+  font-weight: bold;
+}
+
 .welcom-img {
   background-image: url("../assets/welcomeimage-1024x1024.jpg");
   background-repeat: no-repeat;
@@ -665,9 +723,9 @@ footer {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 50px 10px;
+  padding: 135px 10px;
   width: 100%;
-  text-align: center;
+  align-items: center;
 }
 
 .section-image {
@@ -897,6 +955,9 @@ input:checked + label {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin: 9px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.topic-card > a {
+  display: inline-block;
 }
 .topic-card > img {
   max-width: 370px;

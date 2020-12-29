@@ -22,7 +22,9 @@ overflow:auto;
     box-shadow: $shadow;
     margin: 9px;
     box-shadow: $shadow;
-
+>a{
+    display: inline-block;
+}
 >img{
     max-width: 370px;
     height: 230px;
