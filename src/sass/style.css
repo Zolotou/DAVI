@@ -557,16 +557,15 @@ button:active {
 .header__burger::after {
   bottom: 0;
 }
-
-.header__burger .active :before {
+.header__burger.active::before {
   transform: rotate(45deg);
   top: 9px;
 }
-.header__burger .active:after {
+.header__burger.active::after {
   transform: rotate(-45deg);
   bottom: 9px;
 }
-.header__burger .active span {
+.header__burger.active span {
   transform: scale(0);
 }
 

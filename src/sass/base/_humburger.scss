@@ -76,23 +76,23 @@
     &::after {
         bottom: 0;
     }
-}
 
-.header__burger {
-    .active {
-        & :before {
+    &.active {
+        &::before {
             transform: rotate(45deg);
             top: 9px;
         }
-        &:after {
+        &::after {
             transform: rotate(-45deg);
             bottom: 9px;
         }
-        span {
+         span {
             transform: scale(0);
         }
     }
 }
+
+
 
 body.lock {
     overflow: hidden;
