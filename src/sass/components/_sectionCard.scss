@@ -22,7 +22,7 @@
         }
     }
 }
-.section{
+.section {
     &__img {
         display: flex;
         align-items: center;
@@ -54,7 +54,6 @@
         }
     }
 }
-
 .section-title {
     margin: 0;
     @include media-mobile {
