@@ -817,39 +817,49 @@ footer {
 #parent {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   text-align: center;
 }
 
+.divMain {
+  z-index: 5;
+  background-color: #F1F6FA;
+  width: 220px;
+  height: 100px;
+  border: 1px solid black;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #011D33;
+  padding: 5px;
+  margin: 7px;
+  position: relative;
+}
 .divMain:hover {
   cursor: pointer;
 }
 
 .tegs {
-  width: 200px;
-  height: 100px;
-  border: 1px solid black;
-  font-size: 1.4rem;
-  font-weight: bold;
-  color: #333333;
-  padding: 10px;
-  margin: 5px;
+  position: relative;
 }
 
 .descriptio {
-  display: none;
-  color: red;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background-color: #ffffff;
   width: 200px;
   height: 100px;
   border: 1px solid black;
   font-size: 1.4rem;
-  color: #333333;
+  color: #011D33;
   padding: 5px;
   margin: 5px;
 }
 
 .invisible {
-  display: none;
+  visibility: hidden;
 }
 
 .visible {

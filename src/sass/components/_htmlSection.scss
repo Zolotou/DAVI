@@ -1,40 +1,50 @@
-#parent{
+#parent {
     display: flex;
     flex-wrap: wrap;
- justify-content: space-between;
+    justify-content: space-around;
     text-align: center;
 }
-.divMain{
-    &:hover{
+.divMain {
+    z-index: 5;
+    background-color: $color-section;
+    width: 220px;
+    height: 100px;
+    border: 1px solid black;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color:$main-header-color;
+    padding:5px;
+    margin: 7px;
+    position: relative;
+    &:hover {
         cursor: pointer;
     }
 }
-.tegs{
+.tegs {
 
+    position: relative;
+
+}
+.descriptio {
+visibility: hidden;
+   position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background-color:$color-light;
     width: 200px;
     height: 100px;
-border :1px solid black;
+    border: 1px solid black;
     font-size: 1.4rem;
-    font-weight: bold;
-    color: $color-text;
-padding: 10px;
-margin: 5px;
-}
-.descriptio{
-display:none ;
-   color: red;
-   width: 200px;
-   height: 100px;
-border :1px solid black;
-   font-size: 1.4rem;
 
-   color: $color-text;
-padding: 5px;
-margin: 5px;
+    color: $main-header-color;
+    padding: 5px;
+    margin: 5px;
 }
-.invisible{
-    display: none;
+.invisible {
+    visibility: hidden;
+
 }
-.visible{
+.visible {
     display: block;
 }
