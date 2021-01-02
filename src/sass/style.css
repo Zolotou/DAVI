@@ -826,9 +826,7 @@ footer {
   background-color: #F1F6FA;
   width: 220px;
   height: 100px;
-  border: 1px solid black;
   font-size: 1.4rem;
-  font-weight: bold;
   color: #011D33;
   padding: 5px;
   margin: 7px;
@@ -839,6 +837,7 @@ footer {
 }
 
 .tegs {
+  font-weight: bold;
   position: relative;
 }
 
@@ -851,8 +850,10 @@ footer {
   background-color: #ffffff;
   width: 200px;
   height: 100px;
-  border: 1px solid black;
   font-size: 1.4rem;
+  font-weight: normal;
+  font-style: italic;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   color: #011D33;
   padding: 5px;
   margin: 5px;
