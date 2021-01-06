@@ -435,6 +435,10 @@ h2 {
   color: #0F119E;
 }
 
+h3 {
+  font-size: 2rem;
+}
+
 .logo_img {
   width: 100px;
   height: 100px;
@@ -868,6 +872,11 @@ footer {
   display: block;
 }
 
+.sectionHeading {
+  display: block;
+  text-decoration: underline;
+}
+
 textarea {
   display: block;
   flex: 1 1 auto;
@@ -890,9 +899,7 @@ textarea {
 }
 
 .linksList {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+  display: block;
 }
 
 .linksList li {
@@ -915,7 +922,7 @@ textarea {
   width: 100%;
   height: 300px;
   background-color: white;
-  border-width: 0px;
+  border: 3px solid #b6c6ce;
 }
 
 input {
@@ -935,18 +942,13 @@ input {
   border-radius: unset;
   width: auto;
   max-width: none;
-}
-
-.source label:hover {
-  background: #4e4e4e;
-  cursor: pointer;
-  color: whitesmoke;
+  transition: background-color 0.5s;
 }
 
 .sandbox button {
   background: #4caf50;
   color: whitesmoke;
-  transition: background-color 0.5s;
+  box-shadow: 0 3px 0 #b6c6ce;
 }
 
 .sandbox button:hover {
@@ -957,12 +959,25 @@ input {
 
 .sandbox button:active {
   font-weight: bold;
+  box-shadow: none;
+}
+
+.source label:hover {
+  background: #4e4e4e;
+  cursor: pointer;
+  color: whitesmoke;
 }
 
 input:checked + label {
   font-weight: bold;
   background: #212121;
   color: whitesmoke;
+}
+
+input:active + label:active {
+  font-weight: bold;
+  box-shadow: 0 2px 0 #b6c6ce;
+  transform: translateY(3px);
 }
 
 .flex {
