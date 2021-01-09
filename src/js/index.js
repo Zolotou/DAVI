@@ -1,3 +1,4 @@
+import welcome from './welcome_window.js'
 //burger
 const btn = document.querySelector('.header__burger');
 const menu = document.querySelector('.burger-menu')
@@ -28,6 +29,18 @@ window.onclick=function(e){
         for(let i=0;i<modals.length;i++)
        modals[i].style.display="none";
        document.body.classList.remove('lock')
+    }
+}
+
+//check if user already exist
+document.addEventListener("DOMcontentLoaded", checkUser());
+
+function checkUser() {
+    if(true){
+        welcome();
+    }
+    else{
+        console.log('user');
     }
 }
 
