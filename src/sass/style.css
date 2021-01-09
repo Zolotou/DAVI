@@ -1095,6 +1095,10 @@ input:active + label:active {
   height: 245px;
   margin: auto 0;
 }
+.topic-card h3 {
+  text-align: center;
+  color: #0F119E;
+}
 
 .img1 {
   background-image: url("/DAVI/src/assets/sect1-1.jpg");
