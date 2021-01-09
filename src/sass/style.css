@@ -849,6 +849,10 @@ footer {
   padding: 0 10px;
   cursor: pointer;
 }
+.navigation__link a {
+  color: #ffffff;
+  text-decoration: none;
+}
 .navigation__link:hover {
   color: #F1F6FA;
 }

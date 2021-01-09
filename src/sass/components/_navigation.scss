@@ -6,10 +6,16 @@
     font-size: 2.5rem;
     line-height: 2.8rem;
     &__link {
+        a{
+            color: $color-light;
+            text-decoration: none;
+                    }
+
         list-style: none;
         padding: 0 10px;
         cursor: pointer;
         @extend %transition;
+
         &:hover {
             color: $color-section;
         }
@@ -25,6 +31,7 @@
         &:hover::after {
             transform: scale(1);
         }
+
     }
 }
 
