@@ -845,22 +845,20 @@ footer {
   line-height: 2.8rem;
 }
 .navigation__link {
+  color: #ffffff;
+  text-decoration: none;
   list-style: none;
   padding: 0 10px;
   cursor: pointer;
 }
-.navigation__link a {
-  color: #ffffff;
-  text-decoration: none;
-}
 .navigation__link:hover {
-  color: #F1F6FA;
+  color: #99a9b1;
 }
 .navigation__link::after {
   content: "";
   display: block;
   width: 100%;
-  background-color: #F1F6FA;
+  background-color: #99a9b1;
   height: 2px;
   transform: scale(0);
 }
@@ -876,6 +874,10 @@ footer {
   .header__navigation {
     display: none;
   }
+}
+
+.active {
+  color: #99a9b1;
 }
 
 #parent {
