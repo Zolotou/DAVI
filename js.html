@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0 user-scalable=0">
+    <link rel="stylesheet" href="src/sass/style.css">
+    <link rel="stylesheet" href="src/sass/codemirror.css">
+    <link rel="stylesheet" href="src/sass/material-darker.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" href="./src/assets/favicon.ico">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Welcome page</title>
+</head>
+
+<body>
+    <h1></h1>
+    <div class="welcom-img">
+        <div class="wrapper">
+            <img src="./src/assets/DAVI.png" alt="logo">
+        </div>
+    </div>
+    <header class="header">
+        <div class="wrapper  header-wrapper">
+            <div class="header__logo">
+                <img class="logo_img" src="./src/assets/DAVI.png" alt="logo">
+            </div>
+            <div class="header__burger">
+
+                <span class="burger-menu_lines"></span>
+            </div>
+            <nav class="burger-menu">
+                <a href="#" class="burger-menu_link">HTML</a>
+                <a href="#" class="burger-menu_link">CSS</a>
+                <a href="#" class="burger-menu_link">JS</a>
+                <a href="#" class="burger-menu_link">Other</a>
+            </nav>
+
+
+
+
+            <nav class="header__navigation">
+                <ul class="navigation">
+                    <li class="navigation__link">HTML</li>
+                    <li class="navigation__link">CSS</li>
+                    <li class="navigation__link">JS</li>
+                    <li class="navigation__link">Other</li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <section class="JS sectionBlue">
+        <div class="wrapper">
+            <div class="section-card">
+                <div class="section__img">
+                    <div class="descriptionSection">
+                        <h1 class="section-title">JavaScript Notes</h1>
+
+                        <p class="section__text">
+                            This section contains an extensive collection of practice examples demonstrating the various
+                            techniques and features of the JavaScript language in real action.
+                        </p>
+                    </div>
+
+                    <div class="section-image"> <img src="../src/assets/jslogo.png"></div>
+                </div>
+                <div class="sandboxLinks">
+                    <div class="linksList">
+                    </div>
+                </div>
+                <div class="jsPlayground">
+                    <div class="source">
+
+                        <input type="radio" name="radiotabs" id="jsEditor" checked><label
+                            for="jsEditor">JavaScript</label>
+                        <input type="radio" name="radiotabs" id="htmlEditor"><label for="htmlEditor">HTML</label>
+                        <input type="radio" name="radiotabs" id="cssEditor"><label for="cssEditor">CSS</label>
+                        <textarea id="jsarea" class="js">test</textarea>
+                        <textarea id="htmlarea" class="html">Test</textarea>
+                        <textarea id="cssarea" class="css">test</textarea>
+                    </div>
+                    <div class="sandbox">
+                        <button id="run">Run the code »</button>
+                        <iframe class="iframe" sandbox="allow-scripts allow-same-origin"></iframe>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="wrapper">
+            2020 Minsk (c) All Rights reseved
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.13.0/beautify.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.13.0/beautify-css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.13.0/beautify-html.min.js"></script>
+    <script src="./src/js/codemirror/codemirror.js"></script>
+    <script src="./src/js/codemirror/mode/javascript/javascript.js"></script>
+    <script src="./src/js/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+    <script src="./src/js/codemirror/mode/css/css.js"></script>
+    <script src="./src/js/codemirror/mode/xml/xml.js"></script>
+    <script src="./src/js/codemirror/addon/selection/active-line.js"></script>
+    <script src="./src/js/codemirror/addon/edit/closebrackets.js"></script>
+    <script src="./src/js/codemirror/addon/edit/closetag.js"></script>
+    <script src="./src/js/codemirror/addon/edit/matchbrackets.js"></script>
+    <script src="./src/js/codemirror/addon/fold/xml-fold.js"></script>
+    <script src="./src/js/codemirror/addon/edit/matchtags.js"></script>
+    <script src="./src/js/index.js"></script>
+    <script src="./src/js/js.js"></script>
+</body>
+
+</html>
