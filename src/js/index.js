@@ -81,3 +81,37 @@ function onScroll(event) {
   })
 
 }
+
+const animItems=document.querySelectorAll('.activeItemanime')
+if (animItems.length > 0){
+  window.addEventListener('scroll',animOnScroll);
+  function animOnScroll(params){
+    for (let index = 0; index < animItems.length; index++) {
+      const animItem = animItems[index];
+      const animItemHeight = animItem.offsetHeight; //get height of item
+      const animItemOffset = offset(animItem).top;
+      const animStart = 4;
+      //высота окна браузера - высота анимированного обекта / коофициент
+let animItemPoint = window.innerHeight - animItemHeight / animStart;
+      //иногда аниминированный объект выше высоты браузера => перестроить момент старт
+      if (animItemHeight > window.innerHeight){
+        animItemPoint = window.innerHeight - window.innerHeight / animStart;
+      }
+      // если прокрутили больше,чем позиция щбъекта - точка старта, но меньше чем позиция объекта - его высота
+      if (pageYOffset > (animItemOffset - animItemPoint) && pageYOffset< (animItemOffset - animItemHeight)){
+animItem.classList.add('activeAnime')
+      } else {
+        //если не нужно анимировать при возврате к началу страницы
+      if  (!animItem.classList.contains('anim-no-hide')){
+        animItem.classList.remove('activeAnime')}
+      }
+    }
+  }
+}
+
+function offset(el){
+  const rect=el.getBoundingClientRect(),
+  scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+  scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  return {top: rect.top + scrollTop, left: rect.left + screenLeft}
+}
