@@ -8,27 +8,27 @@ btn.addEventListener('click', function () {
 })
 
 //modal
-let linkModal=document.querySelectorAll("*[data-modal-btn]")
-for(let i=0;i<linkModal.length;i++){
-    linkModal[i].addEventListener('click', function(){
-        let name=linkModal[i].getAttribute('data-modal-btn');
-        let modal=document.querySelector("[data-modal-window='"+name+"']")
-        modal.style.display="block"
-        document.body.classList.add('lock')
-        let closeModal=modal.querySelector('.close_modal_window')
-        closeModal.addEventListener('click', function(){
-            modal.style.display="none"
-            document.body.classList.remove('lock')
-        })
+let linkModal = document.querySelectorAll("*[data-modal-btn]")
+for (let i = 0; i < linkModal.length; i++) {
+  linkModal[i].addEventListener('click', function () {
+    let name = linkModal[i].getAttribute('data-modal-btn');
+    let modal = document.querySelector("[data-modal-window='" + name + "']")
+    modal.style.display = "block"
+    document.body.classList.add('lock')
+    let closeModal = modal.querySelector('.close_modal_window')
+    closeModal.addEventListener('click', function () {
+      modal.style.display = "none"
+      document.body.classList.remove('lock')
     })
+  })
 }
-window.onclick=function(e){
-    if(e.target.hasAttribute('data-modal-window')){
-        let modals=document.querySelectorAll("*[data-modal-window]")
-        for(let i=0;i<modals.length;i++)
-       modals[i].style.display="none";
-       document.body.classList.remove('lock')
-    }
+window.onclick = function (e) {
+  if (e.target.hasAttribute('data-modal-window')) {
+    let modals = document.querySelectorAll("*[data-modal-window]")
+    for (let i = 0; i < modals.length; i++)
+      modals[i].style.display = "none";
+    document.body.classList.remove('lock')
+  }
 }
 
 //slider
@@ -46,7 +46,7 @@ buttonsWrapper.addEventListener("click", e => {
     } else if (e.target.classList.contains("second")) {
       slides.style.transform = "translateX(-33%)";
       e.target.classList.add("active");
-    } else if (e.target.classList.contains('third')){
+    } else if (e.target.classList.contains('third')) {
       slides.style.transform = 'translatex(-50%)';
       e.target.classList.add('active');
     }
@@ -54,10 +54,30 @@ buttonsWrapper.addEventListener("click", e => {
 });
 
 //scroll
-const menu=document.querySelector('.navigation')
+const menu = document.querySelector('.navigation')
 
 console.log(menu)
-menu.addEventListener('click', (event)=>{
-menu.querySelectorAll('a').forEach(el => el.classList.remove('active'));
+menu.addEventListener('click', (event) => {
+  menu.querySelectorAll('a').forEach(el => el.classList.remove('active'));
   event.target.classList.add('active');
 })
+
+//scrolling
+document.addEventListener('scroll', onScroll);
+function onScroll(event) {
+  const currentPosition = window.scrollY;
+  const sect = document.querySelectorAll('section')
+  const link = document.querySelectorAll('.navigation a');
+  sect.forEach((el) => {
+    if (el.offsetTop <= currentPosition && el.offsetTop + el.offsetHeight > currentPosition) {
+      link.forEach((a) => {
+        a.classList.remove('active');
+        if (el.getAttribute('id') === a.getAttribute('href').substr(1)) {
+          a.classList.add('active');
+        }
+      })
+    }
+
+  })
+
+}
