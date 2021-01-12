@@ -97,11 +97,11 @@ function listCases(cases) {
     if (sectionName !== key.section) {
       // we'll create a new section
       let section = document.createElement('h3');
-      section.classList.add('sectionHeading');
+      section.classList.add('accordion');
       section.innerHTML = key.section;
       parentUl.appendChild(section);
       sectionContent = document.createElement('ul');
-      sectionContent.classList.add('sectionContent');
+      sectionContent.classList.add('accordion-panel');
       parentUl.appendChild(sectionContent);
       sectionName = key.section;
 
@@ -138,3 +138,29 @@ triggerCase.forEach(element => {
     appendSandboxCase(caseLibrary, element.textContent);
   })
 });
+
+// Accordion
+const acc = document.getElementsByClassName("accordion");
+const accPanel = document.getElementsByClassName("accordion-panel");
+for (let i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function () {
+
+    let setClasses = !this.classList.contains('accordion-active');
+    setPanelStyle(acc, "accordion-active");
+    setPanelStyle(accPanel, "hide");
+
+    if (setClasses) {
+      this.classList.toggle('accordion-active');
+      this.nextElementSibling.style.maxHeight = accPanel[i].scrollHeight + "px";
+    }
+  });
+}
+function setPanelStyle(elm, state) {
+  for (let i = 0; i < elm.length; i++) {
+    if (state === "accordion-active") {
+      elm[i].classList.remove("accordion-active");
+    } else {
+      elm[i].style.maxHeight = null;
+    }
+  }
+}

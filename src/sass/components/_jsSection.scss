@@ -1,8 +1,4 @@
-.sectionHeading {
-display:block;
-text-decoration: underline;
-}
-  textarea {
+ textarea {
     display: block;
     flex: 1 1 auto;
     margin: 0 0 10px 0;
@@ -108,3 +104,26 @@ input:checked + label {
   #htmlEditor:checked~#htmlarea + div, #cssEditor:checked~#cssarea + div, #jsEditor:checked~#jsarea + div {
     display: block;
   }
+  .accordion{
+    display: block;
+    background-color: #eee;
+    color: #000;
+    cursor: pointer;
+    padding: 0.4em 0.5em;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  .accordion-active, .accordion:hover{
+background-color: #ccc;
+  }
+  .accordion-panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  

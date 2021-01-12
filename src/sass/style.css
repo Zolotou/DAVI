@@ -772,7 +772,6 @@ footer {
 .hello-text {
   transform: translate(0px, 120%);
   opacity: 0;
-  transition: all 0.8s ease 0;
   max-width: 760px;
   width: 100%;
   text-align: center;
@@ -970,11 +969,6 @@ footer {
   display: block;
 }
 
-.sectionHeading {
-  display: block;
-  text-decoration: underline;
-}
-
 textarea {
   display: block;
   flex: 1 1 auto;
@@ -1091,6 +1085,31 @@ input:active + label:active {
 
 #htmlEditor:checked ~ #htmlarea + div, #cssEditor:checked ~ #cssarea + div, #jsEditor:checked ~ #jsarea + div {
   display: block;
+}
+
+.accordion {
+  display: block;
+  background-color: #eee;
+  color: #000;
+  cursor: pointer;
+  padding: 0.4em 0.5em;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.accordion-active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion-panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
 
 .slider-container {
