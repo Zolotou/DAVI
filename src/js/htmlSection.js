@@ -208,9 +208,11 @@ const tegs=[
     for (let key of tegs) {
         let divMain = document.createElement('div')
         divMain.classList.add('divMain')
+
         divMain.innerHTML = key.teg;
         let p = document.createElement('div')
         p.classList.add('descriptio')
+
         p.innerHTML = key.descriptio
         divMain.appendChild(p)
         parent.appendChild(divMain)
@@ -233,5 +235,3 @@ divM.forEach(element => {
     })
 })
 
-const count = (a,b) => a + b;
-count(2,3)
