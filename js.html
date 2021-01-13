@@ -16,80 +16,59 @@
 </head>
 
 <body>
-    <h1></h1>
-    <div class="welcom-img">
-        <div class="wrapper">
-            <img src="./src/assets/DAVI.png" alt="logo">
-        </div>
-    </div>
     <header class="header">
         <div class="wrapper  header-wrapper">
             <div class="header__logo">
-                <img class="logo_img" src="./src/assets/DAVI.png" alt="logo">
+            <a href="index.html#logo1 ">  <img class="logo_img" src="./src/assets/DAVI.png" alt="logo"></a>
             </div>
             <div class="header__burger">
-
                 <span class="burger-menu_lines"></span>
             </div>
             <nav class="burger-menu">
-                <a href="#" class="burger-menu_link">HTML</a>
-                <a href="#" class="burger-menu_link">CSS</a>
-                <a href="#" class="burger-menu_link">JS</a>
-                <a href="#" class="burger-menu_link">Other</a>
+                <a href="index.html#html" class="burger-menu_link">HTML</a>
+                <a href="index.html#css" class="burger-menu_link">CSS</a>
+                <a href="index.html#js" class="burger-menu_link">JS</a>
+                <a href="index.html#other" class="burger-menu_link">Other</a>
             </nav>
-
-
-
-
             <nav class="header__navigation">
                 <ul class="navigation">
-                    <li class="navigation__link">HTML</li>
-                    <li class="navigation__link">CSS</li>
-                    <li class="navigation__link">JS</li>
-                    <li class="navigation__link">Other</li>
+                    <a class="navigation__link " href="index.html#html" >HTML</a>
+                    <a class="navigation__link" href="index.html#css">CSS</a>
+                      <a  class="navigation__link active" href="index.html#js">JS</a>
+                    <a class="navigation__link" href="index.html#other">Other</a>
                 </ul>
             </nav>
         </div>
-
     </header>
     <section class="JS sectionBlue">
         <div class="wrapper">
             <div class="section-card">
                 <div class="section__img">
                     <div class="descriptionSection">
-                        <h2 class="section-title">JavaScript Playground</h2>
+                        <h1 class="section-title">JavaScript Notes</h1>
 
                         <p class="section__text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, rem explicabo architecto
-                            debitis
-                            magnam quaerat.
-                            Possimus sunt veritatis inventore molestiae ex perferendis voluptas nobis, ratione eveniet
-                            id fugiat
-                            iste ea!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, Lorem ipsum dolor sit amet
-                            consectetur adipisicing elit. Maxime,
+                            This section contains an extensive collection of practice examples demonstrating the various
+                            techniques and features of the JavaScript language in real action.
                         </p>
                     </div>
 
                     <div class="section-image"> <img src="../src/assets/jslogo.png"></div>
                 </div>
                 <div class="sandboxLinks">
-                    <ul class="linksList">
-                    </ul>
+                    <div class="linksList">
+                    </div>
                 </div>
                 <div class="jsPlayground">
                     <div class="source">
 
-                        <input type="radio" name="radiotabs" id="htmlEditor" checked><label
-                            for="htmlEditor">HTML</label>
+                        <input type="radio" name="radiotabs" id="jsEditor" checked><label
+                            for="jsEditor">JavaScript</label>
+                        <input type="radio" name="radiotabs" id="htmlEditor"><label for="htmlEditor">HTML</label>
                         <input type="radio" name="radiotabs" id="cssEditor"><label for="cssEditor">CSS</label>
-                        <input type="radio" name="radiotabs" id="jsEditor"><label for="jsEditor">JavaScript</label>
-
-                        <textarea id="htmlarea" class="html">Test</textarea>
-
-                        <textarea id="cssarea" class="css">test</textarea>
-
                         <textarea id="jsarea" class="js">test</textarea>
+                        <textarea id="htmlarea" class="html">Test</textarea>
+                        <textarea id="cssarea" class="css">test</textarea>
                     </div>
                     <div class="sandbox">
                         <button id="run">Run the code »</button>
