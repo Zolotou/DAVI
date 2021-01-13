@@ -56,7 +56,7 @@ buttonsWrapper.addEventListener("click", e => {
 //scroll
 const menu = document.querySelector('.navigation')
 
-console.log(menu)
+
 menu.addEventListener('click', (event) => {
   menu.querySelectorAll('a').forEach(el => el.classList.remove('active'));
   event.target.classList.add('active');
@@ -85,7 +85,7 @@ function onScroll(event) {
 const animItems=document.querySelectorAll('.activeItemanime')
 if (animItems.length > 0){
   window.addEventListener('scroll',animOnScroll);
-  function animOnScroll(params){
+  function animOnScroll(){
     for (let index = 0; index < animItems.length; index++) {
       const animItem = animItems[index];
       const animItemHeight = animItem.offsetHeight; //get height of item
@@ -115,3 +115,17 @@ function offset(el){
   scrollTop = window.pageYOffset || document.documentElement.scrollTop;
   return {top: rect.top + scrollTop, left: rect.left + screenLeft}
 }
+
+document.addEventListener('DOMContentLoaded', ()=>{
+
+   navline = document.querySelector('.nav_line');
+   navItem = document.querySelectorAll('.navigation__link');
+  navline.style.width = `${navItem[0].offsetWidth}px`;
+navItem.forEach(el => {
+  el.addEventListener('mouseenter', (e)=> {
+    navline.style.width = `${e.currentTarget.offsetWidth}px`;
+    navline.style.left = `${e.currentTarget.offsetLeft}px`;
+  });
+})
+
+})
