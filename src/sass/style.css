@@ -747,12 +747,48 @@ body.lock {
   align-items: center;
 }
 
-footer {
+.footer {
   background-color: #011D33;
-  height: 60px;
+  height: 200px;
+}
+.footer .wrapper {
+  color: #ffffff;
+  height: 100px;
   display: flex;
-  justify-content: center;
-  padding-top: 30px;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  flex-direction: column;
+}
+
+.footer-link {
+  padding: 0 10px;
+}
+.footer-link > a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.footer-link > a:hover {
+  color: aqua;
+}
+
+.footer__navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 500 px;
+  font-size: 2rem;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  margin-left: 50px;
+}
+
+.facebook {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 5px;
 }
 
 .wrapper-hello {
