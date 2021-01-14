@@ -1176,7 +1176,7 @@ input:active + label:active {
 }
 
 .img5 {
-  background-image: url(/DAVI/src/assets/sect1-1.jpg);
+  background-image: url("/DAVI/src/assets/sect1-1.jpg");
 }
 
 .welcome-popup-background {
@@ -1228,17 +1228,30 @@ input:active + label:active {
 .welcome-popup-background .welcome-popup .smash {
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
   height: 70%;
-  background-color: violet;
 }
 .welcome-popup-background .welcome-popup .smash .welcome-smash1 {
-  height: 100px;
-  width: 100px;
+  height: 180px;
+  width: 220px;
+  background-image: url("./src/assets/smeharik1.jpg");
   background-size: cover;
 }
+.welcome-popup-background .welcome-popup .smash .welcome-smash1:hover {
+  cursor: pointer;
+  border: 5px solid black;
+  opacity: 0.8;
+}
 .welcome-popup-background .welcome-popup .smash .welcome-smash2 {
-  width: 100px;
-  height: auto;
+  width: 220px;
+  height: 180px;
+  background-image: url("./src/assets/smeh2.jpg");
+  background-size: cover;
+}
+.welcome-popup-background .welcome-popup .smash .welcome-smash2:hover {
+  cursor: pointer;
+  border: 5px solid black;
+  opacity: 0.8;
 }
 @keyframes visibility {
   from {

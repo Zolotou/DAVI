@@ -61,12 +61,14 @@ if (buttonsWrapper !== null) {
 document.addEventListener("DOMcontentLoaded", checkUser());
 
 function checkUser() {
-    if(true){
-        welcome();
-    }
-    else{
-        console.log('user');
-    }
+  let userName = localStorage.getItem('userName');
+  console.log(userName)
+  if(userName != null){
+    document.querySelector('.welcome-user').innerHTML = `Welcome back ${localStorage.getItem('UserName')}`
+  }
+  else{
+      welcome();
+  }
 }
 
 //scroll
@@ -134,8 +136,8 @@ function offset(el) {
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  navline = document.querySelector('.nav_line');
-  navItem = document.querySelectorAll('.navigation__link');
+  let navline = document.querySelector('.nav_line');
+  let navItem = document.querySelectorAll('.navigation__link');
   navline.style.width = `${navItem[0].offsetWidth}px`;
   navItem.forEach(el => {
     el.addEventListener('mouseenter', (e) => {
