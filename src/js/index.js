@@ -66,7 +66,6 @@ function checkUser() {
   if(userName != null){
     document.querySelector('.welcome-user').innerHTML = `Welcome back ${localStorage.getItem('userName')}`;
     document.querySelector('.welcome-user-level').innerHTML = `Your level is still ${localStorage.getItem('levelOfUser')}`
-    getQuote();
   }
   else{
       welcome();
@@ -88,7 +87,7 @@ async function getQuote() {
   const result = await data.json();
   document.querySelector('.welcome-api').textContent = result.slip.advice;
 }
-
+getQuote();
 
 
 //scroll
