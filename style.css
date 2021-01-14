@@ -1160,23 +1160,23 @@ input:active + label:active {
 }
 
 .img1 {
-  background-image: url("/DAVI/src/assets/sect1-1.jpg");
+  background-image: url("./src/assets/sect1-1.jpg");
 }
 
 .img2 {
-  background-image: url("/DAVI/src/assets/sec1-2.png");
+  background-image: url("./src/assets/sec1-2.png");
 }
 
 .img3 {
-  background-image: url("/DAVI/src/assets/sec1-3.jpg");
+  background-image: url("./src/assets/sec1-3.jpg");
 }
 
 .img4 {
-  background-image: url("/DAVI/src/assets/sec1-2.png");
+  background-image: url("./src/assets/sec1-2.png");
 }
 
 .img5 {
-  background-image: url("/DAVI/src/assets/sect1-1.jpg");
+  background-image: url("./src/assets/sect1-1.jpg");
 }
 
 .welcome-popup-background {
