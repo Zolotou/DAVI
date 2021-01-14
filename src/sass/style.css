@@ -718,7 +718,7 @@ body.lock {
 }
 
 .welcom-img {
-  background-image: url("../assets/welcomeimage-1024x1024.jpg");
+  background-image: url("../../src/assets/welcomeimage-1024x1024.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
@@ -1004,11 +1004,6 @@ body.lock {
   display: block;
 }
 
-.sectionHeading {
-  display: block;
-  text-decoration: underline;
-}
-
 textarea {
   display: block;
   flex: 1 1 auto;
@@ -1127,6 +1122,31 @@ input:active + label:active {
   display: block;
 }
 
+.accordion {
+  display: block;
+  background-color: #eee;
+  color: #000;
+  cursor: pointer;
+  padding: 0.4em 0.5em;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.accordion-active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion-panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
 .slider-container {
   display: flex;
   grid-gap: 1em;
@@ -1177,23 +1197,23 @@ input:active + label:active {
 }
 
 .img1 {
-  background-image: url("/DAVI/src/assets/sect1-1.jpg");
+  background-image: url("../../src/assets/sect1-1.jpg");
 }
 
 .img2 {
-  background-image: url("/DAVI/src/assets/sec1-2.png");
+  background-image: url("../../src/assets/sec1-2.png");
 }
 
 .img3 {
-  background-image: url("/DAVI/src/assets/sec1-3.jpg");
+  background-image: url("../../src/assets/sec1-3.jpg");
 }
 
 .img4 {
-  background-image: url("/DAVI/src/assets/sec1-2.png");
+  background-image: url("../../src/assets/sec1-2.png");
 }
 
 .img5 {
-  background-image: url(/DAVI/src/assets/sect1-1.jpg);
+  background-image: url("../../src/assets/sect1-1.jpg");
 }
 
 /*# sourceMappingURL=style.css.map */
