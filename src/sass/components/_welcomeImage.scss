@@ -1,0 +1,11 @@
+.welcome-image {
+    margin: 0 auto;
+    text-align: center;
+    background-color: $color-section;
+    color: $color-text;
+
+    .welcome-reset-button{
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+}

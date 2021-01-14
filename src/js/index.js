@@ -1,3 +1,4 @@
+import welcome from './welcome_window.js'
 //burger
 const btn = document.querySelector('.header__burger');
 const menuBur = document.querySelector('.burger-menu')
@@ -55,6 +56,40 @@ if (buttonsWrapper !== null) {
     }
   })
 }
+
+//check if user already exist
+document.addEventListener("DOMcontentLoaded", checkUser());
+
+function checkUser() {
+  let userName = localStorage.getItem('userName');
+  console.log(userName)
+  if(userName != null){
+    document.querySelector('.welcome-user').innerHTML = `Welcome back ${localStorage.getItem('userName')}`;
+    document.querySelector('.welcome-user-level').innerHTML = `Your level is still ${localStorage.getItem('levelOfUser')}`
+    getQuote();
+  }
+  else{
+      welcome();
+  }
+}
+
+// reset the user statistic
+let reset = document.querySelector('.welcome-reset-button');
+reset.addEventListener('click', ()=> {
+  localStorage.removeItem('userName');
+  localStorage.removeItem('levelofUser');
+  window.location.reload(false); ;
+})
+
+// get the Api quote
+async function getQuote() {
+  const url = "https://api.adviceslip.com/advice"
+  const data = await fetch(url);
+  const result = await data.json();
+  document.querySelector('.welcome-api').textContent = result.slip.advice;
+}
+
+
 
 //scroll
 const menu = document.querySelector('.navigation')
@@ -141,8 +176,8 @@ function offset(el) {
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  navline = document.querySelector('.nav_line');
-  navItem = document.querySelectorAll('.navigation__link');
+  let navline = document.querySelector('.nav_line');
+  let navItem = document.querySelectorAll('.navigation__link');
   navline.style.width = `${navItem[0].offsetWidth}px`;
   navItem.forEach(el => {
     el.addEventListener('mouseenter', (e) => {
