@@ -72,7 +72,7 @@ function onScroll(event) {
   const sect = document.querySelectorAll('section')
   const link = document.querySelectorAll('.navigation a');
   sect.forEach((el) => {
-    if (el.offsetTop <= currentPosition && el.offsetTop + el.offsetHeigh > currentPosition) {
+    if (el.offsetTop <= currentPosition && el.offsetTop + el.offsetHeight > currentPosition) {
       link.forEach((a) => {
         a.classList.remove('active');
         if (el.getAttribute('id') === a.getAttribute('href').substr(1)) {
