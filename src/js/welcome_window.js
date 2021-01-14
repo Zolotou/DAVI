@@ -23,8 +23,8 @@ export default function welcome() {
         for (let i = 0; i < all.length; i++) {
             all[i].style.display = "none";
         }
+
         createUser();
-        localStorage.setItem('user', 'UserName');
     }
 
     function createUser() {
@@ -39,20 +39,22 @@ export default function welcome() {
             </div><div class="welcome-smash2"></div></div>`)
             const noobButton = document.querySelector(".welcome-smash1");
             const proButton = document.querySelector(".welcome-smash2");
-            noobButton.addEventListener('click', enterThePage)
-            proButton.addEventListener('click',enterThePage)
+            noobButton.addEventListener('click', () =>{
+                enterThePage("newbie")})
+            proButton.addEventListener('click', () => {
+                enterThePage("intermidiate")})
         })
        
     }
 
-    function enterThePage() {
+    function enterThePage(level) {
         for (let i of all){
             i.style.display = 'flex';
         }
         welcomeUser = document.querySelector('.welcome-user');
-        welcomeUser.innerHTML = `Well ${nameUser} your level is.`
+        welcomeUser.innerHTML = `Well ${nameUser} \n your level is: ${level}`;
         welcomeBody.removeChild(welcomeWindow);
-        localStorage.setItem('userName', 'UserName');
-        console.log('code came to here')
+        localStorage.setItem('userName', `${nameUser}`);
+        localStorage.setItem('levelOfUser', `${level}`)
     }
 }

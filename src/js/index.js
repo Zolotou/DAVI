@@ -64,12 +64,32 @@ function checkUser() {
   let userName = localStorage.getItem('userName');
   console.log(userName)
   if(userName != null){
-    document.querySelector('.welcome-user').innerHTML = `Welcome back ${localStorage.getItem('UserName')}`
+    document.querySelector('.welcome-user').innerHTML = `Welcome back ${localStorage.getItem('userName')}`;
+    document.querySelector('.welcome-user-level').innerHTML = `Your level is still ${localStorage.getItem('levelOfUser')}`
+    getQuote();
   }
   else{
       welcome();
   }
 }
+
+// reset the user statistic
+let reset = document.querySelector('.welcome-reset-button');
+reset.addEventListener('click', ()=> {
+  localStorage.removeItem('userName');
+  localStorage.removeItem('levelofUser');
+  window.location.reload(false); ;
+})
+
+// get the Api quote
+async function getQuote() {
+  const url = "https://api.adviceslip.com/advice"
+  const data = await fetch(url);
+  const result = await data.json();
+  document.querySelector('.welcome-api').textContent = result.slip.advice;
+}
+
+
 
 //scroll
 const menu = document.querySelector('.navigation')
