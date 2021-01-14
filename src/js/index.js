@@ -99,7 +99,8 @@ menu.addEventListener('click', (event) => {
   event.target.classList.add('active');
 })
 
-//scrolling
+//scrolling 
+
 document.addEventListener('scroll', onScroll);
 function onScroll(event) {
   const currentPosition = window.scrollY;
@@ -113,11 +114,30 @@ function onScroll(event) {
           a.classList.add('active');
         }
       })
+
     }
 
   })
 
 }
+/*
+function smoothScroll() {
+  const anchors = document.querySelectorAll('a[href*="#"]')
+
+  for (let anchor of anchors) {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault() // предотвращаем стандартное поведение
+
+      const blockID = anchor.getAttribute('href').substr(1)
+
+      document.getElementById(blockID).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      })
+
+    })
+  }
+} */
 
 const animItems = document.querySelectorAll('.activeItemanime')
 if (animItems.length > 0) {
