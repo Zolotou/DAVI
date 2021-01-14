@@ -64,25 +64,45 @@ menu.addEventListener('click', (event) => {
   event.target.classList.add('active');
 })
 
-//scrolling
+//scrolling 
+
 document.addEventListener('scroll', onScroll);
 function onScroll(event) {
   const currentPosition = window.scrollY;
   const sect = document.querySelectorAll('section')
   const link = document.querySelectorAll('.navigation a');
   sect.forEach((el) => {
-    if (el.offsetTop <= currentPosition && el.offsetTop + el.offsetHeight > currentPosition) {
+    if (el.offsetTop <= currentPosition && el.offsetTop + el.offsetHeigh > currentPosition) {
       link.forEach((a) => {
         a.classList.remove('active');
         if (el.getAttribute('id') === a.getAttribute('href').substr(1)) {
           a.classList.add('active');
         }
       })
+
     }
 
   })
 
 }
+/*
+function smoothScroll() {
+  const anchors = document.querySelectorAll('a[href*="#"]')
+
+  for (let anchor of anchors) {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault() // предотвращаем стандартное поведение
+
+      const blockID = anchor.getAttribute('href').substr(1)
+
+      document.getElementById(blockID).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      })
+
+    })
+  }
+} */
 
 const animItems = document.querySelectorAll('.activeItemanime')
 if (animItems.length > 0) {
