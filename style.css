@@ -1312,4 +1312,13 @@ input:active + label:active {
   margin-bottom: 10px;
 }
 
+.Html-inform {
+  background-color: #C2DEF4;
+}
+
+.introduction-container {
+  display: flex;
+  background: whitesmoke;
+}
+
 /*# sourceMappingURL=style.css.map */
