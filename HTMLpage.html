@@ -36,57 +36,304 @@
 
     </header>
     <section class="html-tegs">
-        <div class="wrapper">
-
+        <div class="wrapper wrapper-html">
+            <h2>HTML tegs</h2>
             <div id="parent">
 
             </div>
         </div>
     </section>
     <section class="Html-inform">
-        <div class="wrapper">
-<h1>Introduction to HTML</h1>
-<div class="introduction-container">
-    <ul class="introduction-links">
-         <li class="introduction-item">Fast start</li>
-    <li class="introduction-item">Tools</li>
-    <li class="introduction-item">Types of tags</li>
-    <li class="introduction-item">Tag atributes</li>
-    <li class="introduction-item">Text</li>
-    <li class="introduction-item">Links</li>
-    <li class="introduction-item">Anchors</li>
-    <li class="introduction-item">Images</li>
-    <li class="introduction-item">Lists</li>
-    <li class="introduction-item">Tables</li>
-    <li class="introduction-item">Frames</li>
-    <li class="introduction-item">Document validation</li>
-    </ul>
+        <div class="wrapper HTML-wrapper">
+            <h2>Introduction to HTML</h2>
+            <div class="introduction-container">
+                <ul class="introduction-links" id="introductionLinks">
+                    <li class="introduction-item">Fast start</li>
+                    <li class="introduction-item">Tools</li>
+                    <li class="introduction-item">Types of tags</li>
+                    <li class="introduction-item">Tag atributes</li>
+                    <li class="introduction-item">Text</li>
+                    <li class="introduction-item">Links</li>
+                    <li class="introduction-item">Anchors</li>
+                    <li class="introduction-item">Images</li>
+                    <li class="introduction-item">Lists</li>
+                    <li class="introduction-item">Tables</li>
+                    <li class="introduction-item">Frames</li>
+                    <li class="introduction-item">Document validation</li>
+                </ul>
+<div id="otPutInfo"></div>
+                <div class="outPut-html">
+
+
+                    <div class="outPut-html__info start">
+                        Быстрый старт
+                        Чтобы сразу же ввести в курс дела нетерпеливых читателей, предложим им возможность создания
+                        веб-страницы без последовательного изучения правил HTML. По крайней мере, вы сумеете убедиться,
+                        что создание веб-страниц достаточно простая штука.
+
+                        В примере 1.1 приведен несложный пример такого кода.
+                        Чтобы посмотреть результат примера в действии, проделайте следующие шаги.
+
+                        1. В Windows откройте программу Блокнот (Пуск > Выполнить > набрать «notepad» или Пуск >
+                        Программы > Стандартные > Блокнот).
+
+                        2. Наберите или скопируйте код в Блокноте (рис. 1.1).
+                        3. Сохраните готовый документ (Файл > Сохранить как...) под именем c:\www\example11.html, при
+                        этом обязательно поставьте в диалоговом окне сохранения тип файла: Все файлы и кодировку UTF-8
+                        (рис. 1.2). Обратите внимание, что расширение у файла должно быть именно html.
+                        4. Запустите браузер Internet Explorer (Пуск > Выполнить > набрать «iexplore» или Пуск >
+                        Программы > Internet Explorer).
+
+                        5. В браузере выберите пункт меню Файл > Открыть и укажите путь к вашему файлу.
+
+                        6. Если все сделано правильно, то в браузере вы увидите результат, как показано на рис. 1.3.
+                        В случае возникновения каких-либо ошибок проверьте правильность набора кода согласно примеру
+                        1.1, расширение файла (должно быть html) и путь к документу.
+
+                    </div>
+                    <div class="outPut-html__info tools ">
+                        To work efficiently, you cannot do without necessary and familiar tools, including when writing
+                        HTML code. Therefore, for the initial development of web pages or even a small site - this is
+                        the name of a set of pages linked by links and a single design, we need the following programs.
+
+                        Text editor.
+                        Browser for viewing results.
+                        Validator is a program for checking HTML syntax and detecting errors in the code.
+                        Graphics editor.
+                        HTML tag reference.
+                        Let's take a closer look at these tools below.
+
+                        Text editor
+                        An HTML document can be created in any text editor, although Notepad, however, not every program
+                        is suitable for this purpose. You need one to support the following features:
+
+                        syntax highlighting - highlighting tags, text, keywords and parameters in different colors. This
+                        makes it easier to find the desired element, speeds up the developer's work and reduces the
+                        occurrence of errors;
+                        work with tabs. The site is a set of files that have to be edited separately, which requires an
+                        editor who can work simultaneously with several documents at once. At the same time, it is
+                        convenient to open files in separate tabs in order to quickly move to the desired document;
+                        checking the current document for errors.
+                    </div>
+
+                    <div class="outPut-html__info tegs ">
+                        So that the browser, when displaying the document, understands that it is not dealing with plain
+                        text, but with a formatting element and tags are applied. The general syntax for writing tags is
+                        as follows.
+
+
+                        As you can see from this example, there are two types of tags - single and paired (containers).
+                        A single tag is used on its own, while a paired tag can include other tags or text within it.
+                        Tags are allowed different attributes, which are separated by a space. However, there are tags
+                        without any additional attributes. Attributes can be conventionally subdivided into mandatory,
+                        they must be present, and optional, their addition depends on the purpose of the tag.
+
+                        Example 3.1 shows a typical HTML document with tags and text.
+
+                    </div>
+                    <div class="outPut-html__info  tagAtributes"></div>
+
+                    Tag attributes expand the capabilities of the tags themselves and allow flexible control over
+                    various display settings for web page elements. The total number of attributes is quite large, but
+                    their values, as a rule, can be grouped by different types, for example, specifying color, size,
+                    address, etc. Next, we will consider the main types of values.
+
+
+
+
+
+
+                    <div class="outPut-html__info text  ">
+                        To change the appearance of the text, there are a large number of different tags. This is not
+                        surprising, because text is the most popular type of information.
+
+                        Features of text in HTML
+                        Before you edit the code of a web page, you should take into account some of the features that
+                        are inherent in HTML when working with text.
+
+                        Any number of consecutive spaces, displayed in the browser as one
+                        No matter how many spaces you put between words, it will not affect the final appearance of the
+                        text. The same rule applies to tabs and text wrapping. Therefore, do not add extra spaces, as
+                        this will only increase the total file size, but will not change the way the document looks in
+                        the browser. The lines below will appear the same on the web page, despite their different
+                        spellings.
+                        The exception to this rule is the
+                        <pre> tag, within which any number of spaces are displayed exactly as specified in the code.
+
+    No hyphenation in the text
+    HTML does not support word hyphenation, as text editors do, in other words, all words are written entirely without breaking them. This condition is irrelevant until the text is justified. In this case, the block of text is left and right aligned. At the same time, short lines are stretched by automatically adding spaces between words. Sometimes the blank blocks between words are so large that they spoil the appearance of the page and impair the readability of the text.
+
+    Imagine that you have a long word in the middle of a sentence, such as "Dehydroepiandrosterone". In a text editor, this word will be wrapped by syllables so that the text takes up the specified width, and on a web page such a word will be displayed in its entirety, without hyphenation.
+
+    The text occupies the width of the browser window
+    If you just write one long line in the HTML code, it will be formatted in the browser to fit the width of the window. Text hyphenation will be added automatically at spaces or hyphens. What happens if there is neither one nor the other character in the text? The browser will not be able to create hyphens and will display the text in one line. If it is wider than the browser window, then a horizontal scroll bar will inevitably appear.
+   </div>
+<div class="outPut-html__info  links ">
+    Links are the backbone of hypertext documents and allow you to navigate from one web page to another. Their peculiarity is that the link itself can lead not only to HTML files, but also to a file of any type, and this file can be placed on a completely different site. The main thing is that the referenced document has access. In other words, if the path to the file can be specified in the address bar of the browser, and the file will be opened, then a link can be made to it.
+
+    To create a link, you must tell the browser what the link is, and also indicate the address of the document to which the link should be made. Both actions are performed using the <a> tag. The general syntax for creating links is as follows.
+        The href attribute defines the URL (Universal Resource Locator), in other words, the address of the document to navigate to, and the contents of the <a> container are a link. Text between tags is blue and underlined by default. Example 8.1 shows how to create multiple links to different web pages.
+        If a link is specified to a file that does not exist, for example, its name in the href attribute is typed with an error, then such a link is called broken. Broken links should be strictly avoided as they mislead website visitors. So, when you click on the link from example 8.1 in the Safari browser, not the document itself will open, but a warning window (Fig. 8.2).
+        Naturally, such a message will differ in browsers, but the meaning remains the same - the document to which the link leads cannot be opened. To avoid such errors, test all links for their performance and immediately eliminate the existing errors.
+
+        A linked file opens in a browser window only when the browser knows the document type. But since the link can be made to any type of file, the browser cannot always display the document. This displays a message on how to process the file - open it or save it to the specified folder. For example, the Firefox browser displays the following window (Figure 8.3).
+       </div>
+<div class="outPut-html__info   anchors">
+    An anchor is a bookmark with a unique name at a specific place on a web page, designed to create a link to it. It is convenient to use anchors in large documents so that you can quickly jump to the desired section.
+
+    To create an anchor, you must first make a bookmark in the appropriate place and give it a name using the name attribute of the <a> tag (example 9.1). The href value to navigate to this anchor is the bookmark name with a hash (#) character in front.
+        the text is not required, since you only need to indicate the location of the transition to the link located at the bottom of the page. The name of the link to the anchor begins with the # symbol, followed by the name of the anchor, it can be chosen any appropriate to the topic. The main thing is that the values ​​of the name and href attributes match (the hash symbol does not count). </div>
+<div class="outPut-html__info   images">
+    Adding an image takes place in two stages: first, a graphic file of the desired size is prepared, then it is added to the page via the <img> tag. The HTML itself is intended only to display the desired image, without changing it in any way.
+
+There are several things to keep in mind when preparing images.
+
+Since the web page is loaded over the network, the size of the graphic file embedded in the document is a significant factor. The smaller it is, the faster the image will be displayed.
+The size of the picture must be limited in width, for example, set no more than 800 pixels. Otherwise, the entire image will not fit in the browser window and scroll bars will appear.
 </div>
-<div class="outPut-html">
-<div class="start">
-    Быстрый старт
-Чтобы сразу же ввести в курс дела нетерпеливых читателей, предложим им возможность создания веб-страницы без последовательного изучения правил HTML. По крайней мере, вы сумеете убедиться, что создание веб-страниц достаточно простая штука.
-
-В примере 1.1 приведен несложный пример такого кода.
-Чтобы посмотреть результат примера в действии, проделайте следующие шаги.
-
-1. В Windows откройте программу Блокнот (Пуск > Выполнить > набрать «notepad» или Пуск > Программы > Стандартные > Блокнот).
-
-2. Наберите или скопируйте код в Блокноте (рис. 1.1).
-3. Сохраните готовый документ (Файл > Сохранить как...) под именем c:\www\example11.html, при этом обязательно поставьте в диалоговом окне сохранения тип файла: Все файлы и кодировку UTF-8 (рис. 1.2). Обратите внимание, что расширение у файла должно быть именно html.
-4. Запустите браузер Internet Explorer (Пуск > Выполнить > набрать «iexplore» или Пуск > Программы > Internet Explorer).
-
-5. В браузере выберите пункт меню Файл > Открыть и укажите путь к вашему файлу.
-
-6. Если все сделано правильно, то в браузере вы увидите результат, как показано на рис. 1.3.
-В случае возникновения каких-либо ошибок проверьте правильность набора кода согласно примеру 1.1, расширение файла (должно быть html) и путь к документу.
-
+<div id='List' class="outPut-html__info List">
+    A list is an interconnected collection of individual phrases or sentences that begin with a bullet or number. Lists provide the ability to organize and organize different data and present it in a visual and user-friendly way.
 </div>
+<div class="outPut-html__info  tables ">
+    Due to the versatility of tables, a large number of parameters that control their appearance, tables have long become a definite standard for the layout of web pages. A table with an invisible border is like a modular grid, in which blocks it is convenient to place elements of a web page. However, this is not quite the right approach, because each HTML object is defined for its own purposes and if it is used for other purposes, and moreover, it means that there are no alternatives. This was the case for a long time, until layers came to replace tables in site layout. This does not mean that layers are now used all the time, but the trend has already been clearly outlined - tables are used to place tabular data, and layers are used for layout and design.
 
+Creating a table
+A table consists of rows and columns of cells that can contain text and pictures. Typically, tables are used to organize and present data, but tables are not limited to that. With the help of tables, it is convenient to typeset page layouts by arranging fragments of text and images in the desired way.
+</div>
+<div class="outPut-html__info  frames ">
+    Frames divide the browser window into separate areas that sit side by side. A separate web page is loaded into each of these areas. Since there is a lot of talk around frames about their need, here are the advantages and disadvantages of frames so that you can independently decide whether to use them on your site.
+
+Advantages of frames
+Simplicity
+Frames delimit a web page into two areas that contain the site's navigation and content. The frame mechanism allows you to open a document in one frame, by clicking on a link clicked in a completely different frame. This division of a web page into components is intuitive and logical.
+
+Rapidity
+For a layout without frames, it is common to place both navigation and content on one page. This increases the volume of each page and, in total, can significantly affect the amount of information downloaded from the site. And since frames use the division of information into parts, pages with them will load faster.
+
+Accommodation
+Frames provide a unique opportunity - placing information exactly in the right place in the browser window. So, you can put a frame at the bottom of the browser and regardless of the scrolling of the content, this area will not change its position.
+
+Resizing areas
+You can resize frames on the fly, which is not possible with traditional HTML layout.
+
+Loading
+The web page is loaded only into the specified window, the rest remain unchanged. Using the JavaScript language, you can simultaneously load two or more pages into frames.
+</div>
+<div class="outPut-html__info  documentValidation ">
+    Validation will mean checking a document for compliance with web standards and identifying existing errors. Accordingly, a web document that has gone through a similar procedure and has no comments on the code is valid. The code of a web page must obey certain rules called a specification, which is developed by the W3 Consortium (www.w3c.org) with the support of the browser developers.
+
+At first glance, it seems that validation is necessary, because we are talking about reducing the number of developers' mistakes and writing "correct" code. In fact, everything is much more complicated, and around validation there are still heated debates about its relevance. In order to objectively reveal this issue, we will further consider the pros and cons of such a check.
+
+Pros of validation
+Although the HTML code has a fairly simple hierarchical structure, it is easy to get confused in the code as the size of the document grows, therefore, it is easy to make mistakes. Browsers, despite obviously incorrect code, will try to render the web page anyway. But since there is no single regulation on how a "crooked" document should be displayed, each browser tries to do it differently. This, in turn, leads to the fact that the same document may look different in popular browsers. Correction of obvious mistakes and systematization of the code leads, as a rule, to a stable result.
+</div>
+<div class="outPut-html__info   "></div>
 </div>
         </div>
     </section>
+    <section class="workshop">
+<div class="wrapper wrapper-workshop">
+    <h2>Workshop</h2>
+    <p class="workshop-text">
+        This section is intended for self-solving tasks related to HTML, CSS and layout of web pages
+    </p>
+    <div class="workshop-tags tags">
+        <span class="tag tag_selected">All</span>
+        <span class="tag tag_bordered">Layouts</span>
+        <span class="tag tag_bordered">Low compl</span>
+        <span class="tag tag_bordered">Medium</span>
+        <span class="tag tag_bordered">High compl</span>
+
+    </div>
+</div>
+<div class="outPut__workshop">
+    <div class="Low-workshop">
+<ul>
+    <li>TEX </li>
+    <li>Андроид в тени    </li>
+    <li>Асуанская плотина    </li>
+    <li>Верхний и нижний индекс    </li>
+    <li>Вложенные списки    </li>
+    <li>Выворотка    </li>
+    <li>Заголовки    </li>
+    <li>Из XHTML в HTML5    </li>
+    <li>Использование спецсимволов</li>
+    <li>Исправление ошибок</li>
+</ul>
+    </div>
+    <div class="Layouts compl-workshop">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+            </div>
+            <div class="Medium-workshop">
+                <ul>
+                    <li>Батарейка                    </li>
+                    <li>Вырезанные уголки                    </li>
+                    <li>Гламурная кнопка                    </li>
+                    <li>Градиентные кнопки в Safari</li>
+                    <li>Граница вокруг формы                    </li>
+                    <li>Двойная рамка                    </li>
+                    <li>Значки для листания фотографий</li>
+                    <li>Индикатор прогресса                    </li>
+                    <li>Квадратный корень                    </li>
+                    <li>Квадраты                    </li>
+                </ul>
+                    </div>
+                    <div class="High compl-workshop">
+                        <ul>
+                            <li>Блок с градиентом</li>
+                            <li>Блок с тенью</li>
+                            <li>Блок с указателем</li>
+                            <li>Знак французских ВВС</li>
+                            <li>Индикатор выполнения</li>
+                            <li>Картинка с тенью </li>
+                            <li>Ниспадающее меню</li>
+                            <li>Нумерованные списки  </li>
+                            <li>Обратная связь</li>
+                            <li>Пошаговая форма</li>
+                        </ul>
+                            </div>
+
+</div>
+    </section>
+    <footer class="footer">
+        <div class="wrapper">
+            <ul class="footer__navigation active">
+                <li class="footer-link">
+                    <a href="About.html">About Us</a>
+                </li>
+                <li class="footer-link">
+                    <a href="FAQ.html">FAQ</a>
+                </li>
+                <li class="footer-link">
+                    <a href="News.html">News</a>
+                </li>
+                <li class="footer-link">
+                    <a href="Contact.html">Contact Us</a>
+                </li>
+                <li class="footer-link">
+                    <a href="Privacy.html">Pivacy Policy</a>
+                </li>
+            </ul>
+            <div class="flex-container_image">
+                <img class="facebook" src="./src/assets/facebook.svg" alt="Facebook-logo" />
+                <img class="icon instagram" src="./src/assets/Instagram.svg" alt="Instagram-logo" />
+                <img class="icon twitter" src="./src/assets/twitter.svg" alt="Twitter-logo" />
+            </div>
+            <p> 2020 Minsk (c) All Rights reseved Wild code school</p>
+    </footer>
     <script src="src/js/htmlSection.js"></script>
+    <script src="src/js/introductionHTMLsection.js"></script>
     <script src="src/js/index.js"></script>
 
 </body>

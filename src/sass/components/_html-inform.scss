@@ -1,7 +1,40 @@
+.HTML-wrapper{
+    flex-direction: column;
+}
 .Html-inform{
     background-color: #C2DEF4;
 }
 .introduction-container{
     display: flex;
-    background: rgb(245, 245, 245);
+
+}
+.introduction-links{
+      background: rgb(245, 245, 245);
+      font-size: 2rem;
+      padding-left: 10px;
+      .introduction-item{
+          margin:  10px;
+          color: $color-title;
+          &:hover{
+              cursor: pointer;
+
+          }
+      }
+}
+.outPut-html{
+    max-width: 945px;
+    width: 80vw;
+    font-size: 1.8rem;
+    padding: 50px;
+    display: none;
+    .outPut-html__info{
+width: 100%;
+
+}
+}
+#otPutInfo{
+    background: red;
+    width: 500px;
+    height: 500px;
+    font-size: 1.5rem;
 }
