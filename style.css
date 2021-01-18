@@ -1348,7 +1348,7 @@ input:active + label:active {
 }
 
 .Html-inform {
-  background-color: #C2DEF4;
+  background-color: #c2def4;
 }
 
 .introduction-container {
@@ -1392,6 +1392,52 @@ input:active + label:active {
   font-size: 1.8rem;
   padding-left: 20px;
   margin-bottom: 10px;
+}
+
+.outPut__workshop {
+  display: flex;
+  max-width: 800px;
+}
+.outPut__workshop .contentBt {
+  position: relative;
+  margin: 10px 20px;
+}
+.outPut__workshop .contentBt .label {
+  width: 250px;
+  position: relative;
+  padding: 10px;
+  background: #c2def4;
+  cursor: pointer;
+  color: #36393b;
+  font-size: 1.5rem;
+}
+.outPut__workshop .contentBt .label::before {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 1.5 em;
+}
+.outPut__workshop .contentBt .contentTask {
+  width: 250px;
+  position: relative;
+  background-color: #e0eaf1;
+  color: black;
+  font-size: 1.8rem;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
+}
+
+.outPut__workshop.activTask .contentTask {
+  height: 150px;
+  padding: 10px;
+}
+
+.outPut__workshop.activTask .label::before {
+  content: "-";
 }
 
 .wrapper-workshop {
