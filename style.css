@@ -1353,6 +1353,7 @@ input:active + label:active {
 
 .introduction-container {
   display: flex;
+  justify-content: space-between;
 }
 
 .introduction-links {
@@ -1380,10 +1381,17 @@ input:active + label:active {
 }
 
 #otPutInfo {
-  background: red;
-  width: 500px;
-  height: 500px;
+  padding: 20px;
+  width: 900px;
+  height: 420px;
   font-size: 1.5rem;
+  overflow-y: scroll;
+}
+
+#output-title {
+  font-size: 1.8rem;
+  padding-left: 20px;
+  margin-bottom: 10px;
 }
 
 .wrapper-workshop {

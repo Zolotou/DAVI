@@ -6,7 +6,7 @@
 }
 .introduction-container{
     display: flex;
-
+justify-content: space-between;
 }
 .introduction-links{
       background: rgb(245, 245, 245);
@@ -33,8 +33,14 @@ width: 100%;
 }
 }
 #otPutInfo{
-    background: red;
-    width: 500px;
-    height: 500px;
+padding: 20px;
+    width: 900px;
+    height: 420px;
     font-size: 1.5rem;
+    overflow-y: scroll;
+}
+#output-title{
+    font-size: 1.8rem;
+    padding-left: 20px;
+    margin-bottom: 10px;
 }
