@@ -1,0 +1,12 @@
+.wrapper-workshop{
+    flex-direction: column;
+}
+.workshop-text{
+    font-size: 1.8rem;
+}
+.workshop-tags{
+    margin-bottom: 31px;
+    @include media-tablet {
+        justify-content: center;
+    }
+}

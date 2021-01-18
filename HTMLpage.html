@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/sass/style.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
 
@@ -36,14 +36,361 @@
 
     </header>
     <section class="html-tegs">
-        <div class="wrapper">
-
+        <div class="wrapper wrapper-html">
+            <h2>HTML tegs</h2>
             <div id="parent">
 
             </div>
         </div>
     </section>
+    <section class="Html-inform">
+        <div class="wrapper HTML-wrapper">
+            <h2>Introduction to HTML</h2>
+            <div class="introduction-container">
+                <ul class="introduction-links" id="introductionLinks">
+                    <li class="introduction-item">Fast start</li>
+                    <li class="introduction-item">Tools</li>
+                    <li class="introduction-item">Types of tags</li>
+                    <li class="introduction-item">Tag atributes</li>
+                    <li class="introduction-item">Text</li>
+                    <li class="introduction-item">Links</li>
+                    <li class="introduction-item">Anchors</li>
+                    <li class="introduction-item">Images</li>
+                    <li class="introduction-item">Lists</li>
+                    <li class="introduction-item">Tables</li>
+                    <li class="introduction-item">Frames</li>
+                    <li class="introduction-item">Document validation</li>
+                </ul>
+                <div class="output-container">
+                    <div id="output-title"></div>
+                    <div id="otPutInfo">
+
+                    </div>
+                </div>
+
+                <div class="outPut-html">
+
+
+                    <div class="outPut-html__info fast start">
+<p>
+    To get impatient readers up to date right away, let us offer them the ability to create a web page without having to step through the rules of HTML. At the very least, you will be able to make sure that creating web pages is easy enough.
+</p>
+<p>To see the result of the example in action, follow these steps.</p>
+<ul>
+    <ol>In Windows, open Notepad (Start> Run> type notepad or Start> Programs> Accessories> Notepad).</ol>
+    <ol>Type or copy the code in Notepad (Fig. 1.1).</ol>
+    <ol>Save the finished document (File> Save As ...) under the name c: \ www \ example11.html, and be sure to set the file type in the save dialog box: All files and UTF-8 encoding. Please note that the file extension must be exactly html.</ol>
+    <ol>Launch Internet Explorer (Start> Run> type “iexplore” or Start> Programs> Internet Explorer).</ol>
+    <ol>In your browser, select the File> Open menu item and specify the path to your file.</ol>
+    <ol>If everything is done correctly, then in the browser you will see the result</ol>
+</ul>
+                    </div>
+                    <div class="outPut-html__info tools">
+  <p>
+    To work efficiently, you cannot do without necessary and familiar tools, including when writing HTML code. Therefore, for the initial development of web pages or even a small site - this is the name of a set of pages linked by links and a single design, we need the following programs.
+  </p>
+            <ul>
+                <li>Text editor.</li>
+                <li>Browser for viewing results.</li>
+                <li>Validator is a program for checking HTML syntax and detecting errors in the code.</li>
+                <li>Graphics editor.</li>
+                <li>HTML tag reference.</li>
+            </ul>
+ </div>
+                    <div class="outPut-html__info types of tags">
+ <P>
+    So that the browser, when displaying the document, understands that it is not dealing with simple text, but with a formatting element and tags are applied. The general syntax for writing tags is as follows.
+</P>
+
+   <p>
+    Tags are of two types - single and paired (containers). A single tag is used on its own, while a paired tag can include other tags or text within it. Tags are allowed different attributes, which are separated by a space. However, there are tags without any additional attributes. Attributes can be conventionally divided into mandatory, they must be present, and optional, their addition depends on the purpose of the tag.
+   </p>
+
+                    </div>
+                    <div class="outPut-html__info tag atributes">
+ <p>
+  Tag attributes expand the capabilities of the tags themselves and allow flexible control over
+  various display settings for web page elements. The total number of attributes is quite large, but
+  their values, as a rule, can be grouped by different types, for example, specifying color, size,
+   address, etc. Next, we will consider the main types of values.
+ </p>
+                 </div>
+
+
+                    <div class="outPut-html__info text">
+ <p>
+    Any number of consecutive spaces, displayed in the browser as one
+    No matter how many spaces you put between words, it will not affect the final appearance of the text. The same rule applies to tabs and text wrapping. Therefore, do not add extra spaces, as this will only increase the total file size, but will not change the way the document looks in the browser.
+ </p>
+ <p>
+    Исключением из этого правила является тег pre, внутри которого любое число пробелов отображается именно так, как оно указано в коде.
+ </p>
+ <p>
+    Нет расстановки переносов в тексте
+    HTML не поддерживает расстановку переносов в словах, как это делают текстовые редакторы, иначе говоря, все слова пишутся целиком без их разбиения. Это условие несущественно, пока не используется выравнивание текста по ширине. В этом случае блок текста выравнивается по левому и правому краю. Короткие строки при этом растягиваются за счет автоматического добавления пробелов между словами. Иногда пустые блоки между словами настолько велики, что портят внешний вид страницы и ухудшают читабельность текста.
+ </p>
+ <p>
+    Представьте, что у вас в середине предложения есть какое-нибудь длинное слово, вот например «Дегидроэпиандростерон» . В текстовом редакторе это слово будет перенесено по слогам так, чтобы текст занял указанную ширину, а на веб-странице подобное слово будет отображаться целиком, без переносов.
+ </p>
+ <p>
+    Текст занимает ширину окна браузера
+    Если вы просто напишете одну длинную строку в коде HTML, то в браузере она будет отформатирована, чтобы текст поместился по ширине в окно. Переносы текста будут добавлены автоматически в местах пробела или дефиса. Что произойдет, если в тексте нет ни того, ни другого символа? Браузер не сможет создать переносы и отобразит текст одной строкой. Если она шире окна браузера, то неминуемо появится горизонтальная полоса прокрутки.
+ </p>
+                    </div>
+<div class="outPut-html__info links">
+<p>
+    Links are the backbone of hypertext documents and allow you to navigate from one web page to another. Their peculiarity is that the link itself can lead not only to HTML files, but also to a file of any type, and this file can be placed on a completely different site. The main thing is that the referenced document has access. In other words, if the path to the file can be specified in the address bar of the browser, and the file will be opened, then a link can be made to it.
+</p>
+<p>
+    To create a link, you must tell the browser what the link is, and also indicate the address of the document to which the link should be made. Both actions are performed using the a tag.
+</p>
+<p>
+    The href attribute defines a URL (Universal Resource Locator), in other words, the address of the document to navigate to, and the contents of container a> are a link. The text between the a> and / a> tags is blue and underlined by default.
+</p>
+<p>
+    If a link is specified to a file that does not exist, for example, its name in the href attribute is typed with an error, then such a link is called broken. Broken links should be strictly avoided as they mislead website visitors.
+</p>
+<p>
+    Naturally, such a message will differ in browsers, but the meaning remains the same - the document to which the link leads cannot be opened. To avoid such errors, test all links for their performance and immediately eliminate the existing errors.
+</p>
+<p>
+    A linked file opens in a browser window only if the browser knows the type of document. However, since the link can be made to any type of file, the browser cannot always display the document. This displays a message on how to process the file - open it or save it to the specified folder.
+</p>
+</div>
+<div class="outPut-html__info anchors">
+  <p>
+    An anchor is a bookmark with a unique name at a specific place on a web page, designed to create a link to it. It is convenient to use anchors in large documents so that you can quickly jump to the desired section.
+  </p>
+  <p>
+    To create an anchor, you must first make a bookmark in the appropriate place and give it a name using the name attribute of the a> tag
+  </p>
+  <p>
+    One feature of the browser is associated with anchors. After moving to the specified anchor, pressing the "Back" button returns not to the previous viewed page, but to the link from which the transition to the anchor was made. It turns out that to go to the previous document, you need to press the "Back" button two times.
+  </p>
+  <p>
+    The link can also be made to a bookmark located on another web page or even another site. To do this, in the href attribute of the a> tag, you must specify the address of the document and at the end add the hash symbol # and the bookmark name
+  </p>
+ <p>
+    If the web page contains a link to an anchor, but the anchor itself is not, then no error will occur.
+ </p>
+</div>
+<div class="outPut-html__info images">
+  <p>
+    Adding an image takes place in two stages: first, a graphic file of the desired size is prepared, then it is added to the page via the img> tag. The HTML itself is intended only to display the required image, without changing it in any way.
+  </p>
+<p>При подготовке изображений следует учесть несколько моментов.
+<ul>
+    <ol>Since the web page is loaded over the network, the size of the graphic file embedded in the document is a significant factor. The smaller it is, the faster the image will be displayed.</ol>
+    <ol>Размер картинки необходимо ограничить по ширине, например, установить не более 800 пикселов. Иначе изображение целиком не поместится в окне браузера, и появятся полосы прокрутки.</ol>
+</ul>
+</p>
+</div>
+<div id='List' class="outPut-html__info lists">
+  <p>
+    A list is an interconnected collection of individual phrases or sentences that begin with a bullet or number. Lists provide the ability to organize and organize different data and present them in a visual and user-friendly way.
+  </p>
+  <p>
+    Any list is a container ul> which sets up a bulleted list, or ol> which defines a numbered list. Each list item must start with an li> tag.
+  </p>
+</div>
+<div class="outPut-html__info tables">
+<p>
+    Due to the versatility of tables, a large number of parameters that control their appearance, tables have long become a definite standard for the layout of web pages. A table with an invisible border is like a modular grid, in which blocks it is convenient to place elements of a web page. However, this is not quite the right approach, because each HTML object is defined for its own purposes and if it is used for other purposes, and moreover, it means that there are no alternatives. This was the case for a long time, until layers came to replace tables in site layout. This does not mean that layers are now used all the time, but the trend has already been clearly outlined - tables are used to place tabular data, and layers - for layout and design.
+</p>
+<p>
+    Creating a table
+    A table consists of rows and columns of cells that can contain text and pictures. Typically, tables are used to organize and present data, but tables are not limited to that. With the help of tables, it is convenient to typeset page layouts by arranging fragments of text and images in the desired way.
+</p>
+<p>
+    The table> tag is used to add a table to a web page. This element serves as a container for elements that define the contents of the table. Any table consists of rows and cells, which are specified using the tr> and td> tags, respectively. The table must contain at least one cell. It is allowed to use the th> tag instead of the td> tag. The text in a cell decorated with the th> tag is rendered in bold by the browser and aligned to the center of the cell. Otherwise, there is no difference between the cells created via the td> and th> tags.
+</p>
+</div>
+<div class="outPut-html__info frames">
+ <p>
+    Frames divide the browser window into separate areas that sit side by side. A separate web page is loaded into each of these areas. Since there is a lot of talk around frames about their need, here are the advantages and disadvantages of frames so that you can independently decide whether to use them on your site.
+ </p>
+<p>
+    Advantages of frames
+    Simplicity
+    Frames delimit a web page into two areas that contain the site's navigation and content. The frame mechanism allows you to open a document in one frame by clicking a link in a completely different frame. This division of a web page into components is intuitive and logical.
+</p>
+<p>
+    Rapidity
+For a layout without frames, it is common to place both navigation and content on one page. This increases the volume of each page and, in total, can significantly affect the amount of information downloaded from the site. And since frames use the division of information into parts, pages with them will load faster.
+</p>
+<p>
+    Размещение
+Фреймы предоставляют уникальную возможность — размещение информации точно в нужном месте окна браузера. Так, можно поместить фрейм внизу браузера и независимо от прокручивания содержимого, эта область не изменит своего положения.
+</p>
+<p>
+    Resizing areas
+    You can resize frames on the fly, which is not possible with traditional HTML layout.
+</p>
+<p>
+    Загрузка
+    Загрузка веб-страницы происходит только в указанное окно, остальные остаются неизменными. С помощью языка JavaScript можно осуществить одновременную загрузку двух и более страниц во фреймы
+</p>
+<p>
+    Недостатки фреймов
+Навигация
+Пользователь зачастую оказывается на сайте, совершенно не представляя, куда он попал, потому что всего лишь нажал на ссылку, полученную в поисковой системе. Чтобы посетителю сайта было проще разобраться, где он находится, на каждую страницу помещают название сайта, заголовок страницы и навигацию. Фреймы, как правило, нарушают данный принцип, отделяя заголовок сайта от содержания, а навигацию от контента. Представьте, что вы нашли подходящую ссылку в поисковой системе, нажимаете на нее, а в итоге открывается документ без названия и навигации. Чтобы понять, где мы находимся или посмотреть другие материалы, придется редактировать путь в адресной строке, что в любом случае доставляет неудобство.
+</p>
+<p>
+    Плохая индексация поисковыми системами
+    Поисковые системы плохо работают с фреймовой структурой, поскольку на страницах, которые содержат контент, нет ссылок на другие документы.
+</p>
+<p>
+    Внутренние страницы нельзя добавить в «Закладки»
+Фреймы скрывают адрес страницы, на которой находится посетитель, и всегда показывают только адрес сайта. По этой причине понравившуюся страницу сложно поместить в закладки браузера.
+</p>
+<p>
+    Несовместимость с разными браузерами
+Параметры фреймов обладают свойством совершенно по разному отображаться в различных браузерах. Причём противоречие между ними настолько явное, что одни и те же параметры интерпретируются браузерами совершенно по-своему.
+</p>
+<p>
+    Disrespect
+    A very strange flaw that has nothing to do with the technical features of creating a site, but rather an ideological one. Sites with frames are considered undignified, and their authors immediately fall out of the category of professionals who never use frames in their work. The exception is chats, where you can do without frames, although it is possible, but rather tricky methods, and with the help of frames, creating chats is quite simple.
+</p>
+<p>
+    It should be noted that some of the above disadvantages are completely bypassed. So, with the help of scripts, you can make a separate document opened in the browser formed with the entire frame structure. Search engines are also already better at indexing frame documents than they were a few years ago.
+</p>
+</div>
+<div class="outPut-html__info document validation">
+<p>
+    Validation will mean checking a document for compliance with web standards and identifying existing errors. Accordingly, a web document that has gone through a similar procedure and has no comments on the code is valid. The code of a web page must obey certain rules called a specification, which is developed by the W3 Consortium (www.w3c.org) with the support of the browser developers.
+ </p>
+<p>
+    At first glance, it seems that validation is necessary, because we are talking about reducing the number of developers' mistakes and writing "correct" code. In fact, everything is much more complicated, and around validation there is still heated debate about its relevance. In order to objectively reveal this issue, we will further consider the pros and cons of such a check.
+</p>
+<p>
+    Pros of validation
+    Although HTML code has a fairly simple hierarchical structure, it is easy to get confused in the code as the size of the document grows, therefore, it is easy to make a mistake. Browsers, despite obviously incorrect code, will try to render the web page anyway. But since there is no single regulation on how a "crooked" document should be displayed, each browser tries to do it differently. And this, in turn, leads to the fact that the same document may look different in popular browsers. Correction of obvious mistakes and systematization of the code leads, as a rule, to a stable result.
+</p>
+<p>
+    Trends
+    The days when browser makers added unique features to their product contrary to all standards are starting to fade into the past. Each new version of the browser increasingly supports specifications and displays documents with minimal or no errors. Developers of sites that also adhere to the canons of web standards, thus comply with modern trends in the development of web technologies.
+</p>
+<p>
+    Don't forget about XML (eXtensible Markup Language). This language is becoming the de facto standard for storing data and exchanging information between different applications. XML syntax is stricter than HTML and does not forgive the slightest mistakes. In a sense, XML is like programming languages in which the program won't compile until the code is debugged. HTML is the first step to learning XML, so by accustoming yourself to write code according to all the rules, it will be easier to move to the next stage of HTML development.
+</p>
+<p>
+    Indirect benefits
+    Compliance with standards provides many benefits, which show up in the smallest detail and become visible when a certain critical mass is reached. In particular, the amount of code becomes smaller, more compact, and more readable. Accordingly, the loading speed of the site as a whole increases for users.
+</p>
+<p>
+    Cons of validation
+    Sites, of course, are made so that people visit them. It is the visitors who are the measure of the site's work, and they are interested in information and the way to obtain it. The user wants the site to display correctly in his favorite browser, load quickly and contain the materials he needs. Note that there is nothing in this list about the document code and its validity, visitors are simply not interested. Therefore, a completely invalid site, but made with soul, filled with interesting materials will attract more visitors than an empty resource, but made according to all the "rules".
+</p>
+<p>
+    Browsers
+    Browser developers do not always follow the specification and in some cases interpret the code not according to the given rules, but in their own way. Ultimately, this leads to the fact that a web page that is displayed correctly (that is, as intended by the developers) in one browser is displayed with errors in another. Following the specification in such cases is likely to scare off some browser users. For example, Internet Explorer (IE) currently holds the leading position among browsers, but it supports the HTML and CSS specification worse than Firefox and Opera. Obviously, IE users, when visiting a site made according to all standards, but not taking into account the specifics of this browser, will see an unsightly picture.
+</p>
+<p>
+    Site customers, as well as their developers, do not like this situation, so when faced with a choice: standards or a browser, they mostly choose a browser.
+</p>
+It turns out a disappointing picture - there is no particular need to spend time debugging the code to comply with the specification. It is better to devote this time to making the document work without problems in different browsers - this is how web developers mostly think.
+</div>
+<p>
+    Summary
+    So is it worth validating documents and doing this step when writing web pages? Definitely yes. It will help someone to identify the existing shortcomings, to others it will help to write correct code. Fixing errors, achieving full compliance with standards, or leaving them for the sake of compatibility with different browsers - here everyone decides for himself what goals he pursues and what is more important for him.
+</p>
+<div class="outPut-html__info   "></div>
+</div>
+        </div>
+    </section>
+    <section class="workshop">
+<div class="wrapper wrapper-workshop">
+    <h2>Workshop</h2>
+    <p class="workshop-text">
+        This section is intended for self-solving tasks related to HTML, CSS and layout of web pages
+    </p>
+    <div class="workshop-tags tags">
+        <span class="tag tag_selected">All</span>
+        <span class="tag tag_bordered">Layouts</span>
+        <span class="tag tag_bordered">Low compl</span>
+        <span class="tag tag_bordered">Medium</span>
+        <span class="tag tag_bordered">High compl</span>
+
+    </div>
+
+
+    <div class="outPut__workshop">
+
+<div class="contentBt">
+    <div class="label">Image  in the shadows L</div>
+    <div class="contentTask">Display the image so that there is a shadow around it</div>
+</div>
+<div class="contentBt">
+    <div class="label">Nested lists L</div>
+    <div class="contentTask">Using tag nesting, make a list </div>
+</div>
+<div class="contentBt">
+    <div class="label"> Concatenate table cells L</div>
+    <div class="contentTask">Create a table </div>
+</div>
+<div class="contentBt">
+    <div class="label"> Hand drawn frame L</div>
+    <div class="contentTask">Use the attached frame picture to make a width-scalable box with a hand-drawn border </div>
+</div>
+<div class="contentBt">
+    <div class="label">Cut corners M</div>
+    <div class="contentTask">Add small square corners to the block </div>
+</div>
+<div class="contentBt">
+    <div class="label">Search field M</div>
+    <div class="contentTask">Create a search box for Chrome and Safari browsers. If the field is not active, text is displayed in it; when focus is received, the text inside the field disappears. When typing, the text is displayed in red. </div>
+</div>
+<div class="contentBt">
+    <div class="label">Registration form  M </div>
+    <div class="contentTask">Make up the registration form. The width of the form and its fields is fixed. </div>
+</div>
+<div class="contentBt">
+    <div class="label">Frame around text H</div>
+    <div class="contentTask"> </div>
+</div>
+<div class="contentBt">
+    <div class="label">Gradient block H</div>
+    <div class="contentTask">Make a block. The block contains a semi-transparent gradient box with a gradient background under the title and a small pointer. The background on the page is given only for clarity of the translucency effect, you can specify any of your own images. The minimum block height is 100px. </div>
+</div>
+<div class="contentBt">
+    <div class="label">Frame around text H</div>
+    <div class="contentTask">Think of five ways to create a border around a paragraph of free text (the <p> tag). You cannot change or modify the HTML code, all changes are made only through styles. Cross-browser compatibility can be ignored. </div>
+</div>
+
+
+    </div>
+
+</div>
+
+    </section>
+    <footer class="footer">
+        <div class="wrapper">
+            <ul class="footer__navigation active">
+                <li class="footer-link">
+                    <a href="About.html">About Us</a>
+                </li>
+                <li class="footer-link">
+                    <a href="FAQ.html">FAQ</a>
+                </li>
+                <li class="footer-link">
+                    <a href="News.html">News</a>
+                </li>
+                <li class="footer-link">
+                    <a href="Contact.html">Contact Us</a>
+                </li>
+                <li class="footer-link">
+                    <a href="Privacy.html">Pivacy Policy</a>
+                </li>
+            </ul>
+            <div class="flex-container_image">
+                <img class="facebook" src="./src/assets/facebook.svg" alt="Facebook-logo" />
+                <img class="icon instagram" src="./src/assets/Instagram.svg" alt="Instagram-logo" />
+                <img class="icon twitter" src="./src/assets/twitter.svg" alt="Twitter-logo" />
+            </div>
+            <p> 2020 Minsk (c) All Rights reseved Wild code school</p>
+    </footer>
     <script src="src/js/htmlSection.js"></script>
+    <script src="src/js/introductionHTMLsection.js"></script>
     <script src="src/js/index.js"></script>
 
 </body>

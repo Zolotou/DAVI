@@ -46,9 +46,10 @@
   border: 3px solid #b6c6ce;
 
 }
-input {
-    display: none;
-  }
+#jsEditor, #htmlEditor, #cssEditor {
+     display: none;
+   }
+   
 .source label, .sandbox button {
     padding: 0.2em 0.5em;
     font-size: 2rem;
