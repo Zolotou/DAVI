@@ -848,6 +848,7 @@ body.lock {
   overflow: hidden;
   background-position: center;
   margin: 10px;
+  background: #c1a776;
 }
 .card__collection .cards--one:hover:after {
   bottom: -20px;
