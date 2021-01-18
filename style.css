@@ -520,6 +520,33 @@ h3 {
     background-color: #ffffff;
   }
 }
+.tags {
+  display: flex;
+}
+.tags > * {
+  margin-right: 7px;
+}
+
+.tag {
+  border-radius: 90px;
+  padding: 0 14px;
+  cursor: pointer;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 2.8rem;
+}
+.tag_selected {
+  background-color: #FF9900;
+  color: #ffffff;
+}
+.tag_bordered {
+  border: 1px solid #D7D7D7;
+}
+.tag_colored {
+  background-color: #F5F5F5;
+}
+
 .burger-menu {
   display: none;
 }
@@ -952,6 +979,10 @@ body.lock {
   color: #2a9fda;
 }
 
+.wrapper-html {
+  flex-direction: column;
+}
+
 #parent {
   padding: 25px 5px;
   display: flex;
@@ -1312,13 +1343,72 @@ input:active + label:active {
   margin-bottom: 10px;
 }
 
+.HTML-wrapper {
+  flex-direction: column;
+}
+
 .Html-inform {
   background-color: #C2DEF4;
 }
 
 .introduction-container {
   display: flex;
+  justify-content: space-between;
+}
+
+.introduction-links {
   background: whitesmoke;
+  font-size: 2rem;
+  padding-left: 10px;
+}
+.introduction-links .introduction-item {
+  margin: 10px;
+  color: #0F119E;
+}
+.introduction-links .introduction-item:hover {
+  cursor: pointer;
+}
+
+.outPut-html {
+  max-width: 945px;
+  width: 80vw;
+  font-size: 1.8rem;
+  padding: 50px;
+  display: none;
+}
+.outPut-html .outPut-html__info {
+  width: 100%;
+}
+
+#otPutInfo {
+  padding: 20px;
+  width: 900px;
+  height: 420px;
+  font-size: 1.5rem;
+  overflow-y: scroll;
+}
+
+#output-title {
+  font-size: 1.8rem;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.wrapper-workshop {
+  flex-direction: column;
+}
+
+.workshop-text {
+  font-size: 1.8rem;
+}
+
+.workshop-tags {
+  margin-bottom: 31px;
+}
+@media (max-width: 768px) {
+  .workshop-tags {
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
