@@ -12,14 +12,14 @@ let arrOutPutLinks = [];
 links.forEach(element => {
 
     element.addEventListener('click', (e) => {
-        let target = 'outPut-html__info ' + e.target.innerHTML.toLowerCase();
+        let target = 'outPut-html__info ' + e.target.textContent.toLowerCase();
         for (let i = 0; i < outPutLinks.length; i++) {
             let name = outPutLinks[i].className
             console.log(e.target.innerHTML)
 
             if (name == target) {
                 otputInfo.textContent = outPutLinks[i].textContent
-                outputTitle.innerHTML = e.target.innerHTML
+                outputTitle.textContent = e.target.textContent
                 break;
             } else {
                 otputInfo.innerHTML = "nothing"
@@ -29,9 +29,12 @@ links.forEach(element => {
 })
 
 
-const outPutWorkshop = document.getElementsByClassName('outPut__workshop')
-for (let i = 0; i < outPutWorkshop.length; i++) {
-    outPutWorkshop[i].addEventListener('click', function (){
+const accordion = document.querySelectorAll('.contentBt')
+
+for (let i = 0; i < accordion.length; i++) {
+
+    accordion[i].addEventListener('click', function (){
+
         this.classList.toggle('activTask')
     })
 
