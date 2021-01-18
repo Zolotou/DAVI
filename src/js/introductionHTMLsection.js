@@ -29,8 +29,10 @@ links.forEach(element => {
 })
 
 
-// for (let i=0;i<=outPutLinks.length;i++){
+const outPutWorkshop = document.getElementsByClassName('outPut__workshop')
+for (let i = 0; i < outPutWorkshop.length; i++) {
+    outPutWorkshop[i].addEventListener('click', function (){
+        this.classList.toggle('activTask')
+    })
 
-//         console.log(outPutLinks[i].className)
-
-//     }
+}

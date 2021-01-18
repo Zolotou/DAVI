@@ -1,46 +1,93 @@
-.HTML-wrapper{
+.HTML-wrapper {
     flex-direction: column;
 }
-.Html-inform{
-    background-color: #C2DEF4;
+.Html-inform {
+    background-color: #c2def4;
 }
-.introduction-container{
+.introduction-container {
     display: flex;
-justify-content: space-between;
+    justify-content: space-between;
 }
-.introduction-links{
-      background: rgb(245, 245, 245);
-      font-size: 2rem;
-      padding-left: 10px;
-      .introduction-item{
-          margin:  10px;
-          color: $color-title;
-          &:hover{
-              cursor: pointer;
-
-          }
-      }
+.introduction-links {
+    background: rgb(245, 245, 245);
+    font-size: 2rem;
+    padding-left: 10px;
+    .introduction-item {
+        margin: 10px;
+        color: $color-title;
+        &:hover {
+            cursor: pointer;
+        }
+    }
 }
-.outPut-html{
+.outPut-html {
     max-width: 945px;
     width: 80vw;
     font-size: 1.8rem;
     padding: 50px;
     display: none;
-    .outPut-html__info{
-width: 100%;
-
+    .outPut-html__info {
+        width: 100%;
+    }
 }
-}
-#otPutInfo{
-padding: 20px;
+#otPutInfo {
+    padding: 20px;
     width: 900px;
     height: 420px;
     font-size: 1.5rem;
     overflow-y: scroll;
 }
-#output-title{
+#output-title {
     font-size: 1.8rem;
     padding-left: 20px;
     margin-bottom: 10px;
+}
+
+.outPut__workshop {
+    display: flex;
+    max-width:800px;
+    .contentBt {
+        position: relative;
+        margin: 10px 20px;
+
+        .label {
+            width: 250px;
+
+            position: relative;
+            padding: 10px;
+            background:  #c2def4;
+            cursor: pointer;
+            color: #36393b;
+            font-size: 1.5rem;
+            &::before {
+                content: "+";
+                position: absolute;
+                top: 50%;
+                right: 20px;
+                transform: translateY(-50%);
+                font-size: 1.5 em;
+            }
+        }
+
+        .contentTask {
+width: 250px;
+            position: relative;
+
+            background-color: #e0eaf1;
+            color: black;
+            font-size: 1.8rem;
+            height: 0;
+            overflow: hidden;
+            transition: 0.5s;
+            overflow-y: auto;
+        }
+    }
+
+}
+.outPut__workshop.activTask .contentTask{
+        height: 150px;
+        padding: 10px;
+    }
+.outPut__workshop.activTask .label::before{
+    content: "-";
 }
