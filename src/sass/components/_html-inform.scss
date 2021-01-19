@@ -53,7 +53,9 @@
     .contentBt {
         position: relative;
         margin: 10px 20px;
-
+&_hidden{
+    display: none;
+}
 
         .label {
             width: 250px;

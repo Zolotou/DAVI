@@ -1403,6 +1403,9 @@ input:active + label:active {
   position: relative;
   margin: 10px 20px;
 }
+.outPut__workshop .contentBt_hidden {
+  display: none;
+}
 .outPut__workshop .contentBt .label {
   width: 250px;
   position: relative;
