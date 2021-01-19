@@ -878,6 +878,69 @@ body.lock {
   margin: 0px 10px;
   max-width: 150px;
 }
+.section-image .wrapper-workshop {
+  flex-direction: column;
+}
+.section-image .workshop-text {
+  font-size: 1.8rem;
+}
+.section-image .workshop-tags {
+  margin-bottom: 31px;
+}
+@media (max-width: 768px) {
+  .section-image .workshop-tags {
+    justify-content: center;
+  }
+}
+.section-image .outPut__workshop {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 96px;
+  height: 440px;
+}
+.section-image .outPut__workshop .contentBt {
+  position: relative;
+  margin: 10px 20px;
+}
+.section-image .outPut__workshop .contentBt_hidden {
+  display: none;
+}
+.section-image .outPut__workshop .contentBt .label {
+  width: 230px;
+  position: relative;
+  padding: 10px;
+  background: #c2def4;
+  cursor: pointer;
+  color: #36393b;
+  font-size: 1.3rem;
+}
+.section-image .outPut__workshop .contentBt .label::before {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 2.5 em;
+}
+.section-image .outPut__workshop .contentBt .contentTask {
+  width: 230px;
+  position: relative;
+  background-color: #e0eaf1;
+  color: black;
+  font-size: 1.8rem;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
+}
+.section-image .contentBt.activTask .contentTask {
+  height: 100px;
+  padding: 10px;
+}
+.section-image .contentBt.activTask .label::before {
+  content: "-";
+}
 .section-image .activeAnime {
   transform: scale(1);
 }
