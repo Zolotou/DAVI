@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ==========================================================================
    Normalize.scss settings
    ========================================================================== */
@@ -1071,15 +1072,20 @@ textarea {
 }
 
 .linksList {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .linksList li {
   font-size: 1.7rem;
   padding: 0.2em 0.5em;
   min-width: 60px;
-  background-color: green;
   cursor: pointer;
+  text-decoration: underline dotted 1px;
+}
+
+.linksList li:hover {
+  text-decoration: underline 1px;
 }
 
 .source, .sandbox {
@@ -1095,6 +1101,10 @@ textarea {
   height: 300px;
   background-color: white;
   border: 3px solid #b6c6ce;
+}
+
+#jsEditor, #htmlEditor, #cssEditor {
+  display: none;
 }
 
 .source label, .sandbox button {
@@ -1176,16 +1186,34 @@ input:active + label:active {
   transition: 0.4s;
 }
 
+.accordion:after {
+  content: "+";
+  /* Unicode character for "plus" sign (+) */
+  font-size: 2rem;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
 .accordion-active, .accordion:hover {
   background-color: #ccc;
 }
 
+.accordion-active:after {
+  content: "−";
+  /* Unicode character for "minus" sign (-) */
+}
+
 .accordion-panel {
-  padding: 0 18px;
-  background-color: white;
+  padding: 0;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+}
+
+.jsSection {
+  flex: 1 1 48%;
+  margin: 0.5rem;
 }
 
 .slider-container {
