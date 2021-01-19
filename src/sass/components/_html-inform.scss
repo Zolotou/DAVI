@@ -31,7 +31,7 @@
     }
 }
 #otPutInfo {
-    padding: 20px;
+    padding: 0px 20px;
     width: 900px;
     height: 420px;
     font-size: 1.5rem;
@@ -40,62 +40,19 @@
 #output-title {
     font-size: 1.8rem;
     padding-left: 20px;
-    margin-bottom: 10px;
+margin-bottom: 10px;
 }
 
-.outPut__workshop {
-   display: flex;
-   flex-wrap: wrap;
 
-
-  //  max-width:1000px;
-     height: 300px;
-    .contentBt {
-        position: relative;
-        margin: 10px 20px;
-&_hidden{
-    display: none;
+.p-color{
+    font-size: 2rem;
+    text-align: justify;
+    text-indent: 20px
 }
-
-        .label {
-            width: 250px;
-
-            position: relative;
-            padding: 10px;
-            background:  #c2def4;
-            cursor: pointer;
-            color: #36393b;
-            font-size: 1.5rem;
-            &::before {
-                content: "+";
-                position: absolute;
-                top: 50%;
-                right: 20px;
-                transform: translateY(-50%);
-                font-size: 1.5 em;
-            }
-        }
-
-        .contentTask {
-width: 250px;
-
-            position: relative;
-
-            background-color: #e0eaf1;
-            color: black;
-            font-size: 1.8rem;
-            height: 0;
-            overflow: hidden;
-            transition: 0.5s;
-            overflow-y: auto;
-        }
+.otPutInfo{
+    >p{
+      text-align: justify;
+    text-indent: 20px
     }
 
-}
-.contentBt.activTask .contentTask{
-        height: 100px;
-        padding: 10px;
-    }
-    .contentBt.activTask .label::before{
-    content: "-";
 }

@@ -29,19 +29,52 @@ links.forEach(element => {
 })
 
 
-const accordion = document.querySelectorAll('.contentBt')
+// const accordion = document.querySelectorAll('.contentBt')
 
-for (let i = 0; i < accordion.length; i++) {
+// for (let i = 0; i < accordion.length; i++) {
 
-    accordion[i].addEventListener('click', function () {
+//     accordion[i].addEventListener('click', function () {
 
-        this.classList.toggle('activTask')
-    })
+//         this.classList.toggle('activTask')
 
+//     })
+
+// }
+// function closeAccord(el,state){
+//     for (let i = 0; i < el.length; i++) {
+//         if (state === "activTask") {
+//           elm[i].classList.remove("activTask");
+//         } else {
+//           elm[i].style.maxHeight = null;
+//         }
+//       }
+// }
+// closeAccord()
+
+const acc = document.getElementsByClassName("contentBt");
+const accPanel = document.getElementsByClassName("contentTask");
+for (let i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function () {
+
+    let setClasses = !this.classList.contains('activTask');
+    setPanelStyle(acc, "activTask");
+    setPanelStyle(accPanel, "hide");
+
+    if (setClasses) {
+      this.classList.toggle('activTask');
+      this.nextElementSibling.style.maxHeight = accPanel[i].scrollHeight + "px";
+    }
+  });
 }
-
-
-
+function setPanelStyle(elm, state) {
+  for (let i = 0; i < elm.length; i++) {
+    if (state === "activTask") {
+      elm[i].classList.remove("activTask");
+    } else {
+      elm[i].style.maxHeight = null;
+    }
+  }
+}
 
 const addTagsClickHandler = () => {
     document.querySelector('.workshop-tags').addEventListener('click', (e) => {
