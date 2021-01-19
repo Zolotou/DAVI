@@ -1,12 +1,68 @@
-.wrapper-workshop{
+.wrapper-workshop {
     flex-direction: column;
 }
-.workshop-text{
+.workshop-text {
     font-size: 1.8rem;
 }
-.workshop-tags{
+.workshop-tags {
     margin-bottom: 31px;
     @include media-tablet {
         justify-content: center;
     }
+}
+
+.outPut__workshop {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 96px;
+    //  max-width:1000px;
+    height: 440px;
+    .contentBt {
+        position: relative;
+        margin: 10px 20px;
+        &_hidden {
+            display: none;
+        }
+
+        .label {
+            width: 230px;
+
+            position: relative;
+            padding: 10px;
+            background: #c2def4;
+            cursor: pointer;
+            color: #36393b;
+            font-size: 1.3rem;
+            &::before {
+                content: "+";
+                position: absolute;
+                top: 50%;
+                right: 10px;
+                transform: translateY(-50%);
+                font-size: 2.5 em;
+            }
+        }
+
+        .contentTask {
+            width: 230px;
+
+            position: relative;
+
+            background-color: #e0eaf1;
+            color: black;
+            font-size: 1.8rem;
+            height: 0;
+            overflow: hidden;
+            transition: 0.5s;
+            overflow-y: auto;
+        }
+    }
+}
+.contentBt.activTask .contentTask {
+    height: 100px;
+    padding: 10px;
+}
+.contentBt.activTask .label::before {
+    content: "-";
 }
