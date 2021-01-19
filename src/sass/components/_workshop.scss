@@ -1,14 +1,21 @@
 .wrapper-workshop {
     flex-direction: column;
+    padding: 14px;
+
 }
 .workshop-text {
     font-size: 1.8rem;
+    @include media-mobile{
+        font-size: 1.5rem;
+    }
 }
 .workshop-tags {
     margin-bottom: 31px;
     @include media-tablet {
+        flex-wrap: wrap;
         justify-content: center;
     }
+
 }
 
 

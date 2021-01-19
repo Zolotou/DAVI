@@ -453,6 +453,16 @@ h2 {
   font-size: 3rem;
   color: #0F119E;
 }
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2.3rem;
+  }
+}
+@media (max-width: 414px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
 
 h3 {
   font-size: 2rem;
@@ -546,6 +556,11 @@ h3 {
 }
 .tag_colored {
   background-color: #F5F5F5;
+}
+@media (max-width: 768px) {
+  .tag {
+    margin-bottom: 5px;
+  }
 }
 
 .burger-menu {
@@ -780,6 +795,11 @@ body.lock {
   background-color: #011D33;
   height: 200px;
 }
+@media (max-width: 414px) {
+  .footer {
+    height: 300px;
+  }
+}
 .footer .wrapper {
   color: #ffffff;
   height: 100px;
@@ -792,6 +812,7 @@ body.lock {
 
 .footer-link {
   padding: 0 10px;
+  margin: 7px;
 }
 .footer-link > a {
   color: #ffffff;
@@ -800,12 +821,22 @@ body.lock {
 .footer-link > a:hover {
   color: aqua;
 }
+@media (max-width: 768px) {
+  .footer-link {
+    font-size: 1.5rem;
+  }
+}
 
 .footer__navigation {
   display: flex;
   justify-content: space-between;
   width: 500 px;
   font-size: 2rem;
+}
+@media (max-width: 768px) {
+  .footer__navigation {
+    flex-direction: column;
+  }
 }
 
 .icon {
@@ -1002,6 +1033,13 @@ body.lock {
 
 .nav-page {
   font-size: 1.5rem;
+}
+@media (max-width: 768px) {
+  .nav-page {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 .wrapper-html {
@@ -1407,6 +1445,7 @@ input:active + label:active {
 
 .HTML-wrapper {
   flex-direction: column;
+  padding: 10px;
 }
 
 .Html-inform {
@@ -1424,11 +1463,24 @@ input:active + label:active {
   padding-left: 10px;
 }
 .introduction-links .introduction-item {
+  width: 170px;
   margin: 10px;
   color: #0F119E;
 }
 .introduction-links .introduction-item:hover {
   cursor: pointer;
+}
+@media (max-width: 768px) {
+  .introduction-links .introduction-item {
+    width: 120px;
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 414px) {
+  .introduction-links .introduction-item {
+    width: 90px;
+    font-size: 1.3rem;
+  }
 }
 
 .outPut-html {
@@ -1444,10 +1496,17 @@ input:active + label:active {
 
 #otPutInfo {
   padding: 0px 20px;
-  width: 900px;
+  width: 90%;
   height: 420px;
   font-size: 1.5rem;
   overflow-y: scroll;
+}
+@media (max-width: 414px) {
+  #otPutInfo {
+    text-align: left;
+    font-size: 1.5rem;
+    margin-right: 0;
+  }
 }
 
 #output-title {
@@ -1461,6 +1520,11 @@ input:active + label:active {
   text-align: justify;
   text-indent: 20px;
 }
+@media (max-width: 768px) {
+  .p-color {
+    font-size: 1.6rem;
+  }
+}
 
 .otPutInfo > p {
   text-align: justify;
@@ -1469,10 +1533,16 @@ input:active + label:active {
 
 .wrapper-workshop {
   flex-direction: column;
+  padding: 14px;
 }
 
 .workshop-text {
   font-size: 1.8rem;
+}
+@media (max-width: 414px) {
+  .workshop-text {
+    font-size: 1.5rem;
+  }
 }
 
 .workshop-tags {
@@ -1480,6 +1550,7 @@ input:active + label:active {
 }
 @media (max-width: 768px) {
   .workshop-tags {
+    flex-wrap: wrap;
     justify-content: center;
   }
 }

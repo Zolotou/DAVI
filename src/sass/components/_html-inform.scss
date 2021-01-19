@@ -1,6 +1,7 @@
 
 .HTML-wrapper {
     flex-direction: column;
+    padding: 10px;
 }
 .Html-inform {
     background-color: #c2def4;
@@ -10,14 +11,24 @@
     justify-content: space-between;
 }
 .introduction-links {
+
     background: rgb(245, 245, 245);
     font-size: 2rem;
     padding-left: 10px;
     .introduction-item {
+        width: 170px;
         margin: 10px;
         color: $color-title;
         &:hover {
             cursor: pointer;
+        }
+        @include media-tablet{
+            width: 120px;
+            font-size: 1.5rem;
+        }
+        @include media-mobile{
+            width: 90px;
+            font-size: 1.3rem;
         }
     }
 }
@@ -33,10 +44,15 @@
 }
 #otPutInfo {
     padding: 0px 20px;
-    width: 900px;
+    width: 90%;
     height: 420px;
     font-size: 1.5rem;
     overflow-y: scroll;
+    @include media-mobile{
+text-align: left;
+        font-size: 1.5rem;
+        margin-right: 0;
+    }
 }
 #output-title {
     font-size: 1.8rem;
@@ -48,8 +64,10 @@ margin-bottom: 10px;
 .p-color{
     font-size: 2rem;
     text-align: justify;
-    text-indent: 20px
-}
+    text-indent: 20px;
+    @include media-tablet{
+        font-size: 1.6rem;
+}}
 .otPutInfo{
     >p{
       text-align: justify;

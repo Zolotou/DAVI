@@ -2,6 +2,9 @@
   background-color: $main-header-color;
 
   height: 200px;
+  @include media-mobile{
+    height: 300px;
+  }
 
   .wrapper {
     color: $color-light;
@@ -11,18 +14,26 @@
     align-items: center;
     color: $color-light;
     flex-direction: column;
+
   }
 }
 
 .footer-link {
   padding: 0 10px;
+margin: 7px;
   > a {
     color: $color-light;
     text-decoration: none;
+
     &:hover {
       color: aqua;
     }
   }
+  @include media-tablet{
+    font-size:1.5rem;
+
+  }
+
 }
 
 .footer__navigation {
@@ -30,6 +41,10 @@
   justify-content: space-between;
   width: 500 px;
   font-size: 2rem;
+  @include media-tablet{
+     flex-direction: column;
+
+  }
 }
 
 .icon {
