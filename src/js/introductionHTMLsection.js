@@ -12,14 +12,14 @@ let arrOutPutLinks = [];
 links.forEach(element => {
 
     element.addEventListener('click', (e) => {
-        let target = 'outPut-html__info ' + e.target.innerHTML.toLowerCase();
+        let target = 'outPut-html__info ' + e.target.textContent.toLowerCase();
         for (let i = 0; i < outPutLinks.length; i++) {
             let name = outPutLinks[i].className
             console.log(e.target.innerHTML)
 
             if (name == target) {
-                otputInfo.textContent = outPutLinks[i].textContent
-                outputTitle.innerHTML = e.target.innerHTML
+                otputInfo.innerText = outPutLinks[i].innerText
+                outputTitle.innerText = e.target.innerText
                 break;
             } else {
                 otputInfo.innerHTML = "nothing"
@@ -29,10 +29,71 @@ links.forEach(element => {
 })
 
 
-const outPutWorkshop = document.getElementsByClassName('outPut__workshop')
-for (let i = 0; i < outPutWorkshop.length; i++) {
-    outPutWorkshop[i].addEventListener('click', function (){
+const accordion = document.querySelectorAll('.contentBt')
+
+for (let i = 0; i < accordion.length; i++) {
+
+    accordion[i].addEventListener('click', function () {
+
         this.classList.toggle('activTask')
     })
 
 }
+
+
+
+
+const addTagsClickHandler = () => {
+    document.querySelector('.workshop-tags').addEventListener('click', (e) => {
+
+        if (e.target.classList.contains('tag')) {
+            let clickedTag = e.target;
+            removeSelectedTags();
+            selectClickTag(clickedTag);
+            if (clickedTag.innerHTML == "All") {
+                showAllTask();
+            } else {
+                filterTaskBySelectedTag(clickedTag.innerHTML);
+            }
+        }
+    })
+
+}
+addTagsClickHandler();
+const removeSelectedTags = () => {
+    let tags = document.querySelectorAll('.workshop-tags .tag')
+    console.log(tags)
+    tags.forEach(tag => {
+        tag.classList.remove('tag_selected');
+        tag.classList.add('tag_bordered')
+
+    })
+}
+const selectClickTag = (clickedTag) => {
+    clickedTag.classList.add('tag_selected');
+    clickedTag.classList.remove('tag_bordered')
+}
+
+const  showAllTask= () => {
+    let task = document.querySelectorAll('.outPut__workshop .contentBt')
+    console.log(task)
+    task.forEach(task=> {
+        task.classList.remove('contentBt_hidden');})
+
+
+}
+const  filterTaskBySelectedTag= (selectedTag) => {
+    let task = document.querySelectorAll('.outPut__workshop .contentBt')
+    console.log(task)
+    task.forEach(task=> {
+        task.classList.add('contentBt_hidden');
+        task.querySelectorAll('.tag').forEach(tag => {
+            if (tag.innerHTML == selectedTag){
+                task.classList.remove('contentBt_hidden');
+
+            }
+        } )
+
+    })
+}
+

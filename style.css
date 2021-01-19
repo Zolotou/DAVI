@@ -1424,11 +1424,15 @@ input:active + label:active {
 
 .outPut__workshop {
   display: flex;
-  max-width: 800px;
+  flex-wrap: wrap;
+  height: 300px;
 }
 .outPut__workshop .contentBt {
   position: relative;
   margin: 10px 20px;
+}
+.outPut__workshop .contentBt_hidden {
+  display: none;
 }
 .outPut__workshop .contentBt .label {
   width: 250px;
@@ -1459,12 +1463,12 @@ input:active + label:active {
   overflow-y: auto;
 }
 
-.outPut__workshop.activTask .contentTask {
-  height: 150px;
+.contentBt.activTask .contentTask {
+  height: 100px;
   padding: 10px;
 }
 
-.outPut__workshop.activTask .label::before {
+.contentBt.activTask .label::before {
   content: "-";
 }
 

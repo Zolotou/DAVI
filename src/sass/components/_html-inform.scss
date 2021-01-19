@@ -44,11 +44,18 @@
 }
 
 .outPut__workshop {
-    display: flex;
-    max-width:800px;
+   display: flex;
+   flex-wrap: wrap;
+
+
+  //  max-width:1000px;
+     height: 300px;
     .contentBt {
         position: relative;
         margin: 10px 20px;
+&_hidden{
+    display: none;
+}
 
         .label {
             width: 250px;
@@ -71,6 +78,7 @@
 
         .contentTask {
 width: 250px;
+
             position: relative;
 
             background-color: #e0eaf1;
@@ -84,10 +92,10 @@ width: 250px;
     }
 
 }
-.outPut__workshop.activTask .contentTask{
-        height: 150px;
+.contentBt.activTask .contentTask{
+        height: 100px;
         padding: 10px;
     }
-.outPut__workshop.activTask .label::before{
+    .contentBt.activTask .label::before{
     content: "-";
 }
