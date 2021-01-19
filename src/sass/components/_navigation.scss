@@ -62,8 +62,13 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+
 }
 .nav-page{
-
+ @include media-tablet{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    }
     font-size: 1.5rem;
 }
