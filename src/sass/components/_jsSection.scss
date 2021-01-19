@@ -17,7 +17,8 @@
   width: 100%;
 }
 .linksList {
-display:block;
+  display: flex;
+  flex-wrap: wrap;
 
 }
 
@@ -25,10 +26,12 @@ display:block;
   font-size: 1.7rem;
   padding: 0.2em 0.5em;
   min-width: 60px;
-  background-color: green;
   cursor: pointer;
+  text-decoration: underline dotted 1px;
 }
-
+.linksList li:hover {
+  text-decoration: underline 1px;
+}
 .source, .sandbox {
   margin: 5px;
   flex: 1 1 48%;
@@ -43,9 +46,10 @@ display:block;
   border: 3px solid #b6c6ce;
 
 }
-// input {
-//     display: none;
-//   }
+#jsEditor, #htmlEditor, #cssEditor {
+     display: none;
+   }
+   
 .source label, .sandbox button {
     padding: 0.2em 0.5em;
     font-size: 2rem;
@@ -116,14 +120,28 @@ input:checked + label {
     outline: none;
     transition: 0.4s;
   }
+  .accordion:after {
+    content: '\002B'; /* Unicode character for "plus" sign (+) */
+    font-size: 2rem;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+  }
+  
   .accordion-active, .accordion:hover{
 background-color: #ccc;
   }
+  .accordion-active:after {
+    content: "\2212"; /* Unicode character for "minus" sign (-) */
+  }
+
   .accordion-panel {
-    padding: 0 18px;
-    background-color: white;
+    padding: 0;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
   }
-  
+  .jsSection {
+flex: 1 1 48%;
+margin: .5rem;
+  }
