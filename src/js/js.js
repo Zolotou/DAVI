@@ -81,10 +81,41 @@ const caseLibrary = [
   {
     section: 'JavaScript Basics',
     checked: 'js',
-    title: 'Second point',
-    html: "<p>Привет, Мир! </p><div class='box'></div>",
-    css: '.box {border-style: solid; border-width: 1px; display: block; margin: 20px; width: 100px; height: 100px; background-color: #0000FF; -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s; transition: width 2s, height 2s, background-color 2s, transform 2s; } .box:hover {background-color: #FFCCCC; width: 200px; height: 200px; -webkit-transform: rotate(360deg); transform: rotate(360deg); }',
-    js: 'const box = document.querySelector(".box"); box.onclick = () => { box.style.backgroundColor = "green"; box.innerHTML = "<span style=\'color:white; font-size: 1.7rem\'>Зеленый квадрат Залевского</span>\"; }',
+    title: 'JavaScript Data Types',
+    reference: '<h3>Basic data types in JS</h3><p>There are six basic data types in JavaScript which can be divided into three main categories: <ul><li><span>Primitive (or <em>primary</em>).</span> String, Number, and Boolean are primitive data types.</li><li><span>Composite (or <em>reference</em>).</span> Object, Array, and Function (which are all types of objects) are composite data types.</li><li><span>Special data types.</span> Undefined and Null are special data types.</li></ul></p><h3>The String Data Type</h3><p>The <em>string</em> data type is used to represent textual data (i.e. sequences of characters). Strings are created using single or double quotes surrounding one or more characters.</p><h3>The Number Data Type</h3><p>The <em>number</em> data type is used to represent positive or negative numbers with or without decimal place, or numbers written using exponential notation e.g. 1.5e-4 (equivalent to 1.5x10<sup>-4</sup>).</p><p>The Number data type also includes some special values which are: <code>Infinity</code>, <code>-Infinity</code> and <code>NaN</code>. Infinity represents the mathematical Infinity <code>∞</code>, which is greater than any number. Infinity is the result of dividing a nonzero number by 0, as demonstrated below:</p><p><code>NaN</code> represents a special <em>Not-a-Number</em> value. It is a result of an invalid or an undefined mathematical operation, like taking the square root of -1 or dividing 0 by 0, etc.</p><h3>The Boolean Data Type</h3><p>The Boolean data type can hold only two values: <code>true</code> or <code>false</code>. It is typically used to store values like yes (<code>true</code>) or no (<code>false</code>), on (<code>true</code>) or off (<code>false</code>), etc.</p><h3>The Undefined Data Type</h3><p>The undefined data type can only have one value-the special value <code>undefined</code>. If a variable has been declared, but has not been assigned a value, has the value <code>undefined</code>.</p><h3>The Null Data Type</h3><p>This is another special data type that can have only one value-the <code>null</code> value. A <code>null</code> value means that there is no value. It is not equivalent to an empty string (<code>""</code>) or 0, it is simply nothing. </p><p>A variable can be explicitly emptied of its current contents by assigning it the <code>null</code> value.</p><h3 id="object">The Object Data Type</h3><p>The <code>object</code> is a complex data type that allows you to store collections of data.</p><p>An object contains properties, defined as a key-value pair. A property key (name) is always a string, but the value can be any data type, like strings, numbers, booleans, or complex data types like arrays, function and other objects.</p><h3>The Array Data Type</h3><p>An array is a type of object used for storing multiple values in single variable. Each value (also called an element) in an array has a numeric position, known as its index, and it may contain data of any data type-numbers, strings, booleans, functions, objects, and even other arrays. The array index starts from 0, so that the first array element is <code>arr[0]</code> not <code>arr[1]</code>.</p><p>The simplest way to create an array is by specifying the array elements as a comma-separated list enclosed by square brackets.</p><h3>The Function Data Type</h3><p>The function is callable object that executes a block of code. Since functions are objects, so it is possible to assign them to variables.</p><p>In fact, functions can be used at any place any other value can be used. Functions can be stored in variables, objects, and arrays. Functions can be passed as arguments to other functions, and functions can be returned from functions.</p><h3>The typeof Operator</h3><p>The <code>typeof</code> operator can be used to find out what type of data a variable or operand contains. It can be used with or without parentheses (<code>typeof(x)</code> or <code>typeof x</code>).</p><p>The <code>typeof</code> operator is particularly useful in the situations when you need to process the values of different types differently, but you need to be very careful, because it may produce unexpected result in some cases, as demonstrated in the following example:</p>',
+    html: '',
+    css: '',
+    js: `// Numbers
+    typeof 15;  // Returns: "number"
+    typeof 42.7;  // Returns: "number"
+    typeof 2.5e-4;  // Returns: "number"
+    typeof Infinity;  // Returns: "number"
+    typeof NaN;  // Returns: "number". Despite being "Not-A-Number"
+     
+    // Strings
+    typeof '';  // Returns: "string"
+    typeof 'hello';  // Returns: "string"
+    typeof '12';  // Returns: "string". Number within quotes is typeof string
+     
+    // Booleans
+    typeof true;  // Returns: "boolean"
+    typeof false;  // Returns: "boolean"
+     
+    // Undefined
+    typeof undefined;  // Returns: "undefined"
+    typeof undeclaredVariable; // Returns: "undefined"
+     
+    // Null
+    typeof Null;  // Returns: "object"
+     
+    // Objects
+    typeof {name: "John", age: 18};  // Returns: "object"
+     
+    // Arrays
+    typeof [1, 2, 4];  // Returns: "object"
+     
+    // Functions
+    typeof function(){};  // Returns: "function"`,
   },
   {
     section: 'JavaScript Functions',
