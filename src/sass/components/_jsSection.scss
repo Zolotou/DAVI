@@ -32,8 +32,14 @@
 .linksList li:hover {
   text-decoration: underline 1px;
 }
+.linksList li:focus {
+  background-color: #CCCCCC;
+}
+.selected {
+  color: red;
+}
 .source, .sandbox {
-  margin: 5px;
+  margin: 2rem .5rem .5rem;
   flex: 1 1 48%;
   min-width: 300px;
   text-align: left;
@@ -144,4 +150,32 @@ background-color: #ccc;
   .jsSection {
 flex: 1 1 48%;
 margin: .5rem;
+  }
+  .reference {
+    display: block;
+    padding: 2rem;
+    width: 100%;
+    font-size: 1.7rem;
+    background-color: white;
+    border: #CCC solid 2px;
+    border-radius: 4px;
+  }
+  .reference ul {
+    list-style-type: disc;
+    margin: 10px 0 20px;
+    padding-left: 4rem;
+  }
+  .reference ul li {
+    margin-top: 7px;
+  }
+  .reference ul li span {
+    font-weight: 700;
+  }
+
+  code {
+    padding: 2px 4px;
+    color: #333;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    font-family: Courier,monospace;
   }
