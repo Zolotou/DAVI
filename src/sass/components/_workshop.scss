@@ -1,12 +1,94 @@
-.wrapper-workshop{
+.wrapper-workshop {
     flex-direction: column;
+    padding: 14px;
+
 }
-.workshop-text{
+.workshop-text {
     font-size: 1.8rem;
+    @include media-surface{
+        font-size: 1.6rem;
+        text-align: justify;
+    }
+    @include media-mobile{
+        font-size: 1.5rem;
+    }
 }
-.workshop-tags{
+.workshop-tags {
     margin-bottom: 31px;
     @include media-tablet {
+        flex-wrap: wrap;
         justify-content: center;
     }
+
+}
+
+
+.outPut__workshop {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 96px;
+    //  max-width:1000px;
+    height: 440px;
+    @include media-tablet{
+        overflow-y: auto;
+
+    }
+    @include media-surface{
+        overflow-y: auto;
+ }
+    .contentBt {
+        position: relative;
+        margin: 10px 20px;
+        &_hidden {
+            display: none;
+        }
+
+
+        .label {
+            width: 250px;
+
+            position: relative;
+            padding: 10px;
+            background: #c2def4;
+            cursor: pointer;
+            color: #36393b;
+            font-size: 1.5rem;
+            &::before {
+                content: "+";
+                position: absolute;
+                top: 50%;
+                right: 10px;
+                transform: translateY(-50%);
+                font-size: 2.5 em;
+            }
+
+
+        }
+
+        .contentTask {
+            width: 230px;
+
+            position: relative;
+
+            background-color: #e0eaf1;
+            color: black;
+            font-size: 1.6rem;
+            height: 0;
+            overflow: hidden;
+            transition: 0.5s;
+            overflow-y: auto;
+            @include media-tablet{
+            width:200px ;
+                        }
+        }
+
+    }
+}
+.contentBt.activTask .contentTask {
+    height: 100px;
+    padding: 10px;
+}
+.contentBt.activTask .label::before {
+    content: "-";
 }

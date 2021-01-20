@@ -23,4 +23,7 @@
     &_colored {
         background-color: $color-tag;
     }
+    @include media-tablet{
+        margin-bottom: 5px;
+    }
 }
