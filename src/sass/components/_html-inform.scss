@@ -1,4 +1,3 @@
-
 .HTML-wrapper {
     flex-direction: column;
     padding: 10px;
@@ -9,12 +8,20 @@
 .introduction-container {
     display: flex;
     justify-content: space-between;
+    @include media-mobile{
+        flex-direction: column;
+    }
 }
 .introduction-links {
-
     background: rgb(245, 245, 245);
     font-size: 2rem;
     padding-left: 10px;
+    @include media-mobile {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+        padding: 2px;
+    }
     .introduction-item {
         width: 170px;
         margin: 10px;
@@ -22,13 +29,14 @@
         &:hover {
             cursor: pointer;
         }
-        @include media-tablet{
+        @include media-tablet {
             width: 120px;
             font-size: 1.5rem;
         }
-        @include media-mobile{
-            width: 90px;
-            font-size: 1.3rem;
+        @include media-mobile {
+            width: 56px;
+            font-size: 1.2rem;
+
         }
     }
 }
@@ -48,30 +56,41 @@
     height: 420px;
     font-size: 1.5rem;
     overflow-y: scroll;
-    @include media-mobile{
-text-align: left;
+    @include media-mobile {
+        text-align: left;
         font-size: 1.5rem;
+        margin-right: 0;
+        padding: 5px;
+    }
+    div{
         margin-right: 0;
     }
 }
 #output-title {
     font-size: 1.8rem;
     padding-left: 20px;
-margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
-
-.p-color{
+.p-color {
     font-size: 2rem;
     text-align: justify;
     text-indent: 20px;
-    @include media-tablet{
+    @include media-tablet {
         font-size: 1.6rem;
-}}
-.otPutInfo{
-    >p{
-      text-align: justify;
-    text-indent: 20px
     }
+}
+.otPutInfo {
+    > p {
+        text-align: justify;
+        text-indent: 20px;
+    }
+}
 
+
+.outPut-html__info{
+    > p{
+        text-indent: 20px;
+        margin: 0;
+    }
 }

@@ -2,6 +2,9 @@
   background-color: $main-header-color;
 
   height: 200px;
+  @include media-tablet{
+    height: 200px;
+  }
   @include media-mobile{
     height: 300px;
   }
@@ -41,7 +44,7 @@ margin: 7px;
   justify-content: space-between;
   width: 500 px;
   font-size: 2rem;
-  @include media-tablet{
+  @include media-mobile{
      flex-direction: column;
 
   }

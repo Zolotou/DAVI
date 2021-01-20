@@ -19,13 +19,8 @@
   outline: 0;
   padding: 12px 20px;
   transition: all 0.1s linear;
-  @include media-surface {
-    margin-left: 20%;
-  }
-  @include media-mobilesmall {
-    max-width: 120px;
-    margin-left: 5px;
-  }
+
+
   &:active {
     box-shadow: 0 2px 0 #b6c6ce;
     transform: translateY(3px);
