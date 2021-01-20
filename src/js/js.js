@@ -52,10 +52,31 @@ const caseLibrary = [
     section: 'JavaScript Basics',
     checked: 'js',
     title: 'JavaScript Output Methods',
-    reference: '<h3>Generating Output</h3><p>In JavaScript there are several different ways of generating output including writing output to the browser window or browser console, displaying output in dialog boxes, writing output into an HTML element, etc. Lets take a closer look at each of these techniques:</p><ul><li>Writing Output to Browser Console</li></ul>',
-    html: "<p>К блоку ниже применятся анимации для свойств: width, height, background-color, transform. Наведите на него, чтоб увидеть, как они анимируются.</p><p>Клик по элементу приведёт к срабатыванию EventListener и обработке события 'click'. </p><div class='box'></div>",
-    css: '.box {border - style: solid; border-width: 1px; display: block; margin: 20px; width: 100px; height: 100px; background-color: #0000FF; -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s; transition: width 2s, height 2s, background-color 2s, transform 2s; } .box:hover {background - color: #FFCCCC; width: 200px; height: 200px; -webkit-transform: rotate(360deg); transform: rotate(360deg); }',
-    js: 'const box = document.querySelector(".box"); box.onclick = () => {box.style.backgroundColor = "green"; box.innerHTML = "<span style=\'color:white; font-size: 1.7rem\'>Зеленый квадрат Залевского</span>\"; }',
+    reference: '<h3>Generating Output</h3><p>In JavaScript there are several different ways of generating output including writing output to the browser window or browser console, displaying output in dialog boxes, writing output into an HTML element, etc. Lets take a closer look at each of these techniques:</p><ul><li><span>Writing Output to Browser Console.</span> You can easily output a message or write data to the browser console using the <code>console.log()</code> method. This is a simple, but very powerful method for generating detailed output.</li><li><span>Displaying Output in Alert Dialog Boxes.</span> You can also use alert dialog boxes to display the message or output data to the user. An alert dialog box is created using the <code>alert()</code> method.</li><li><span>Writing Output to the Browser Window.</span> You can use the <code>document.write()</code> method to write the content to the current document only while that document is being parsed.</li><li><span>Inserting Output Inside an HTML Element.</span> You can also write or insert output inside an HTML element using the element\'s <code>innerHTML</code> property. However, before writing the output first we need to select the element using a method such as <code>getElementById()</code>, as demonstrated further.</p></li></ul>',
+    html: '<p id="greet"></p><p id="result"></p>',
+    css: '',
+    js: ` // Prints: Hello World! Please, check the browser 	console pressing F12 button
+    console.log("Hello World!");
+   
+    // Printing a variable value 
+    let x = 10;
+    let y = 20;
+    let sum = x + y;
+    console.log(sum); // Prints: 30
+   
+    // Displaying a simple text message
+    alert("Hello World!"); // Outputs: Hello World!
+    // Displaying a variable value 
+    alert(sum); // Outputs: 30
+   
+    // Printing a variable value 
+    document.write("Document write: " + sum); // Prints: 30
+   
+    // Writing text string inside an element
+    document.getElementById("greet").innerHTML = "Greet Element";
+   
+    // Writing a variable value inside an element
+    document.getElementById("result").innerHTML = "Result Element";`,
   },
   {
     section: 'JavaScript Basics',

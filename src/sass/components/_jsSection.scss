@@ -39,7 +39,7 @@
   color: red;
 }
 .source, .sandbox {
-  margin: 5px;
+  margin: 2rem .5rem .5rem;
   flex: 1 1 48%;
   min-width: 300px;
   text-align: left;
@@ -168,6 +168,10 @@ margin: .5rem;
   .reference ul li {
     margin-top: 7px;
   }
+  .reference ul li span {
+    font-weight: 700;
+  }
+
   code {
     padding: 2px 4px;
     color: #333;

@@ -1085,7 +1085,7 @@ textarea {
 }
 
 .source, .sandbox {
-  margin: 5px;
+  margin: 2rem 0.5rem 0.5rem;
   flex: 1 1 48%;
   min-width: 300px;
   text-align: left;
@@ -1230,6 +1230,10 @@ input:active + label:active {
 
 .reference ul li {
   margin-top: 7px;
+}
+
+.reference ul li span {
+  font-weight: 700;
 }
 
 code {
