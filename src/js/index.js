@@ -57,27 +57,28 @@ if (buttonsWrapper !== null) {
   })
 }
 
-//check if user already exist
+//check if user already exist 
+
 document.addEventListener("DOMcontentLoaded", checkUser());
 
 function checkUser() {
   let userName = localStorage.getItem('userName');
   console.log(userName)
-  if(userName != null){
+  if (userName != null) {
     document.querySelector('.welcome-user').innerHTML = `Welcome back ${localStorage.getItem('userName')}`;
     document.querySelector('.welcome-user-level').innerHTML = `Your level is still ${localStorage.getItem('levelOfUser')}`
   }
-  else{
-      welcome();
+  else {
+    welcome();
   }
 }
 
 // reset the user statistic
 let reset = document.querySelector('.welcome-reset-button');
-reset.addEventListener('click', ()=> {
+reset.addEventListener('click', () => {
   localStorage.removeItem('userName');
   localStorage.removeItem('levelofUser');
-  window.location.reload(false); ;
+  window.location.reload(false);;
 })
 
 // get the Api quote
@@ -89,54 +90,44 @@ async function getQuote() {
 }
 getQuote();
 
+//Scroll 
+const headerWrapperHeight = document.querySelector('.header-wrapper').offsetHeight;
+const anchors = document.querySelectorAll('.navigation a');
+//smoothScroll.onClick
 
-//scroll
-const menu = document.querySelector('.navigation')
-
-menu.addEventListener('click', (event) => {
-  menu.querySelectorAll('a').forEach(el => el.classList.remove('active'));
-  event.target.classList.add('active');
+anchors.forEach(anchor => {
+  anchor.addEventListener('click', (event) => {
+    event.preventDefault();
+    anchors.forEach(el => el.classList.remove('active')); // очистим все классы элементов меню от active
+    anchor.classList.add('active'); // добавим active к тому, по которому кликнули
+    const blockID = anchor.getAttribute('href').substr(1); // получим id блока, к которому будем скроллить
+    const block = document.getElementById(blockID); // найдем узел нужного блока в DOM
+    window.scrollTo({
+      top: block.offsetTop - headerWrapperHeight,
+      behavior: 'smooth',
+    })
+  })
 })
 
-//scrolling 
+//Changing the active point in menu while scrolling
 
 document.addEventListener('scroll', onScroll);
 function onScroll(event) {
-  const currentPosition = window.scrollY;
-  const sect = document.querySelectorAll('section')
-  const link = document.querySelectorAll('.navigation a');
+  const currentPosition = window.scrollY + headerWrapperHeight; // + высота фиксированного меню (можно указать offsetHeight меню в шапке)
+  const sect = document.querySelectorAll('section');
+  // const link = document.querySelectorAll('.navigation a');
   sect.forEach((el) => {
+    // console.log(el.offsetTop);
     if (el.offsetTop <= currentPosition && el.offsetTop + el.offsetHeight > currentPosition) {
-      link.forEach((a) => {
+      anchors.forEach((a) => {
         a.classList.remove('active');
         if (el.getAttribute('id') === a.getAttribute('href').substr(1)) {
           a.classList.add('active');
         }
       })
-
     }
-
   })
-
 }
-/*
-function smoothScroll() {
-  const anchors = document.querySelectorAll('a[href*="#"]')
-
-  for (let anchor of anchors) {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault() // предотвращаем стандартное поведение
-
-      const blockID = anchor.getAttribute('href').substr(1)
-
-      document.getElementById(blockID).scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      })
-
-    })
-  }
-} */
 
 const animItems = document.querySelectorAll('.activeItemanime')
 if (animItems.length > 0) {

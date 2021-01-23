@@ -493,7 +493,6 @@ h3 {
   border: 1px solid #b6c6ce;
   font-size: 17px;
   max-width: 132px;
-  position: absolute;
   right: 15px;
   bottom: 35px;
   background: #ffff;
@@ -1156,7 +1155,7 @@ body.lock {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 100px 10px;
+  padding: 20px 10px;
   width: 100%;
   align-items: center;
 }
@@ -1297,6 +1296,31 @@ body.lock {
     flex-direction: column;
     text-align: center;
   }
+}
+
+.user-area {
+  display: block;
+  float: right;
+  margin-right: 36px;
+}
+
+.user-area svg {
+  height: 36px;
+  width: 36px;
+  vertical-align: sub;
+}
+
+.user-area svg:hover {
+  cursor: pointer;
+}
+
+.user-area svg path {
+  fill: #ffffff;
+  transition: fill 0.8s;
+}
+
+.user-area svg:hover path {
+  fill: #2a9fda;
 }
 
 .wrapper-html {
