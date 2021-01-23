@@ -17,8 +17,10 @@
 
 .cards-wrapper {
     display: flex;
+    justify-content: space-evenly;
     grid-gap: 1em;
     transition: all 1s ease-in-out;
+    flex-wrap: wrap;
   @include media-tablet {
     height: 369px;
    //overflow: auto;
@@ -28,10 +30,12 @@
   }
 }
 .topic-card {
+  display: flex;
+  flex-direction: column;
   background-color: #ffffff;
   border-radius: 6%;
-  width: 360px;
-  height: 342px;
+ width: 315px;
+  //height: 342px;
   box-shadow: $shadow;
   margin: 9px;
   box-shadow: $shadow;
@@ -44,8 +48,8 @@
     display: inline-block;
   }
   > img {
-    max-width: 370px;
-    height: 245px;
+   width: 100%;
+ //   height: 245px;
     margin: auto 0;
 }
 h3{
