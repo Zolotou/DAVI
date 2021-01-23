@@ -3,7 +3,7 @@
     padding: 10px;
 }
 .Html-inform {
-    background-color: #c2def4;
+    background-color: #F1F6FA;
 }
 .introduction-container {
 
@@ -57,8 +57,9 @@ justify-content: space-around;
     padding: 0px 20px;
     width: 90%;
     height: 420px;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     overflow-y: scroll;
+    text-align: justify;
     @include media-mobile {
         text-align: left;
         font-size: 1.5rem;
@@ -70,7 +71,7 @@ justify-content: space-around;
     }
 }
 #output-title {
-    font-size: 1.8rem;
+    font-size: 2rem;
     padding-left: 20px;
     margin-bottom: 10px;
 }

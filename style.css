@@ -453,6 +453,7 @@ body {
 h2 {
   font-size: 3rem;
   color: #0F119E;
+  margin-bottom: 15px;
 }
 @media (max-width: 768px) {
   h2 {
@@ -1774,7 +1775,7 @@ code {
 }
 
 .Html-inform {
-  background-color: #c2def4;
+  background-color: #F1F6FA;
 }
 
 .introduction-container {
@@ -1838,8 +1839,9 @@ code {
   padding: 0px 20px;
   width: 90%;
   height: 420px;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   overflow-y: scroll;
+  text-align: justify;
 }
 @media (max-width: 414px) {
   #otPutInfo {
@@ -1854,7 +1856,7 @@ code {
 }
 
 #output-title {
-  font-size: 1.8rem;
+  font-size: 2rem;
   padding-left: 20px;
   margin-bottom: 10px;
 }
@@ -1887,6 +1889,7 @@ code {
 
 .workshop-text {
   font-size: 1.8rem;
+  margin-bottom: 15px;
 }
 @media (max-width: 526px) {
   .workshop-text {
@@ -1915,6 +1918,7 @@ code {
   justify-content: space-around;
   flex-wrap: wrap;
   padding-bottom: 96px;
+  overflow-y: auto;
   height: 440px;
 }
 @media (max-width: 768px) {
@@ -1938,7 +1942,7 @@ code {
   width: 250px;
   position: relative;
   padding: 10px;
-  background: #c2def4;
+  background: #e1e5e9;
   cursor: pointer;
   color: #36393b;
   font-size: 1.5rem;
@@ -1954,7 +1958,7 @@ code {
 .outPut__workshop .contentBt .contentTask {
   width: 250px;
   position: relative;
-  background-color: #e0eaf1;
+  background-color: #ffffff;
   color: black;
   font-size: 1.6rem;
   height: 0;
