@@ -94,7 +94,6 @@ getQuote();
 const headerWrapperHeight = document.querySelector('.header-wrapper').offsetHeight;
 const anchors = document.querySelectorAll('.navigation a');
 //smoothScroll.onClick
-
 anchors.forEach(anchor => {
   anchor.addEventListener('click', (event) => {
     event.preventDefault();
@@ -108,12 +107,16 @@ anchors.forEach(anchor => {
     })
   })
 })
-
 //Changing the active point in menu while scrolling
 
 document.addEventListener('scroll', onScroll);
 function onScroll(event) {
   const currentPosition = window.scrollY + headerWrapperHeight; // + высота фиксированного меню (можно указать offsetHeight меню в шапке)
+  /* if (currentPosition > 80) {
+     document.querySelector('.header').classList.add('op');
+   } else {
+     document.querySelector('.header').classList.remove('op');
+   } */
   const sect = document.querySelectorAll('section');
   // const link = document.querySelectorAll('.navigation a');
   sect.forEach((el) => {
@@ -169,11 +172,25 @@ document.addEventListener('DOMContentLoaded', () => {
   let navline = document.querySelector('.nav_line');
   let navItem = document.querySelectorAll('.navigation__link');
   navline.style.width = `${navItem[0].offsetWidth}px`;
-  navItem.forEach(el => {
-    el.addEventListener('mouseenter', (e) => {
+  // navItem.forEach(el => {
+  for (let i = 0; i < navItem.length; i++) {
+
+    navItem[i].addEventListener('mouseenter', (e) => {
+      navline.style.display = `inline`;
       navline.style.width = `${e.currentTarget.offsetWidth}px`;
       navline.style.left = `${e.currentTarget.offsetLeft}px`;
+      if (i === 0) {
+        navline.style.backgroundColor = `red`;
+      } else if (i === 1) {
+        navline.style.backgroundColor = `green`;
+      } else if (i === 2) {
+        navline.style.backgroundColor = `orange`;
+      } else {
+        navline.style.backgroundColor = `blue`;
+      }
     });
-  })
+    //еще неплоход добавить событие на mouseleave, чтобы подчеркивание возвращалось к активному элементу
+  }
 
+  // })
 })
