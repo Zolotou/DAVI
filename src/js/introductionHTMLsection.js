@@ -18,7 +18,7 @@ links.forEach(element => {
             console.log(e.target.innerHTML)
 
             if (name == target) {
-                otputInfo.innerText = outPutLinks[i].innerText
+                otputInfo.innerHTML = outPutLinks[i].outerHTML
                 outputTitle.innerText = e.target.innerText
                 break;
             } else {
