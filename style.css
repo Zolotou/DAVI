@@ -431,7 +431,7 @@ ul {
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;
-  height: 245px;
+  height: 200px;
   border-top-left-radius: 6%;
   border-top-right-radius: 6%;
 }
@@ -493,7 +493,6 @@ h3 {
   border: 1px solid #b6c6ce;
   font-size: 17px;
   max-width: 132px;
-  position: absolute;
   right: 15px;
   bottom: 35px;
   background: #ffff;
@@ -1156,7 +1155,7 @@ body.lock {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 100px 10px;
+  padding: 20px 10px;
   width: 100%;
   align-items: center;
 }
@@ -1297,6 +1296,31 @@ body.lock {
     flex-direction: column;
     text-align: center;
   }
+}
+
+.user-area {
+  display: block;
+  float: right;
+  margin-right: 36px;
+}
+
+.user-area svg {
+  height: 36px;
+  width: 36px;
+  vertical-align: sub;
+}
+
+.user-area svg:hover {
+  cursor: pointer;
+}
+
+.user-area svg path {
+  fill: #ffffff;
+  transition: fill 0.8s;
+}
+
+.user-area svg:hover path {
+  fill: #2a9fda;
 }
 
 .wrapper-html {
@@ -1580,8 +1604,10 @@ code {
 }
 .cards-wrapper {
   display: flex;
+  justify-content: space-evenly;
   grid-gap: 1em;
   transition: all 1s ease-in-out;
+  flex-wrap: wrap;
 }
 @media (max-width: 768px) {
   .cards-wrapper {
@@ -1595,10 +1621,11 @@ code {
 }
 
 .topic-card {
+  display: flex;
+  flex-direction: column;
   background-color: #ffffff;
   border-radius: 6%;
-  width: 360px;
-  height: 342px;
+  width: 315px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin: 9px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -1611,8 +1638,7 @@ code {
   display: inline-block;
 }
 .topic-card > img {
-  max-width: 370px;
-  height: 245px;
+  width: 100%;
   margin: auto 0;
 }
 .topic-card h3 {
@@ -1763,6 +1789,8 @@ code {
 
 .introduction-links {
   background: whitesmoke;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
   font-size: 2rem;
   padding-left: 10px;
 }
@@ -1924,7 +1952,7 @@ code {
   font-size: 2.5 em;
 }
 .outPut__workshop .contentBt .contentTask {
-  width: 230px;
+  width: 250px;
   position: relative;
   background-color: #e0eaf1;
   color: black;

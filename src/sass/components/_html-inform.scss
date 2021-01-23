@@ -6,6 +6,7 @@
     background-color: #c2def4;
 }
 .introduction-container {
+
     display: flex;
     justify-content: space-between;
     @include media-mobile{
@@ -14,6 +15,8 @@
 }
 .introduction-links {
     background: rgb(245, 245, 245);
+    box-shadow: $shadow;
+    border-radius: 20px;
     font-size: 2rem;
     padding-left: 10px;
     @include media-mobile {
