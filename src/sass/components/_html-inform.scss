@@ -1,8 +1,11 @@
 .HTML-wrapper {
+
     flex-direction: column;
     padding: 10px;
 }
 .Html-inform {
+    padding-top: 50px;
+    padding-bottom: 50px;
     background-color: #F1F6FA;
 }
 .introduction-container {
@@ -54,8 +57,9 @@ justify-content: space-around;
     }
 }
 #otPutInfo {
+
     padding: 0px 20px;
-    width: 90%;
+   // width: 90%;
     height: 420px;
     font-size: 1.7rem;
     overflow-y: scroll;
@@ -79,7 +83,7 @@ justify-content: space-around;
 .p-color {
     font-size: 2rem;
     text-align: justify;
-    text-indent: 20px;
+     text-indent: 30px;
     @include media-tablet {
         font-size: 1.6rem;
     }

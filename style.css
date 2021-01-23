@@ -451,9 +451,9 @@ body {
 }
 
 h2 {
+  margin-bottom: 20px;
   font-size: 3rem;
   color: #0F119E;
-  margin-bottom: 15px;
 }
 @media (max-width: 768px) {
   h2 {
@@ -1153,6 +1153,7 @@ body.lock {
 }
 
 .section-card {
+  padding-bottom: 100px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -1775,6 +1776,8 @@ code {
 }
 
 .Html-inform {
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-color: #F1F6FA;
 }
 
@@ -1837,7 +1840,6 @@ code {
 
 #otPutInfo {
   padding: 0px 20px;
-  width: 90%;
   height: 420px;
   font-size: 1.7rem;
   overflow-y: scroll;
@@ -1864,7 +1866,7 @@ code {
 .p-color {
   font-size: 2rem;
   text-align: justify;
-  text-indent: 20px;
+  text-indent: 30px;
 }
 @media (max-width: 768px) {
   .p-color {
@@ -1885,6 +1887,7 @@ code {
 .wrapper-workshop {
   flex-direction: column;
   padding: 14px;
+  padding-top: 50px;
 }
 
 .workshop-text {
