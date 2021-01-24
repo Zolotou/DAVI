@@ -1,10 +1,12 @@
 .wrapper-workshop {
     flex-direction: column;
     padding: 14px;
+    padding-top: 50px;
 
 }
 .workshop-text {
     font-size: 1.8rem;
+    margin-bottom: 15px;
     @include media-surface{
         font-size: 1.6rem;
         text-align: justify;
@@ -28,6 +30,7 @@
     justify-content: space-around;
     flex-wrap: wrap;
     padding-bottom: 96px;
+    overflow-y: auto;
     //  max-width:1000px;
     height: 440px;
     @include media-tablet{
@@ -50,7 +53,7 @@
 
             position: relative;
             padding: 10px;
-            background: #c2def4;
+            background: #e1e5e9;
             cursor: pointer;
             color: #36393b;
             font-size: 1.5rem;
@@ -67,11 +70,11 @@
         }
 
         .contentTask {
-            width: 230px;
+            width: 250px;
 
             position: relative;
 
-            background-color: #e0eaf1;
+            background-color: #ffffff;
             color: black;
             font-size: 1.6rem;
             height: 0;
