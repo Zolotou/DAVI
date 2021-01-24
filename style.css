@@ -1118,6 +1118,12 @@ body.lock {
   margin-left: 70px;
 }
 
+.css-pict-img {
+  height: auto;
+  width: 100%;
+  object-fit: scale-down;
+}
+
 .wrapper-hello {
   flex-direction: column;
   align-items: center;
@@ -1300,7 +1306,7 @@ body.lock {
 }
 
 .nav-page {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 @media (max-width: 768px) {
   .nav-page {
