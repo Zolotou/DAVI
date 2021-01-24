@@ -21,10 +21,10 @@ button {
     transform: translateY(3px);
   }
 }
-.user-area label {
+label .sign-in {
   padding: 6px 12px;
   font-size: 1.5rem;
-  background-color: rgb(243, 155, 48);
+  background-color: rgb(42, 159, 218);
   color: rgb(255, 255, 255);
   border-radius: 4px;
   box-shadow: none;
@@ -33,9 +33,12 @@ button {
   letter-spacing: 0.15rem;
   font-weight: 500;
   transition: background-color 0.3s ease-in, color 0.3s ease-in;
-}
 
-
-.user-area label:hover {
-  background-color: rgb(42, 159, 218);
+  &:active{
+    box-shadow: 0 2px 0 #b6c6ce;
+    transform: translateY(3px);
   }
+  &:hover {
+    background-color:  #f39b30;
+  }
+}

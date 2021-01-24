@@ -54,26 +54,26 @@ links.forEach(element => {
 const acc = document.getElementsByClassName("contentBt");
 const accPanel = document.getElementsByClassName("contentTask");
 for (let i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function () {
+    acc[i].addEventListener("click", function () {
 
-    let setClasses = !this.classList.contains('activTask');
-    setPanelStyle(acc, "activTask");
-    setPanelStyle(accPanel, "hide");
+        let setClasses = !this.classList.contains('activTask');
+        setPanelStyle(acc, "activTask");
+        setPanelStyle(accPanel, "hide");
 
-    if (setClasses) {
-      this.classList.toggle('activTask');
-      this.nextElementSibling.style.maxHeight = accPanel[i].scrollHeight + "px";
-    }
-  });
+        if (setClasses) {
+            this.classList.toggle('activTask');
+            this.nextElementSibling.style.maxHeight = accPanel[i].scrollHeight + "px";
+        }
+    });
 }
 function setPanelStyle(elm, state) {
-  for (let i = 0; i < elm.length; i++) {
-    if (state === "activTask") {
-      elm[i].classList.remove("activTask");
-    } else {
-      elm[i].style.maxHeight = null;
+    for (let i = 0; i < elm.length; i++) {
+        if (state === "activTask") {
+            elm[i].classList.remove("activTask");
+        } else {
+            elm[i].style.maxHeight = null;
+        }
     }
-  }
 }
 
 const addTagsClickHandler = () => {
@@ -107,25 +107,26 @@ const selectClickTag = (clickedTag) => {
     clickedTag.classList.remove('tag_bordered')
 }
 
-const  showAllTask= () => {
+const showAllTask = () => {
     let task = document.querySelectorAll('.outPut__workshop .contentBt')
     console.log(task)
-    task.forEach(task=> {
-        task.classList.remove('contentBt_hidden');})
+    task.forEach(task => {
+        task.classList.remove('contentBt_hidden');
+    })
 
 
 }
-const  filterTaskBySelectedTag= (selectedTag) => {
+const filterTaskBySelectedTag = (selectedTag) => {
     let task = document.querySelectorAll('.outPut__workshop .contentBt')
     console.log(task)
-    task.forEach(task=> {
+    task.forEach(task => {
         task.classList.add('contentBt_hidden');
         task.querySelectorAll('.tag').forEach(tag => {
-            if (tag.innerHTML == selectedTag){
+            if (tag.innerHTML == selectedTag) {
                 task.classList.remove('contentBt_hidden');
 
             }
-        } )
+        })
 
     })
 }
