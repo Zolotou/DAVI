@@ -1118,6 +1118,12 @@ body.lock {
   margin-left: 70px;
 }
 
+.css-pict-img {
+  height: auto;
+  width: 100%;
+  object-fit: scale-down;
+}
+
 .wrapper-hello {
   flex-direction: column;
   align-items: center;
