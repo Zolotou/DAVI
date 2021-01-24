@@ -517,7 +517,7 @@ label.sign-in {
   border: none;
   text-transform: uppercase;
   letter-spacing: 0.15rem;
-  font-weight: 500;
+  font-weight: 400;
   transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
 label.sign-in:active {
@@ -526,6 +526,7 @@ label.sign-in:active {
 }
 label.sign-in:hover {
   background-color: #f39b30;
+  transform: translateY(3px);
 }
 
 .tags {
