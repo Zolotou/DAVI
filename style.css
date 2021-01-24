@@ -1306,7 +1306,7 @@ body.lock {
 }
 
 .nav-page {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 @media (max-width: 768px) {
   .nav-page {
