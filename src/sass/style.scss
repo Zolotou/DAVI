@@ -14,23 +14,25 @@
 @import "base/modal";
 @import "base/slider";
 
-@import"layouts/welcome-page";
+@import "layouts/welcome-page";
 @import "layouts/wrapper";
 @import "layouts/header";
 @import "layouts/columns";
 @import "layouts/footer";
 @import "layouts/aboutUs";
+@import "layouts/news";
 
- @import "components/cssSection";
- @import "components/hello";
- @import "components/sectionCard";
+@import "components/cssSection";
+@import "components/hello";
+@import "components/sectionCard";
 @import "components/navigation";
- @import "components/htmlSection";
-  @import "components/otherSection";
-  @import "components/jsSection";
-  @import "components/topic-cards";
-  @import "components/welcomeWindow";
-  @import "components/welcomeImage";
-  
-  @import "components/html-inform";
-  @import "components/_workshop";
+@import "components/htmlSection";
+@import "components/otherSection";
+@import "components/jsSection";
+@import "components/topic-cards";
+@import "components/welcomeWindow";
+@import "components/welcomeImage";
+
+@import "components/html-inform";
+@import "components/_workshop";
+
