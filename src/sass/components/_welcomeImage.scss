@@ -1,10 +1,14 @@
 .welcome-image {
-    margin: 0 auto;
+    display: none;
+    position: absolute;
+    top: 10%;
+   left:  40%;
+  //  margin: 0 auto;
     padding: 10px;
     text-align: center;
     background-color: $color-section;
     color: $color-text;
-
+  //  margin: -110px 0 0 -100px;
     .welcome-api {
         font-size: 1.5rem;
     }

@@ -773,6 +773,94 @@ body.lock {
   justify-content: space-between;
 }
 
+/* ---- particles.js container ---- */
+#particles-js {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: #011d33;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+/* ---- stats.js ---- */
+.count-particles {
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13e8e9;
+  font-size: 0.8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.js-count-particles {
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles {
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+#stats {
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles {
+  border-radius: 0 0 3px 3px;
+}
+
+.arrow-down {
+  position: absolute;
+  margin: 30px;
+  top: 80%;
+  left: 50%;
+}
+
+.arrow-down span {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-bottom: 5px solid #ffffff;
+  border-right: 5px solid #ffffff;
+  transform: rotate(45deg);
+  margin: -16px;
+  animation: arrow-down 2s infinite;
+}
+
+.arrow-down span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+
+.arrow-down span:nth-child(3) {
+  animation-delay: -0.4s;
+}
+
+@keyframes arrow-down {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+  }
+}
 .header {
   background-color: #011D33;
   position: sticky;
@@ -1123,12 +1211,14 @@ body.lock {
 }
 
 .hello-text {
-  transform: translate(0px, 120%);
-  opacity: 0;
+  position: absolute;
+  top: 30vh;
+  left: 30vw;
+  color: #FFFF;
   max-width: 760px;
   width: 100%;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   padding: 0px 20px 30px 20px;
 }
 .hello-text.activeAnime {
@@ -1756,7 +1846,10 @@ code {
 }
 
 .welcome-image {
-  margin: 0 auto;
+  display: none;
+  position: absolute;
+  top: 10%;
+  left: 40%;
   padding: 10px;
   text-align: center;
   background-color: #F1F6FA;
