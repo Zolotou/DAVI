@@ -1108,6 +1108,16 @@ body.lock {
   left: 60%;
 }
 
+.intro-ul {
+  list-style-type: disc;
+  margin-left: 60px;
+}
+
+.intro-ol {
+  list-style-type: decimal;
+  margin-left: 70px;
+}
+
 .wrapper-hello {
   flex-direction: column;
   align-items: center;
@@ -1778,7 +1788,6 @@ code {
 .Html-inform {
   padding-top: 50px;
   padding-bottom: 50px;
-  background-color: #F1F6FA;
 }
 
 .introduction-container {
