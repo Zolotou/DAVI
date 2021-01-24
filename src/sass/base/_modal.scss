@@ -188,9 +188,17 @@ label {
 				height: 100%;
 				background-color: rgba(white,0.2);
 				transition: width 250ms ease;
-				z-index: 0;
+				z-index: 0;					
 			}
-			
+			&:disabled {
+
+				&:hover {
+				
+					&:before {
+						width: 0;
+					}
+				}
+			}
 			&:hover {
 				
 				&:before {
@@ -203,9 +211,18 @@ label {
 				background-color: $color-3;
 				cursor:pointer;
 			}
+			&.success:disabled {
+				margin-right: 5px;
+				background-color: gray;
+				cursor:pointer;
+			}
 
-			&.danger {
+
+			&.beware {
 				background-color: $color-4;
+			}
+			&.beware:disabled {
+				background-color: gray;
 			}
 		}
 	}

@@ -507,7 +507,7 @@ button:active {
   transform: translateY(3px);
 }
 
-label .sign-in {
+label.sign-in {
   padding: 6px 12px;
   font-size: 1.5rem;
   background-color: #2a9fda;
@@ -520,11 +520,11 @@ label .sign-in {
   font-weight: 500;
   transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
-label .sign-in:active {
+label.sign-in:active {
   box-shadow: 0 2px 0 #b6c6ce;
   transform: translateY(3px);
 }
-label .sign-in:hover {
+label.sign-in:hover {
   background-color: #f39b30;
 }
 
@@ -578,7 +578,7 @@ label .sign-in:hover {
     left: 0;
     transition: all 0.3s ease 0s;
     overflow-y: auto;
-    top: 95px;
+    top: 85px;
   }
 }
 .burger-menu_link {
@@ -822,6 +822,9 @@ label {
   transition: width 250ms ease;
   z-index: 0;
 }
+.modal-footer .button:disabled:hover:before {
+  width: 0;
+}
 .modal-footer .button:hover:before {
   width: 100%;
 }
@@ -830,8 +833,16 @@ label {
   background-color: #2ecc71;
   cursor: pointer;
 }
-.modal-footer .button.danger {
+.modal-footer .button.success:disabled {
+  margin-right: 5px;
+  background-color: gray;
+  cursor: pointer;
+}
+.modal-footer .button.beware {
   background-color: #e74c3c;
+}
+.modal-footer .button.beware:disabled {
+  background-color: gray;
 }
 
 #modal-css {
@@ -1445,15 +1456,17 @@ label {
 }
 
 .user-area {
-  display: block;
   margin-right: 28px;
   flex: 0 0 auto;
+  width: 100px;
+  text-align: right;
 }
 
 .user-area svg {
   height: 36px;
   width: 36px;
   vertical-align: sub;
+  margin-top: 0.4rem;
 }
 
 .user-area svg:hover {

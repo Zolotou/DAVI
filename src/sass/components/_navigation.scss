@@ -72,14 +72,16 @@
     font-size: 1.5rem;
 }
 .user-area{
-    display:block;
     margin-right: 28px;
     flex: 0 0 auto;
+    width: 100px;
+    text-align: right;
 }
 .user-area svg {
     height: 36px;
     width: 36px;
     vertical-align: sub;
+    margin-top: 0.4rem;
     
 }
 .user-area svg:hover {
