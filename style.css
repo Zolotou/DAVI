@@ -431,7 +431,7 @@ ul {
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;
-  height: 245px;
+  height: 200px;
   border-top-left-radius: 6%;
   border-top-right-radius: 6%;
 }
@@ -451,6 +451,7 @@ body {
 }
 
 h2 {
+  margin-bottom: 20px;
   font-size: 3rem;
   color: #011D33;
 }
@@ -1264,6 +1265,22 @@ label {
   left: 60%;
 }
 
+.intro-ul {
+  list-style-type: disc;
+  margin-left: 60px;
+}
+
+.intro-ol {
+  list-style-type: decimal;
+  margin-left: 70px;
+}
+
+.css-pict-img {
+  height: auto;
+  width: 100%;
+  object-fit: scale-down;
+}
+
 .wrapper-hello {
   flex-direction: column;
   align-items: center;
@@ -1309,6 +1326,7 @@ label {
 }
 
 .section-card {
+  padding-bottom: 100px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -1446,7 +1464,7 @@ label {
 }
 
 .nav-page {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 @media (max-width: 768px) {
   .nav-page {
@@ -1486,6 +1504,8 @@ label {
 .wrapper-html {
   flex-direction: column;
   padding-top: 20px;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUZkpYhRVMx_dQF8Ac_ngvDec2TSaeZPZ4Uw&usqp=CAU);
+  background-size: cover;
 }
 
 #parent {
@@ -1762,8 +1782,10 @@ code {
 }
 .cards-wrapper {
   display: flex;
+  justify-content: space-evenly;
   grid-gap: 1em;
   transition: all 1s ease-in-out;
+  flex-wrap: wrap;
 }
 @media (max-width: 768px) {
   .cards-wrapper {
@@ -1777,10 +1799,11 @@ code {
 }
 
 .topic-card {
+  display: flex;
+  flex-direction: column;
   background-color: #ffffff;
   border-radius: 6%;
-  width: 360px;
-  height: 342px;
+  width: 315px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin: 9px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -1793,8 +1816,7 @@ code {
   display: inline-block;
 }
 .topic-card > img {
-  max-width: 370px;
-  height: 245px;
+  width: 100%;
   margin: auto 0;
 }
 .topic-card h3 {
@@ -1903,7 +1925,8 @@ code {
 }
 
 .Html-inform {
-  background-color: #c2def4;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .introduction-container {
@@ -1918,6 +1941,8 @@ code {
 
 .introduction-links {
   background: whitesmoke;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
   font-size: 2rem;
   padding-left: 10px;
 }
@@ -1963,10 +1988,10 @@ code {
 
 #otPutInfo {
   padding: 0px 20px;
-  width: 90%;
   height: 420px;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   overflow-y: scroll;
+  text-align: justify;
 }
 @media (max-width: 414px) {
   #otPutInfo {
@@ -1981,7 +2006,7 @@ code {
 }
 
 #output-title {
-  font-size: 1.8rem;
+  font-size: 2rem;
   padding-left: 20px;
   margin-bottom: 10px;
 }
@@ -1989,7 +2014,7 @@ code {
 .p-color {
   font-size: 2rem;
   text-align: justify;
-  text-indent: 20px;
+  text-indent: 30px;
 }
 @media (max-width: 768px) {
   .p-color {
@@ -2010,10 +2035,12 @@ code {
 .wrapper-workshop {
   flex-direction: column;
   padding: 14px;
+  padding-top: 50px;
 }
 
 .workshop-text {
   font-size: 1.8rem;
+  margin-bottom: 15px;
 }
 @media (max-width: 526px) {
   .workshop-text {
@@ -2042,6 +2069,7 @@ code {
   justify-content: space-around;
   flex-wrap: wrap;
   padding-bottom: 96px;
+  overflow-y: auto;
   height: 440px;
 }
 @media (max-width: 768px) {
@@ -2065,7 +2093,7 @@ code {
   width: 250px;
   position: relative;
   padding: 10px;
-  background: #c2def4;
+  background: #e1e5e9;
   cursor: pointer;
   color: #36393b;
   font-size: 1.5rem;
@@ -2079,9 +2107,9 @@ code {
   font-size: 2.5 em;
 }
 .outPut__workshop .contentBt .contentTask {
-  width: 230px;
+  width: 250px;
   position: relative;
-  background-color: #e0eaf1;
+  background-color: #ffffff;
   color: black;
   font-size: 1.6rem;
   height: 0;
