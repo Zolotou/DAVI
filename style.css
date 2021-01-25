@@ -468,6 +468,8 @@ h2 {
 
 h3 {
   font-size: 2rem;
+  padding-bottom: 30px;
+  padding-top: 10px;
 }
 
 .loading {
@@ -769,8 +771,8 @@ body.lock {
   background: rgba(0, 0, 0, 0.8);
 }
 .modal_content {
-  border-radius: 40px;
-  background-color: #eef4f6;
+  border-radius: 10px;
+  background-color: #ffffff;
   margin: 15% auto;
   padding: 20px;
   border: 1px solid #a5a1a1;
@@ -1528,11 +1530,10 @@ img {
 }
 
 .section-card {
-  padding-bottom: 100px;
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 20px 10px;
+  padding: 20px 10px 40px 10px;
   width: 100%;
   align-items: center;
 }
@@ -1582,7 +1583,7 @@ img {
   max-width: 800px;
   width: 100%;
   text-align: left;
-  padding: 10px 10px 10px 0px;
+  padding: 44px 10px 10px 0px;
   font-size: 1.8rem;
   text-align: left;
 }
@@ -1971,6 +1972,7 @@ code {
 }
 
 .slider-container {
+  margin-bottom: 25px;
   display: flex;
   grid-gap: 1em;
   overflow: hidden;
@@ -1983,6 +1985,7 @@ code {
   }
 }
 .cards-wrapper {
+  margin-bottom: 20px;
   display: flex;
   justify-content: space-evenly;
   grid-gap: 1em;
@@ -2001,6 +2004,7 @@ code {
 }
 
 .topic-card {
+  margin-bottom: 30px;
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
