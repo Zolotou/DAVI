@@ -468,6 +468,114 @@ h2 {
 
 h3 {
   font-size: 2rem;
+  padding-bottom: 30px;
+  padding-top: 10px;
+}
+
+.loading {
+  display: flex;
+}
+.loading .dot {
+  position: relative;
+  width: 2em;
+  height: 2em;
+  margin: 0.8em;
+  border-radius: 50%;
+}
+.loading .dot::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  border-radius: inherit;
+  animation: wave 2s ease-out infinite;
+}
+.loading .dot:nth-child(1) {
+  background: #7ef9ff;
+}
+.loading .dot:nth-child(1)::before {
+  animation-delay: 0.2s;
+}
+.loading .dot:nth-child(2) {
+  background: #89cff0;
+}
+.loading .dot:nth-child(2)::before {
+  animation-delay: 0.4s;
+}
+.loading .dot:nth-child(3) {
+  background: #4682b4;
+}
+.loading .dot:nth-child(3)::before {
+  animation-delay: 0.6s;
+}
+.loading .dot:nth-child(4) {
+  background: #0f52ba;
+}
+.loading .dot:nth-child(4)::before {
+  animation-delay: 0.8s;
+}
+.loading .dot:nth-child(5) {
+  background: #000080;
+}
+.loading .dot:nth-child(5)::before {
+  animation-delay: 1s;
+}
+
+@keyframes wave {
+  50%, 75% {
+    transform: scale(2.5);
+  }
+  80%, 100% {
+    opacity: 0;
+  }
+}
+#particles-js {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #011d33;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+/* ---- stats.js ---- */
+.count-particles {
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13e8e9;
+  font-size: 0.8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.js-count-particles {
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles {
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+#stats {
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles {
+  border-radius: 0 0 3px 3px;
 }
 
 .logo_img {
@@ -662,11 +770,11 @@ body.lock {
   top: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.8);
 }
 .modal_content {
-  border-radius: 40px;
-  background-color: #cce9f8;
+  border-radius: 10px;
+  background-color: #ffffff;
   margin: 15% auto;
   padding: 20px;
   border: 1px solid #a5a1a1;
@@ -1283,6 +1391,97 @@ label {
   object-fit: scale-down;
 }
 
+.news {
+  flex-direction: column;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
 .wrapper-hello {
   flex-direction: column;
   align-items: center;
@@ -1298,12 +1497,14 @@ label {
 }
 
 .hello-text {
-  transform: translate(0px, 120%);
-  opacity: 0;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  color: #ffffff;
   max-width: 760px;
   width: 100%;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   padding: 0px 20px 30px 20px;
 }
 .hello-text.activeAnime {
@@ -1312,14 +1513,18 @@ label {
 }
 @media (max-width: 768px) {
   .hello-text {
-    text-align: justify;
+    max-width: 560px;
+    left: 10%;
+    top: 15%;
     font-size: 2rem;
   }
 }
 @media (max-width: 414px) {
   .hello-text {
     font-size: 1.5rem;
-    text-align: justify;
+    text-align: center;
+    left: 0;
+    top: 5%;
   }
 }
 
@@ -1328,11 +1533,10 @@ label {
 }
 
 .section-card {
-  padding-bottom: 100px;
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 20px 10px;
+  padding: 20px 10px 40px 10px;
   width: 100%;
   align-items: center;
 }
@@ -1382,7 +1586,7 @@ label {
   max-width: 800px;
   width: 100%;
   text-align: left;
-  padding: 10px 10px 10px 0px;
+  padding: 44px 10px 10px 0px;
   font-size: 1.8rem;
   text-align: left;
 }
@@ -1771,6 +1975,7 @@ code {
 }
 
 .slider-container {
+  margin-bottom: 25px;
   display: flex;
   grid-gap: 1em;
   overflow: hidden;
@@ -1783,6 +1988,7 @@ code {
   }
 }
 .cards-wrapper {
+  margin-bottom: 20px;
   display: flex;
   justify-content: space-evenly;
   grid-gap: 1em;
@@ -1801,6 +2007,7 @@ code {
 }
 
 .topic-card {
+  margin-bottom: 30px;
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
