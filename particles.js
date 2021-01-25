@@ -19,7 +19,7 @@ var pJS = function(tag_id, params){
       h: canvas_el.offsetHeight
     },
     particles: {
-      number: {
+          number: {
         value: 400,
         density: {
           enable: true,
