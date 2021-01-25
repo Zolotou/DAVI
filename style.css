@@ -617,6 +617,8 @@ button:active {
 }
 
 label.sign-in {
+  display: block;
+  text-align: center;
   padding: 6px 12px;
   font-size: 1.5rem;
   background-color: #2a9fda;
@@ -626,7 +628,7 @@ label.sign-in {
   border: none;
   text-transform: uppercase;
   letter-spacing: 0.15rem;
-  font-weight: 500;
+  font-weight: 400;
   transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
 label.sign-in:active {
@@ -848,7 +850,7 @@ label {
   opacity: 0;
   z-index: 10;
   visibility: hidden;
-  transition: background-color 250ms linear;
+  transition: background-color 300ms linear;
 }
 
 .modal-container {
@@ -864,19 +866,20 @@ label {
   border-radius: 4px;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
   transform: scale(0);
-  transition: transform 250ms ease;
+  transition: transform 300ms ease;
   visibility: hidden;
   z-index: 20;
 }
 .modal-container .close {
   position: relative;
+  text-align: center;
   float: right;
-  font-size: 18px;
-  transition: transform 500ms ease;
+  transition: transform 600ms ease;
   z-index: 100;
+  line-height: 0.5rem;
 }
 .modal-container .close:hover {
-  color: #3498db;
+  fill: #2ecc71;
   transform: rotate(540deg);
 }
 .modal-container h2 {
@@ -961,12 +964,12 @@ label {
   visibility: visible;
   background-color: black;
   opacity: 0.7;
-  transition: background-color 250ms linear;
+  transition: background-color 300ms linear;
 }
 #modal-css:checked ~ .modal-container {
   visibility: visible;
   transform: scale(1);
-  transition: transform 250ms ease;
+  transition: transform 300ms ease;
   z-index: 111;
 }
 
