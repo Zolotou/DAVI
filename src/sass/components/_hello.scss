@@ -27,11 +27,16 @@ color: #ffffff;
     opacity: 1;
     }
     @include media-tablet {
-        text-align: justify;
+        max-width: 560px;
+        left: 10%;
+        top: 15%;
+
         font-size: 2rem;
     }
     @include media-mobile {
         font-size: 1.5rem;
-        text-align: justify;
+        text-align: center;
+        left: 0;
+        top: 5%;
     }
 }
