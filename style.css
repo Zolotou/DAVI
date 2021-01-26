@@ -2117,6 +2117,32 @@ code {
     opacity: 1;
   }
 }
+.didYouKnow-card {
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.didYouKnow-card .didYouKnow-choice {
+  display: flex;
+}
+.didYouKnow-card .didYouKnow-choice .didYouKnow-button {
+  margin: 0px 20px;
+  padding: 0px 20px;
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
+  background-color: #011D33;
+}
+.didYouKnow-card .didYouKnow-choice .didYouKnow-button:hover {
+  background-color: grey;
+}
+.didYouKnow-card .didYouKnow-choice .didYouKnow-phrase {
+  word-wrap: wrap;
+}
+
 .HTML-wrapper {
   flex-direction: column;
   padding: 10px;
