@@ -66,4 +66,12 @@ box-shadow: $shadow;
 .visible {
     display: block;
 }
+#search{
+   max-width: 300px;
+   height: 40px;
+   font-size: 1.4rem;
+}
+#list{
 
+    background-color: aliceblue;
+}
