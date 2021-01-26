@@ -12,6 +12,14 @@
     // padding: 50px 10px 120px 10px;
     align-items: center;
 }
+.descriptionMain{
+    font-size: 1.8rem;
+    padding: 20px;
+    p{
+        margin-top: 20px;
+        text-align: justify;
+    }
+}
 .section-image {
     margin: 0px 10px;.wrapper-workshop {
         flex-direction: column;
@@ -52,10 +60,10 @@
         }
     }
     &__text {
-        max-width: 800px;
-        width: 100%;
+       // max-width: 800px;
+       // width: 100%;
         text-align: left;
-        padding: 44px 10px 10px 0px;
+        padding: 0px 10px 50px 0px;
         font-size: 1.8rem;
         text-align: left;
         @include media-tablet {
@@ -66,10 +74,13 @@
             padding-right: 20px;
         }
         @include media-mobile {
-            max-width: 345px;
-            height: 96px;
+         //   max-width: 345px;
+         padding: 0;
+         padding-right: 10px;
+            height: 220px;
             overflow: auto;
             text-align: justify;
+            margin-bottom: 30px;
         }
     }
 }
