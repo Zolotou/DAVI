@@ -2,6 +2,13 @@
 //     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUZkpYhRVMx_dQF8Ac_ngvDec2TSaeZPZ4Uw&usqp=CAU);
 // background-size: cover;
 background-color: $main-header-color;
+h2{
+    margin-left: 13px;
+}
+}
+.descriptionSection{
+    display: flex;
+    justify-content: space-between;
 }
 .wrapper-html{
 flex-direction: column;
@@ -67,6 +74,7 @@ box-shadow: $shadow;
     display: block;
 }
 #search{
+    margin-left: 13px;
    max-width: 300px;
    height: 40px;
    font-size: 1.4rem;
@@ -74,4 +82,17 @@ box-shadow: $shadow;
 #list{
 
     background-color: aliceblue;
+}
+.tags-text{
+    margin-left: 13px;
+    color:$color-light;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    @include media-surface{
+        font-size: 1.6rem;
+        text-align: justify;
+    }
+    @include media-mobile{
+        font-size: 1.5rem;
+    }
 }
