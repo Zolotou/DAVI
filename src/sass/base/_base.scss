@@ -110,12 +110,15 @@ h5 {
 #particles-js {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: #011d33;
   background-image: url("");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 } /* ---- stats.js ---- */
 .count-particles {
   background: #000022;
