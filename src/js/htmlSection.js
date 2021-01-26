@@ -244,6 +244,7 @@ const searchInput = document.getElementById('search');
      divM.forEach(element =>{
           console.log(element)
       let targ =element.innerText
+      console.log(targ)
       if(targ.toUpperCase().indexOf(filter)>-1){
         element.style.display ='';
       }else{
