@@ -1594,9 +1594,10 @@ img {
   }
 }
 .section__text {
+  color: #666060;
   text-align: left;
   padding: 0px 10px 50px 0px;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   text-align: left;
 }
 @media (max-width: 768px) {

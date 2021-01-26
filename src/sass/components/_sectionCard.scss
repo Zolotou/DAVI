@@ -62,9 +62,11 @@
     &__text {
        // max-width: 800px;
        // width: 100%;
+       color: rgb(102, 96, 96);
         text-align: left;
+
         padding: 0px 10px 50px 0px;
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         text-align: left;
         @include media-tablet {
             max-width: 570px;
