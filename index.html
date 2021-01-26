@@ -58,16 +58,28 @@
                     <label id="sign-in" for="modal-css" class="button sign-in">Sign in
                     </label>
                 </div>
+                <!-- Mobile menu START -->
+                <div class="mobile-menu">
+                    <input type="checkbox" id="hmt" class="hidden-menu-ticker" />
+                    <label class="btn-menu" for="hmt">
+                        <span class="first"></span>
+                        <span class="second"></span>
+                        <span class="third"></span>
+                    </label>
+                    <nav class="hidden-menu">
+                        <span class="nav_line"></span>
+                        <ul>
+                            <li><a href="#html" class="burger-menu_link">HTML</a>
+                            </li>
+                            <li><a href="#css" class="burger-menu_link">CSS</a></li>
+                            <li><a href="#js" class="burger-menu_link">JS</a></li>
+                            <li><a href="#other" class="burger-menu_link">Other</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- Mobile menu END -->
             </div>
-            <div class="header__burger">
-                <span class="burger-menu_lines"></span>
-            </div>
-            <nav class="burger-menu">
-                <a href="#html" class="burger-menu_link">HTML</a>
-                <a href="#css" class="burger-menu_link">CSS</a>
-                <a href="#js" class="burger-menu_link">JS</a>
-                <a href="#other" class="burger-menu_link">Other</a>
-            </nav>
+
         </div>
     </header>
     <input type="checkbox" id="modal-css" />
