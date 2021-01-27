@@ -1,20 +1,7 @@
 const tegs = [
-    {
-        teg: " html  ",
-        descriptio: ' Defines an HTML document',
-    },
-    {
-        teg: "head",
-        descriptio: 'Contains metadata/information for the document ',
-    },
-    {
-        teg: "body",
-        descriptio: '	Defines the documents body',
-    },
-    {
-        teg: "title",
-        descriptio: '	Defines a title for the document',
-    },
+
+
+
     {
         teg: 'a',
         descriptio: 'Defines a hyperlink',
@@ -22,6 +9,10 @@ const tegs = [
     {
         teg: 'b',
         descriptio: 'Defines bold text',
+    },
+    {
+        teg: "body",
+        descriptio: '	Defines the documents body',
     },
     {
         teg: 'br',
@@ -60,6 +51,10 @@ const tegs = [
         descriptio: 'tag defines a footer for a document or section',
     },
     {
+        teg: "head",
+        descriptio: 'Contains metadata/information for the document ',
+    },
+    {
         teg: 'header',
         descriptio: 'element represents a container for introductory content or a set of navigational links',
     },
@@ -72,6 +67,10 @@ const tegs = [
         descriptio: ' tags are used to define HTML headings',
     },
     {
+        teg: " html  ",
+        descriptio: ' Defines an HTML document',
+    },
+       {
         teg: 'i',
         descriptio: 'tag defines a part of text in an alternate voice or mood',
     },
@@ -167,6 +166,10 @@ const tegs = [
         descriptio: 'tag is used to group the body content in an HTML table',
     },
     {
+        teg: "title",
+        descriptio: '	Defines a title for the document',
+    },
+    {
         teg: 'thead',
         descriptio: 'tag is used to group header content in an HTML table',
     },
@@ -244,6 +247,7 @@ const searchInput = document.getElementById('search');
      divM.forEach(element =>{
           console.log(element)
       let targ =element.innerText
+      console.log(targ)
       if(targ.toUpperCase().indexOf(filter)>-1){
         element.style.display ='';
       }else{

@@ -1586,6 +1586,15 @@ img {
   align-items: center;
 }
 
+.descriptionMain {
+  font-size: 1.8rem;
+  padding: 20px;
+}
+.descriptionMain p {
+  margin-top: 20px;
+  text-align: justify;
+}
+
 .section-image {
   margin: 0px 10px;
   max-width: 150px;
@@ -1628,11 +1637,10 @@ img {
   }
 }
 .section__text {
-  max-width: 800px;
-  width: 100%;
+  color: #666060;
   text-align: left;
-  padding: 44px 10px 10px 0px;
-  font-size: 1.8rem;
+  padding: 0px 10px 50px 0px;
+  font-size: 1.6rem;
   text-align: left;
 }
 @media (max-width: 768px) {
@@ -1648,10 +1656,12 @@ img {
 }
 @media (max-width: 414px) {
   .section__text {
-    max-width: 345px;
-    height: 96px;
+    padding: 0;
+    padding-right: 10px;
+    height: 220px;
     overflow: auto;
     text-align: justify;
+    margin-bottom: 30px;
   }
 }
 
@@ -1755,6 +1765,14 @@ img {
 .html-tegs {
   background-color: #011D33;
 }
+.html-tegs h2 {
+  margin-left: 13px;
+}
+
+.descriptionSection {
+  display: flex;
+  justify-content: space-between;
+}
 
 .wrapper-html {
   flex-direction: column;
@@ -1820,6 +1838,7 @@ img {
 }
 
 #search {
+  margin-left: 13px;
   max-width: 300px;
   height: 40px;
   font-size: 1.4rem;
@@ -1827,6 +1846,24 @@ img {
 
 #list {
   background-color: aliceblue;
+}
+
+.tags-text {
+  margin-left: 13px;
+  color: #F2F2F6;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+@media (max-width: 526px) {
+  .tags-text {
+    font-size: 1.6rem;
+    text-align: justify;
+  }
+}
+@media (max-width: 414px) {
+  .tags-text {
+    font-size: 1.5rem;
+  }
 }
 
 textarea {
@@ -2307,9 +2344,13 @@ code {
   padding: 14px;
   padding-top: 50px;
 }
+.wrapper-workshop h2 {
+  margin-left: 13px;
+}
 
 .workshop-text {
   font-size: 1.8rem;
+  margin-left: 15px;
   margin-bottom: 15px;
 }
 @media (max-width: 526px) {
@@ -2325,6 +2366,7 @@ code {
 }
 
 .workshop-tags {
+  margin-left: 15px;
   margin-bottom: 31px;
 }
 @media (max-width: 768px) {
