@@ -1,0 +1,39 @@
+.game-quiz {
+
+    .quiz-start{
+        padding: 10px;
+        border: 1px solid $main-header-color;
+        box-shadow: rgb(182, 198, 206) 0px 5px 0px;;
+
+        &:hover{
+            cursor: pointer;
+            color: grey;
+            border:  1px solid grey;
+            box-shadow: 0;
+        }
+    }
+    .quiz{
+        display: none;
+        text-align: center;
+        .quiz-choices {
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
+    
+            .answer {
+                padding: 20px;
+                margin: 0px 30px;
+                border:  2px solid $main-header-color;
+                box-shadow: 1px 1px $shadow;
+    
+                &:hover{
+                    cursor: pointer;
+                    color: grey;
+                    border: 2px solid grey;
+                    box-shadow: 0;
+                }
+            }
+        }
+    }
+   
+}
