@@ -2117,6 +2117,65 @@ code {
     opacity: 1;
   }
 }
+.didYouKnow-card {
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.didYouKnow-card .didYouKnow-choice {
+  display: flex;
+}
+.didYouKnow-card .didYouKnow-choice .didYouKnow-button {
+  margin: 0px 20px;
+  padding: 0px 20px;
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
+  background-color: #011D33;
+}
+.didYouKnow-card .didYouKnow-choice .didYouKnow-button:hover {
+  background-color: grey;
+}
+.didYouKnow-card .didYouKnow-choice .didYouKnow-phrase {
+  word-wrap: wrap;
+}
+
+.game-quiz .quiz-start {
+  padding: 10px;
+  border: 1px solid #011D33;
+  box-shadow: #b6c6ce 0px 5px 0px;
+}
+.game-quiz .quiz-start:hover {
+  cursor: pointer;
+  color: grey;
+  border: 1px solid grey;
+  box-shadow: 0;
+}
+.game-quiz .quiz {
+  display: none;
+  text-align: center;
+}
+.game-quiz .quiz .quiz-choices {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.game-quiz .quiz .quiz-choices .answer {
+  padding: 20px;
+  margin: 0px 30px;
+  border: 2px solid #011D33;
+  box-shadow: 1px 1px 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.game-quiz .quiz .quiz-choices .answer:hover {
+  cursor: pointer;
+  color: grey;
+  border: 2px solid grey;
+  box-shadow: 0;
+}
+
 .HTML-wrapper {
   flex-direction: column;
   padding: 10px;
