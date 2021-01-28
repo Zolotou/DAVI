@@ -15,6 +15,7 @@ for (let i = 0; i < linkModal.length; i++) {
   })
 }
 window.onclick = function (e) {
+
   if (e.target.hasAttribute('data-modal-window')) {
     let modals = document.querySelectorAll("*[data-modal-window]")
     for (let i = 0; i < modals.length; i++)
@@ -72,16 +73,6 @@ anchors.forEach(anchor => {
 //Changing the active point in menu while scrolling
 document.addEventListener('scroll', onScroll);
 function onScroll(event) {
-  /*   if (window.scrollY < (particlesBlockHeight + headerWrapperHeight)) // если страницу прокрутили меньше, чем на высоту блока с частицами + высота меню
-    {
-      console.log("Scroll is smaller than blocks total height");
-      document.querySelector('.hidden-menu').style.top = `${particlesBlockHeight + headerWrapperHeight - window.scrollY}px`;
-    } else {
-      console.log("Scroll is bigget than blocks total height");
-      document.querySelector('.hidden-menu').style.top = "80px";
-    }
-    console.log(`${window.scrollY} < ${particlesBlockHeight + headerWrapperHeight} (${particlesBlockHeight} + ${headerWrapperHeight})`);
-    console.log(`TOP: ${particlesBlockHeight + headerWrapperHeight}`); */
 
   const sect = document.querySelectorAll('section');
   // const link = document.querySelectorAll('.navigation a');
