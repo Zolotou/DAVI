@@ -427,7 +427,7 @@ ul {
   transition: all 0.8s ease 0s;
 }
 
-.img5, .img4, .img3, .img2, .img1 {
+.img5, .img4, .img3, .img2, .img1, .topic-card > img {
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;
@@ -458,6 +458,7 @@ h2 {
 @media (max-width: 768px) {
   h2 {
     font-size: 2.3rem;
+    margin-bottom: 10px;
   }
 }
 @media (max-width: 414px) {
@@ -585,17 +586,6 @@ h3 {
   width: 80px;
   height: 80px;
   margin: 0 0 0 28px;
-}
-@media (max-width: 414px) {
-  .logo_img > img {
-    width: 60px;
-  }
-}
-@media (max-width: 414px) {
-  .logo_img {
-    width: 50px;
-    height: 50px;
-  }
 }
 
 .sectionBlue button {
@@ -1811,7 +1801,8 @@ input[type=submit]:hover {
   padding: 20px;
 }
 .descriptionMain p {
-  margin-top: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   text-align: justify;
 }
 
@@ -1824,6 +1815,11 @@ input[type=submit]:hover {
 }
 .section-image .workshop-text {
   font-size: 1.8rem;
+}
+@media (max-width: 1197px) {
+  .section-image .workshop-text {
+    font-size: 1.6rem;
+  }
 }
 .section-image .workshop-tags {
   margin-bottom: 31px;
@@ -1839,7 +1835,12 @@ input[type=submit]:hover {
 .section-image > img {
   width: 150px;
 }
-@media (max-width: 414px) {
+@media (max-width: 1197px) {
+  .section-image > img {
+    margin: 15px 0px;
+  }
+}
+@media (max-width: 526px) {
   .section-image > img {
     display: none;
   }
@@ -1859,7 +1860,7 @@ input[type=submit]:hover {
 .section__text {
   color: #666060;
   text-align: left;
-  padding: 0px 10px 50px 0px;
+  padding: 0px 10px 50px 10px;
   font-size: 1.6rem;
   text-align: left;
 }
@@ -1867,6 +1868,7 @@ input[type=submit]:hover {
   .section__text {
     max-width: 570px;
     text-align: justify;
+    padding-top: 10px;
   }
 }
 @media (max-width: 526px) {
@@ -1876,6 +1878,7 @@ input[type=submit]:hover {
 }
 @media (max-width: 414px) {
   .section__text {
+    display: none;
     padding: 0;
     padding-right: 10px;
     height: 220px;
@@ -1945,7 +1948,9 @@ input[type=submit]:hover {
 }
 
 .nav-page {
-  font-size: 2rem;
+  text-align: center;
+  padding-left: 40px;
+  font-size: 1.4rem;
 }
 @media (max-width: 768px) {
   .nav-page {
@@ -1997,6 +2002,12 @@ input[type=submit]:hover {
 .descriptionSection {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 1197px) {
+  .descriptionSection {
+    flex-direction: column-reverse;
+  }
 }
 
 .wrapper-html {
@@ -2076,18 +2087,20 @@ input[type=submit]:hover {
 .tags-text {
   margin-left: 13px;
   color: #F2F2F6;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   margin-bottom: 15px;
+  margin-top: 15px;
+  margin-right: 10px;
 }
 @media (max-width: 526px) {
   .tags-text {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     text-align: justify;
   }
 }
 @media (max-width: 414px) {
   .tags-text {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -2301,7 +2314,6 @@ code {
   margin-bottom: 25px;
   display: flex;
   grid-gap: 1em;
-  overflow: hidden;
   max-width: 100%;
   flex-wrap: wrap;
 }
@@ -2318,17 +2330,6 @@ code {
   transition: all 1s ease-in-out;
   flex-wrap: wrap;
 }
-@media (max-width: 768px) {
-  .cards-wrapper {
-    height: 369px;
-  }
-}
-@media (max-width: 414px) {
-  .cards-wrapper {
-    height: 369px;
-  }
-}
-
 .topic-card {
   margin-bottom: 30px;
   display: flex;
@@ -2348,16 +2349,21 @@ code {
   display: inline-block;
 }
 .topic-card > img {
-  width: 100%;
-  margin: auto 0;
+  object-fit: fill;
 }
 .topic-card h3 {
   text-align: center;
   color: #011D33;
+  margin: 15px 0px;
 }
 .topic-card:hover {
   transform: scale(1.03);
   cursor: pointer;
+}
+@media (max-width: 414px) {
+  .topic-card {
+    max-width: 270px;
+  }
 }
 
 .img1 {
@@ -2537,6 +2543,10 @@ code {
   width: 0px;
 }
 
+.git-section-text {
+  flex-direction: column;
+}
+
 .HTML-wrapper {
   flex-direction: column;
   padding: 10px;
@@ -2545,6 +2555,11 @@ code {
 .Html-inform {
   padding-top: 50px;
   padding-bottom: 50px;
+}
+@media (max-width: 526px) {
+  .Html-inform {
+    padding-top: 30px;
+  }
 }
 
 .introduction-container {
@@ -2570,6 +2585,12 @@ code {
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 2px;
+  }
+}
+@media (max-width: 414px) and (max-width: 526px) {
+  .introduction-links {
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 }
 .introduction-links .introduction-item {
@@ -2608,7 +2629,7 @@ code {
   padding: 0px 20px;
   height: 420px;
   font-size: 1.7rem;
-  overflow-y: scroll;
+  overflow-y: auto;
   text-align: justify;
 }
 @media (max-width: 414px) {
@@ -2657,6 +2678,7 @@ code {
 }
 .wrapper-workshop h2 {
   margin-left: 13px;
+  margin-bottom: 10px;
 }
 
 .workshop-text {
@@ -2728,6 +2750,11 @@ code {
   right: 10px;
   transform: translateY(-50%);
   font-size: 2.5 em;
+}
+@media (max-width: 526px) {
+  .outPut__workshop .contentBt .label {
+    font-size: 1.4rem;
+  }
 }
 .outPut__workshop .contentBt .contentTask {
   width: 250px;
