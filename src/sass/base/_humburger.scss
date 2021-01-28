@@ -44,16 +44,17 @@
 
 }
 .hidden-menu {
-    display: block;
+    //display: block;
+    visibility: hidden;
+    opacity: 0;
     position: absolute;
-    padding: 0 10px 10px 20px;
     margin: 0;
     box-sizing: border-box;
-    width: 400px;
-    height: auto;
+    height: 100vh;
+    width: 100%;
     top: 80px;
-    right: -400px;
-    transition: right .3s ease-in-out;
+    right: 0px;
+    transition: opacity .3s ease-in-out;
     z-index: 2;
     -webkit-transform: translateZ(0);
     -webkit-backface-visibility: hidden;
@@ -114,6 +115,11 @@
 }
 .hidden-menu-ticker:checked ~ .hidden-menu {
     right: 0;
+    display: block;
+    padding: 0 10px 10px 20px;
+   visibility: visible;
+    opacity: 1;
+    overflow: hidden;
 }
 .hidden-menu-ticker ~ .btn-menu span.first {
     top: 0px;

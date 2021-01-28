@@ -108,7 +108,7 @@ label {
 	position: fixed;
 	top: 50%;
 	left: 50%;
-	width: 70%;
+	width: 80%;
 	height: 60%vh;
 	margin-top: -15%;
 	margin-left: -35%;
@@ -120,6 +120,9 @@ label {
 	transition: transform $base-duration/2 ease;
 	visibility: hidden;
 	z-index: 20;
+	@include media-tablet {
+		top: 15%;
+	}
 
 	.close {
 		position: relative;
@@ -140,9 +143,13 @@ label {
 		h2 {
 			margin: 0 0 2rem;
 			padding: 0;
-			font-size: 28px;
-			position: relative;
+			font-size: 2.8rem;
+			position: rlative;
 			display: block;
+			@include media-tablet {
+				font-size: 2rem;
+				margin: 1em;
+			}
 		}
 
 	}
