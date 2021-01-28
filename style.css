@@ -1989,6 +1989,7 @@ input[type=submit]:hover {
 .descriptionSection {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .wrapper-html {
@@ -2293,7 +2294,6 @@ code {
   margin-bottom: 25px;
   display: flex;
   grid-gap: 1em;
-  overflow: hidden;
   max-width: 100%;
   flex-wrap: wrap;
 }
@@ -2310,17 +2310,6 @@ code {
   transition: all 1s ease-in-out;
   flex-wrap: wrap;
 }
-@media (max-width: 768px) {
-  .cards-wrapper {
-    height: 369px;
-  }
-}
-@media (max-width: 414px) {
-  .cards-wrapper {
-    height: 369px;
-  }
-}
-
 .topic-card {
   margin-bottom: 30px;
   display: flex;
@@ -2529,6 +2518,10 @@ code {
   width: 0px;
 }
 
+.git-section-text {
+  flex-direction: column;
+}
+
 .HTML-wrapper {
   flex-direction: column;
   padding: 10px;
@@ -2600,7 +2593,7 @@ code {
   padding: 0px 20px;
   height: 420px;
   font-size: 1.7rem;
-  overflow-y: scroll;
+  overflow-y: auto;
   text-align: justify;
 }
 @media (max-width: 414px) {
