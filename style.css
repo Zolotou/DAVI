@@ -1566,6 +1566,23 @@ h3 {
   object-fit: scale-down;
 }
 
+.usefull_links {
+  background: #F1F6FA;
+}
+.usefull_links .wrapper {
+  display: block;
+}
+
+.usefull_links-item {
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.usefull_links-container {
+  font-size: 2rem;
+  margin-left: 20px;
+}
+
 .mySlides {
   display: none;
 }
