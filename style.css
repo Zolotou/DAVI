@@ -719,16 +719,16 @@ label.sign-in:hover {
 }
 
 .hidden-menu {
-  display: block;
-  position: fixed;
-  padding: 0 10px 10px 20px;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
   margin: 0;
   box-sizing: border-box;
-  width: 400px;
-  height: auto;
+  height: 100vh;
+  width: 100%;
   top: 80px;
-  right: -400px;
-  transition: right 0.3s ease-in-out;
+  right: 0px;
+  transition: opacity 0.3s ease-in-out;
   z-index: 2;
   -webkit-transform: translateZ(0);
   -webkit-backface-visibility: hidden;
@@ -796,6 +796,11 @@ label.sign-in:hover {
 
 .hidden-menu-ticker:checked ~ .hidden-menu {
   right: 0;
+  display: block;
+  padding: 0 10px 10px 20px;
+  visibility: visible;
+  opacity: 1;
+  overflow: hidden;
 }
 
 .hidden-menu-ticker ~ .btn-menu span.first {
@@ -915,7 +920,7 @@ label {
   position: fixed;
   top: 50%;
   left: 50%;
-  width: 70%;
+  width: 80%;
   height: 60% vh;
   margin-top: -15%;
   margin-left: -35%;
