@@ -67,7 +67,7 @@ justify-content: space-around;
    // width: 90%;
     height: 420px;
     font-size: 1.7rem;
-    overflow-y: scroll;
+    overflow-y: auto;
     text-align: justify;
     @include media-mobile {
         text-align: left;
