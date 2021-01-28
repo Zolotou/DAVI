@@ -1,3 +1,4 @@
+import user from './user.js';
 const arrayDidYouKnow = ["The most fast for loop is default one : for(let i=0; i<array.length; i++)", "Try sometimes this : console.log(console)",
 "if you tired of if|else statement try ternary operator (?)"].sort((a,b) => 0.5 - Math.random());
 const randomPhrase = document.querySelector('.didYouKnow-phrase');
@@ -16,6 +17,8 @@ for(let i of didYouKnowArrows){
         }
     })
 }
+
+user();
 
 const contLinks = document.querySelector('.introduction-links');
 const links = document.querySelectorAll('.introduction-item');
