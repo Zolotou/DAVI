@@ -1,29 +1,29 @@
 .footer {
   background-color: $main-header-color;
+  // position: relative;
 
   height: 200px;
-  @include media-tablet{
+  @include media-tablet {
     height: 200px;
   }
-  @include media-mobile{
+  @include media-mobile {
     height: 300px;
   }
 
   .wrapper {
     color: $color-light;
-    height: 100px;
+    height: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: $color-light;
+    
     flex-direction: column;
-
+    justify-content: space-between;
+    // align-items: center;
   }
 }
 
 .footer-link {
   padding: 0 10px;
-margin: 7px;
+  margin: 10px;
   > a {
     color: $color-light;
     text-decoration: none;
@@ -32,33 +32,92 @@ margin: 7px;
       color: aqua;
     }
   }
-  @include media-tablet{
-    font-size:1.5rem;
-
+  @include media-tablet {
+    font-size: 1.5rem;
   }
-
 }
 
 .footer__navigation {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  position: absolute;
+  justify-content: space-around;
   width: 500 px;
   font-size: 2rem;
-  @include media-mobile{
-     flex-direction: column;
-
+  padding-block: 30px;
+  @include media-mobile {
+    flex-direction: column;
   }
 }
 
-.icon {
-width: 40px;
-height: 40px;
-margin-left: 50px;
+.footer-photo{
+  display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+  .photo{
+    display: flex;
+    flex-direction: column;
+     width: 60px;
+    height: 60px;
+  }
+
+  .icon_footer {
+    // position: absolute;
+    display: flex;
+    margin: 3px;
+    flex-direction: row;
+    width: 40px;
+    height: 40px;
+    justify-content: space-around;
+    overflow: initial;
+    // margin-left: 50px;
+  }
+
 }
 
-.facebook{
-  width: 30px;
-  height: 30px;
-  margin-bottom: 5px;
+
+.circle{
+  border-radius: 50%;
 }
 
+.rights{
+  text-align: center;
+}
+
+
+
+// .diana {
+//   position: absolute;
+//   display: flex;
+//   flex-direction: column;
+//    width: 60px;
+//   height: 60px;}
+
+// .artur{
+//   position: absolute;
+//   display: flex;
+//   flex-direction: column;
+//   padding-top: 30px;
+//   padding-left: 300px;
+//   width: 60px;
+//   height: 60px;}
+
+
+// .vadim{
+//   position: absolute;
+//   display: flex;
+//   flex-direction: column;
+//   padding-top: 30px;
+//   padding-left: 400px;
+//   width: 60px;
+//   height: 60px;}
+
+// .irina{
+//   position: absolute;
+//   display: flex;
+//   flex-direction: column;
+//   padding-top: 30px;
+//   padding-left: 500px;
+//   width: 60px;
+//   height: 60px;}
