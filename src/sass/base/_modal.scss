@@ -70,7 +70,7 @@ $base-duration: 600ms;
 
 // Colors
 $color-1: #2c3e50;
-$color-2: #3498db;
+$color-2: #2a9fda;
 $color-3: #2ecc71;
 $color-4: #e74c3c;
 
@@ -230,6 +230,9 @@ label.close {
 			@include media-mobilesmall {
 				font-size: 1.5rem;
 			}
+			span {
+				color: $color-2;
+			}
 		}
 	
 
@@ -334,3 +337,7 @@ label.close {
 		z-index: 111;
 	}
 }
+
+input.welcome-input[type=text] {
+	width: 50%;
+  }
