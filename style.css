@@ -2469,16 +2469,21 @@ code {
   word-wrap: wrap;
 }
 
-.game-quiz .quiz-start {
+.game-quiz .quiz-start-button {
+  text-align: center;
+  margin: 30px;
   padding: 10px;
   border: 1px solid #011D33;
   box-shadow: #b6c6ce 0px 5px 0px;
 }
-.game-quiz .quiz-start:hover {
+.game-quiz .quiz-start-button:hover {
   cursor: pointer;
   color: grey;
   border: 1px solid grey;
   box-shadow: 0;
+}
+.game-quiz .quiz-start-score {
+  font-size: 1.8rem;
 }
 .game-quiz .quiz {
   display: none;
@@ -2490,8 +2495,10 @@ code {
   flex-wrap: wrap;
 }
 .game-quiz .quiz .quiz-choices .answer {
+  min-width: 80px;
   padding: 20px;
   margin: 0px 30px;
+  font-size: 2rem;
   border: 2px solid #011D33;
   box-shadow: 1px 1px 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -2500,6 +2507,26 @@ code {
   color: grey;
   border: 2px solid grey;
   box-shadow: 0;
+}
+.game-quiz .quiz .quiz-timer {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+.game-quiz .quiz .quiz-timer .quiz-timer-progress {
+  margin-left: 20px;
+  border: 2px solid #011D33;
+  height: 30px;
+  width: 150px;
+  padding: 0;
+}
+.game-quiz .quiz .quiz-timer .quiz-timer-progress .quiz-timer-currentProgress {
+  padding-bottom: 5px;
+  background-color: #2a9fda;
+  height: 26px;
+  width: 0px;
 }
 
 .HTML-wrapper {

@@ -83,11 +83,6 @@
                         <li class="introduction-item">Commit</li>
                         <li class="introduction-item">Status</li>
                         <li class="introduction-item">Branch</li>
-                        <li class="introduction-item">Anchors</li>
-                        <li class="introduction-item">Images</li>
-                        <li class="introduction-item">Lists</li>
-                        <li class="introduction-item">Tables</li>
-                        <li class="introduction-item">Frames</li>
                         <li class="introduction-item">Document validation</li>
                     </ul>
                     <div class="output-container">
@@ -199,99 +194,7 @@
         If the web page contains a link to an anchor, but the anchor itself is not, then no error will occur.
      </p>
     </div>
-    <div class="outPut-html__info images">
-      <p>
-        Adding an image takes place in two stages: first, a graphic file of the desired size is prepared, then it is added to the page via the img> tag. The HTML itself is intended only to display the required image, without changing it in any way.
-      </p>
-    <p>There are several things to keep in mind when preparing images.
-    <ul>
-        <ol>Since the web page is loaded over the network, the size of the graphic file embedded in the document is a significant factor. The smaller it is, the faster the image will be displayed.</ol>
-        <ol>The size of the picture must be limited in width, for example, set no more than 800 pixels. Otherwise, the entire image will not fit in the browser window, and scroll bars will appear.</ol>
-    </ul>
-    </p>
-    </div>
-    <div id='List' class="outPut-html__info lists">
-      <p>
-        A list is an interconnected collection of individual phrases or sentences that begin with a bullet or number. Lists provide the ability to organize and organize different data and present them in a visual and user-friendly way.
-      </p>
-      <p>
-        Any list is a container ul> which sets up a bulleted list, or ol> which defines a numbered list. Each list item must start with an li> tag.
-      </p>
-    </div>
-    <div class="outPut-html__info tables">
-    <p>
-        Due to the versatility of tables, a large number of parameters that control their appearance, tables have long become a definite standard for the layout of web pages. A table with an invisible border is like a modular grid, in which blocks it is convenient to place elements of a web page. However, this is not quite the right approach, because each HTML object is defined for its own purposes and if it is used for other purposes, and moreover, it means that there are no alternatives. This was the case for a long time, until layers came to replace tables in site layout. This does not mean that layers are now used all the time, but the trend has already been clearly outlined - tables are used to place tabular data, and layers - for layout and design.
-    </p>
-    <p>
-        <b> Creating a table</b>
-    
-        A table consists of rows and columns of cells that can contain text and pictures. Typically, tables are used to organize and present data, but tables are not limited to that. With the help of tables, it is convenient to typeset page layouts by arranging fragments of text and images in the desired way.
-    </p>
-    <p>
-        The table>  tag is used to add a table to a web page. This element serves as a container for elements that define the contents of the table. Any table consists of rows and cells, which are specified using the tr> and td> tags, respectively. The table must contain at least one cell. It is allowed to use the th> tag instead of the td> tag. The text in a cell decorated with the th> tag is rendered in bold by the browser and aligned to the center of the cell. Otherwise, there is no difference between the cells created via the td> and th> tags.
-    </p>
-    </div>
-    <div class="outPut-html__info frames">
-     <p>
-        Frames divide the browser window into separate areas that sit side by side. A separate web page is loaded into each of these areas. Since there is a lot of talk around frames about their need, here are the advantages and disadvantages of frames so that you can independently decide whether to use them on your site.
-     </p>
-    <p>
-       <b>Advantages of frames.</b>
-       <p> <b>Simplicity</b> </p>
-    
-        Frames delimit a web page into two areas that contain the site's navigation and content. The frame mechanism allows you to open a document in one frame by clicking a link in a completely different frame. This division of a web page into components is intuitive and logical.
-    </p>
-    <p>
-        <b>Rapidity.</b>
-    
-    For a layout without frames, it is common to place both navigation and content on one page. This increases the volume of each page and, in total, can significantly affect the amount of information downloaded from the site. And since frames use the division of information into parts, pages with them will load faster.
-    </p>
-    <p>
-        <b>Accommodation.</b>
-    
-        Frames provide a unique opportunity - placing information exactly in the right place in the browser window. So, you can put a frame at the bottom of the browser and regardless of the scrolling of the content, this area will not change its position.
-    </p>
-    <p>
-        <b>Resizing areas.</b>
-    
-        You can resize frames on the fly, which is not possible with traditional HTML layout.
-    </p>
-    <p>
-        <b>Loading.</b>
-    
-        The web page is loaded only into the specified window, the rest remain unchanged. Using JavaScript, you can simultaneously load two or more pages into frames
-    </p>
-    <b>Disadvantages of frames</b>
-    
-     <p>   <b>Navigation</b>
-    
-        The user often finds himself on the site, completely unaware of where he got to, because he just clicked on the link received in the search engine. To make it easier for a site visitor to figure out where he is, the site name, page title, and navigation are placed on each page. Frames tend to violate this principle by separating the site title from the content, and the navigation from the content. Imagine that you find a suitable link in a search engine, click on it, and as a result, a document opens without a title and navigation. To understand where we are or to look at other materials, you will have to edit the path in the address bar, which is inconvenient anyway.
-    </p>
-    
-      <p>  <b> Bad indexing by search engines</b></p>
-    <p>
-        Search engines do not work well with framing because the pages that contain the content do not have links to other documents.
-    </p>
-    <p>
-        <i>Internal pages cannot be added to Bookmarks.</i>
-    
-    Frames hide the URL of the page the visitor is on and always show only the URL of the site. For this reason, the page you like is difficult to bookmark your browser.
-    </p>
-    
-       <p>   <b>Incompatibility with different browsers</b>
-    
-        Frame parameters have the property of displaying completely differently in different browsers. Moreover, the contradiction between them is so obvious that the same parameters are interpreted by browsers in their own way.
-    </p>
-    <p> <b>Disrespect</b></p>
-    
-    <p>
-        A very strange flaw that has nothing to do with the technical features of creating a site, but rather an ideological one. Sites with frames are considered undignified, and their authors immediately fall out of the category of professionals who never use frames in their work. The exception is chats, where you can do without frames, although it is possible, but rather tricky methods, and with the help of frames, creating chats is quite simple.
-    </p>
-    <p>
-        It should be noted that some of the above disadvantages are completely bypassed. So, with the help of scripts, you can make a separate document opened in the browser formed with the entire frame structure. Search engines are also already better at indexing frame documents than they were a few years ago.
-    </p>
-    </div>
-    <div class="outPut-html__info document validation">
+        <div class="outPut-html__info document validation">
     <p>
         Validation will mean checking a document for compliance with web standards and identifying existing errors. Accordingly, a web document that has gone through a similar procedure and has no comments on the code is valid. The code of a web page must obey certain rules called a specification, which is developed by the W3 Consortium (www.w3c.org) with the support of the browser developers.
      </p>
@@ -340,7 +243,6 @@
     </div>
             </div>
     </section>
-
     <section class="Git sectionBlue">
         <div class="wrapper">
             <div class="section-card">
@@ -364,7 +266,7 @@
         <div class="wraper">
             <div class="game-quiz section-card">
                 <div class="quiz-start">
-                    <h3>Start quiz!</h3>
+                    <h3 class="quiz-start-button">Start quiz!</h3>
                     <h4 class="quiz-start-score"></h4>
                 </div>
                 <div class="quiz">
@@ -377,7 +279,9 @@
                     </div>
                     <div class="quiz-timer">
                         <div class="quiz-timer-counter"></div>
-                        <div class="quiz-timer-progress"></div>
+                        <div class="quiz-timer-progress">
+                            <div class=quiz-timer-currentProgress></div>
+                        </div>
                     </div>
                 </div>
             </div>
