@@ -20,6 +20,11 @@ let TIMER;
 let countQuiz = 0;
 let quizPoints = 0;
 
+if(localStorage[`${page}Quiz`, quizPoints] !== null){
+    quizScore.textContent = `Your record is ${localStorage[`${page}Quiz`]} points.`;
+}else{
+    localStorage.setItem(`${page}Quiz`, 0);
+}
 
 quizStartButton.addEventListener("click", startQuiz);
 for(let i of quizAnswers){
@@ -68,7 +73,9 @@ function endQuiz(){
     progress = 0;
     quizScore.textContent = `You answered right ${goodquestion} questions out of ${question.length}. Your Points is ${quizPoints}`;
     quizStartButton.textContent = `Start quiz again?`;
-    localStorage.setItem(`${page}Quiz`, quizPoints);
+    if(quizPoints > parseInt(localStorage[`${page}Quiz`])){
+        localStorage.setItem(`${page}Quiz`, quizPoints);
+    }
     quizPoints = 0;
     goodquestion = 0;
     quizProgress.style.width = `0px`;
