@@ -1883,6 +1883,7 @@ input[type=submit]:hover {
 .descriptionSection {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .wrapper-html {
@@ -2409,6 +2410,10 @@ code {
   background-color: #2a9fda;
   height: 26px;
   width: 0px;
+}
+
+.git-section-text {
+  flex-direction: column;
 }
 
 .HTML-wrapper {
