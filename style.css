@@ -1454,6 +1454,10 @@ label {
   object-fit: scale-down;
 }
 
+.wrapper-news {
+  display: block;
+}
+
 .mySlides {
   display: none;
 }
@@ -1463,10 +1467,10 @@ img {
 }
 
 /* Slideshow container */
-.slidecontainer {
+.slideshow-container {
   max-width: 1000px;
   position: relative;
-  margin: auto;
+  margin: 50px auto;
 }
 
 /* Next & previous buttons */
@@ -1519,24 +1523,27 @@ img {
 }
 
 .picture_1 {
-  background-image: url("./assets/future_1.jpg");
+  background-image: url("./src/assets/future_1.jpg");
   width: 100%;
   height: 250px;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .picture_2 {
-  background-image: url("./assets/future_2.jpg");
+  background-image: url("./src/assets/future_2.jpg");
   width: 100%;
   height: 250px;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .picture_3 {
-  background-image: url("./assets/future_3.jpg");
+  background-image: url("./src/assets/future_3.jpg");
   width: 100%;
   height: 250px;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* The dots/bullets/indicators */
