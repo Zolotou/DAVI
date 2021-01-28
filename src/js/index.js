@@ -72,11 +72,16 @@ anchors.forEach(anchor => {
 //Changing the active point in menu while scrolling
 document.addEventListener('scroll', onScroll);
 function onScroll(event) {
-  if (particlesBlockHeight > window.scrollY) { // если страницу прокрутили меньше, чем на высоту блока с частицами
-    document.querySelector('.hidden-menu').style.top = `${(particlesBlockHeight + headerWrapperHeight) - window.scrollY}px`;
-  } else {
-    document.querySelector('.hidden-menu').style.top = "80px";
-  }
+  /*   if (window.scrollY < (particlesBlockHeight + headerWrapperHeight)) // если страницу прокрутили меньше, чем на высоту блока с частицами + высота меню
+    {
+      console.log("Scroll is smaller than blocks total height");
+      document.querySelector('.hidden-menu').style.top = `${particlesBlockHeight + headerWrapperHeight - window.scrollY}px`;
+    } else {
+      console.log("Scroll is bigget than blocks total height");
+      document.querySelector('.hidden-menu').style.top = "80px";
+    }
+    console.log(`${window.scrollY} < ${particlesBlockHeight + headerWrapperHeight} (${particlesBlockHeight} + ${headerWrapperHeight})`);
+    console.log(`TOP: ${particlesBlockHeight + headerWrapperHeight}`); */
 
   const sect = document.querySelectorAll('section');
   // const link = document.querySelectorAll('.navigation a');
@@ -132,12 +137,12 @@ function offset(el) {
 // Живая линия для мобильного меню
 document.addEventListener('DOMContentLoaded', () => {
   // mobile menu positioning fix
-  if (particlesBlockHeight > window.scrollY) { // если страницу прокрутили меньше, чем на высоту блока с частицами
-    document.querySelector('.hidden-menu').style.top = `${(particlesBlockHeight + headerWrapperHeight) - window.scrollY}px`;
-  } else {
-    document.querySelector('.hidden-menu').style.top = "80px";
-  }
-
+  /*   if (particlesBlockHeight > window.scrollY) { // если страницу прокрутили меньше, чем на высоту блока с частицами
+      document.querySelector('.hidden-menu').style.top = `${(particlesBlockHeight + headerWrapperHeight) - window.scrollY}px`;
+    } else {
+      document.querySelector('.hidden-menu').style.top = "80px";
+    }
+   */
 
   let navline = document.querySelector('.nav_line');
   let navItem = document.querySelectorAll('.navigation__link');
