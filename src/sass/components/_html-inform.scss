@@ -10,6 +10,9 @@
     padding-top: 50px;
     padding-bottom: 50px;
   //  background-color: #F1F6FA;
+  @include media-surface{
+      padding-top: 30px;
+  }
 }
 .intro-text{
 
@@ -35,6 +38,10 @@ display: flex;
 flex-wrap: wrap;
 justify-content: space-around;
         padding: 2px;
+        @include media-surface{
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
     }
     .introduction-item {
         width: 170px;
