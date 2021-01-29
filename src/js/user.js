@@ -12,7 +12,7 @@ function user () {
         }
     }
 
-    if(document.getElementsByTagName("title")[0].innerHTML !== "Welcome page"){
+    if(userPageProgress !== "Welcome page" || userPageProgress !== "JavaScript"){
         userSessionLoad();
     }else{
 
