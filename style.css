@@ -419,7 +419,7 @@ ul {
   box-sizing: border-box;
 }
 
-.navigation__link, .navigation__link-page {
+.introduction-links .introduction-item, .navigation__link, .navigation__link-page {
   transition: all 0.3s ease-out;
 }
 
@@ -2670,6 +2670,7 @@ code {
 }
 .introduction-links .introduction-item:hover {
   cursor: pointer;
+  color: #F39B30;
 }
 @media (max-width: 768px) {
   .introduction-links .introduction-item {
