@@ -41,14 +41,7 @@
             </div>
 
 
-                 <nav class="header__navigation">
-                <ul class="nav-page">
-                    <a class="navigation__link " href="index.html#html">Main</a>
-                    <a class="navigation__link" href="#introduction">Introduction  </a>
-                    <a class="navigation__link" href="#workshop">Workshop</a>
-                    <a class="navigation__link" href="#tegs">HTML tegs</a>
-                </ul>
-            </nav>
+
 
 
 
@@ -56,6 +49,14 @@
 
     </header>
 
+    <div>      <nav  >
+        <ul class="nav-page">
+            <a class="navigation__link-page " href="index.html#html">Main</a>
+            <a class="navigation__link-page" href="#introduction">Introduction  </a>
+            <a class="navigation__link-page" href="#workshop">Workshop</a>
+            <a class="navigation__link-page" href="#tegs">HTML tegs</a>
+        </ul>
+    </nav></div>
     <section id="introduction" class="Html-inform">
         <div class="wrapper HTML-wrapper">
             <h2>Introduction to HTML</h2>
@@ -478,6 +479,31 @@ It turns out a disappointing picture - there is no particular need to spend time
 </div>
 
     </section>
+    <section class="Game">
+        <div class="wraper">
+            <div class="game-quiz section-card">
+                <div class="quiz-start">
+                    <h3 class="quiz-start-button">Start quiz!</h3>
+                    <h4 class="quiz-start-score"></h4>
+                </div>
+                <div class="quiz">
+                    <div class="quiz-question"></div>
+                    <div class="quiz-choices">
+                        <div id="0" class="answer"></div>
+                        <div id="1" class="answer"></div>
+                        <div id="2" class="answer"></div>
+                        <div id="3" class="answer"></div>
+                    </div>
+                    <div class="quiz-timer">
+                        <div class="quiz-timer-counter"></div>
+                        <div class="quiz-timer-progress">
+                            <div class=quiz-timer-currentProgress></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="tegs" class="html-tegs">
         <div class="wrapper wrapper-html">
             <h2>HTML tags</h2>
@@ -517,9 +543,9 @@ It turns out a disappointing picture - there is no particular need to spend time
             <p> 2020 Minsk (c) All Rights reseved Wild code school</p>
     </footer>
     <script src="src/js/htmlSection.js"></script>
-    <script src="src/js/introductionHTMLsection.js"></script>
-    <script src="src/js/index.js"></script>
-
+    <script type="module" src="src/js/introductionHTMLsection.js"></script>
+    <script  src="src/js/index.js"></script>
+    <script src="./src/js/quiz-game.js"></script>
 </body>
 
 </html>

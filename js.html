@@ -12,7 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-    <title>Welcome page</title>
+    <title>JavaScript</title>
 </head>
 
 <body>
@@ -39,16 +39,19 @@
                     </ul>
                 </nav>
             </div>
-            <nav class="header__navigation">
-                <ul class="nav-page">
-                    <a class="navigation__link " href="index.html#html">Main </a>
-                    <a class="navigation__link" href="#introduction">Introduction</a>
-                    <a class="navigation__link active" href="#workshop">Workshop</a>
-                    <a class="navigation__link" href="index.html#other">Other</a>
-                </ul>
-            </nav>
+
         </div>
     </header>
+    <div>
+        <nav >
+            <ul class="nav-page">
+                <a class="navigation__link-page " href="index.html#html">Main </a>
+                <a class="navigation__link-page" href="#introduction">Introduction</a>
+                <a class="navigation__link-page active" href="#workshop">Workshop</a>
+                <a class="navigation__link-page" href="index.html#other">Other</a>
+            </ul>
+        </nav>
+    </div>
     <section class="JS sectionBlue">
         <div class="wrapper">
             <div class="section-card">
@@ -87,6 +90,31 @@
 
                 </div>
 
+            </div>
+        </div>
+    </section>
+    <section class="Game">
+        <div class="wraper">
+            <div class="game-quiz section-card">
+                <div class="quiz-start">
+                    <h3 class="quiz-start-button">Start quiz!</h3>
+                    <h4 class="quiz-start-score"></h4>
+                </div>
+                <div class="quiz">
+                    <div class="quiz-question"></div>
+                    <div class="quiz-choices">
+                        <div id="0" class="answer"></div>
+                        <div id="1" class="answer"></div>
+                        <div id="2" class="answer"></div>
+                        <div id="3" class="answer"></div>
+                    </div>
+                    <div class="quiz-timer">
+                        <div class="quiz-timer-counter"></div>
+                        <div class="quiz-timer-progress">
+                            <div class=quiz-timer-currentProgress></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -133,6 +161,8 @@
     <script src="src/js/codemirror/addon/edit/matchtags.js"></script>
     <script src="src/js/index.js"></script>
     <script src="src/js/js.js"></script>
+    <script type="module" src="src/js/jsUser.js"></script>
+    <script src="./src/js/quiz-game.js"></script>
 </body>
 
 </html>
