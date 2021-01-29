@@ -2470,6 +2470,14 @@ code {
   color: white;
   transition: 1s;
 }
+.modal-content .welcome-statistic {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.modal-content .welcome-statistic div {
+  padding: 10px;
+}
 .modal-content .welcome-statistic span {
   color: #E74C3C;
 }

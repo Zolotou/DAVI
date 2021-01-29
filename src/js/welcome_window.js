@@ -83,7 +83,7 @@ function checkUser() {
         document.getElementById("sign-in").style.display = "none";
         modalHeader.innerHTML = `Welcome, <span>${localStorage.getItem('userName')}</span>`;
         modalContent.innerHTML = "";
-        modalContent.insertAdjacentHTML('afterbegin', `<h3 class="welcome-user-level"> let's see your <span>statistic:</span></h3><h3>Check this quote: <i class="welcome-api"></i></h3>
+        modalContent.insertAdjacentHTML('afterbegin', `<h3>Check this quote: <i class="welcome-api"></i></h3><h3 class="welcome-user-level"> let's see your <span>statistic:</span></h3>
         <div class="welcome-statistic"></div>
         <p>We do not collect or use the information you provided here.</p>
         <p>All your personal data is stored in the Local Storage of your browser on your local computer.</p>
@@ -97,8 +97,7 @@ function checkUser() {
         // reset the user statistic
         paranojaButton.addEventListener('click', () => {
             //  setTimeout(() => {
-            localStorage.removeItem('userName');
-            localStorage.removeItem('levelofUser');
+            localStorage.clear();
             window.location.reload();
             //   }, 1000);
 
@@ -113,8 +112,15 @@ function checkUser() {
 function getUserStatistic(){
     const welcomeStatictic = document.querySelector('.welcome-statistic');
     for(let i of pagesNames){
-        welcomeStatictic.insertAdjacentHTML('beforeend', `<p><b>${i}</b> visits: <span>${localStorage[i+"Page"]}<span></p>
-        <p><b>last</b> visit: ${localStorage[i+"Date"]}</p>`)
+        let date = localStorage[i+"Date"];
+        let visitPage = localStorage[i+"Page"];
+        let scoreQuiz = localStorage[i+"Quiz"];
+        scoreQuiz = scoreQuiz == undefined ? "0": scoreQuiz;
+        date = date == undefined ? "-": date.slice(0,24);
+        visitPage = visitPage == undefined ? "0" : visitPage;
+        welcomeStatictic.insertAdjacentHTML('beforeend', `<div><p><b>${i}</b> visits: <span>${visitPage}<span></p>
+        <p><b>last</b> visit: ${date}</p>
+        <p><b>Quiz</b> records: ${scoreQuiz} points</p></div>`)
     }
 }
 // get the Api quote

@@ -37,6 +37,12 @@
         }
 
         .welcome-statistic{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            div {
+                padding: 10px;
+            }
             span {
                 color: #E74C3C;
             }
