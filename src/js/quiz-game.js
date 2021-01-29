@@ -20,7 +20,8 @@ let TIMER;
 let countQuiz = 0;
 let quizPoints = 0;
 
-if(localStorage[`${page}Quiz`, quizPoints] !== null){
+
+if(localStorage[`${page}Quiz`] != null){
     quizScore.textContent = `Your record is ${localStorage[`${page}Quiz`]} points.`;
 }else{
     localStorage.setItem(`${page}Quiz`, 0);
