@@ -63,7 +63,7 @@ anchors.forEach(anchor => {
     const addr = document.location.pathname;
 
 
-    if (addr === '/index.html' || addr === '/') {
+    if (addr === '/DAVI/index.html' || addr === '/DAVI/') {
       event.preventDefault();
     }
     hiddenMenuSwitch.checked = false;
