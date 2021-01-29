@@ -1599,21 +1599,33 @@ input.welcome-input[type=text] {
   object-fit: scale-down;
 }
 
+.usefull_links-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
 .usefull_links {
   background: #F1F6FA;
 }
 .usefull_links .wrapper {
   display: block;
+  padding-top: 30px;
 }
 
 .usefull_links-item {
-  font-size: 2rem;
+  font-size: 1.6rem;
   text-decoration: none;
+}
+.usefull_links-item:hover {
+  text-decoration: underline;
 }
 
 .usefull_links-container {
+  padding-top: 15px;
   font-size: 2rem;
   margin-left: 20px;
+  padding-bottom: 30px;
 }
 
 .wrapper-news {
