@@ -741,12 +741,12 @@ label.sign-in:hover {
 
 .hidden-menu li a {
   display: block;
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: #F2F2F6;
   text-decoration: none;
   text-transform: uppercase;
   margin: 0 5px;
-  padding: 8px;
+  padding: 20px 10px;
   border-bottom: 1px solid rgba(42, 159, 218, 0.1);
   -webkit-transition: 0.5s ease-in-out;
   -moz-transition: 0.5s ease-in-out;
@@ -2362,8 +2362,10 @@ code {
   margin-bottom: 25px;
   display: flex;
   grid-gap: 1em;
+  overflow: hidden;
   max-width: 100%;
   flex-wrap: wrap;
+  justify-content: center;
 }
 @media (max-width: 768px) {
   .slider-container {
@@ -2384,7 +2386,8 @@ code {
   flex-direction: column;
   background-color: #ffffff;
   border-radius: 6%;
-  width: 315px;
+  min-width: 280px;
+  max-width: 350px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin: 9px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
