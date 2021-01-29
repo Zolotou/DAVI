@@ -15,11 +15,11 @@
         margin: 15% auto;
         padding: 20px;
         border: 1px solid rgb(165, 161, 161);
-        width: 500px;
+        width: 60%;
         z-index: 9999;
-        font-size: 1.7rem;
+        font-size: 2rem;
         box-shadow: $shadow;
-        //height: 400px;
+        height: 400px;
         overflow-y: auto;
         text-align: left;
         color: $color-title;
@@ -32,15 +32,13 @@
         }
         @include media-tablet {
             margin-top: 120px;
-            width: 400px;
-		   // height: 500px;
-		   font-size: 1.4rem;
+            width: 80%;
+            height: 500px;
         }
         @include media-surface {
-            font-size: 1.2rem;
-            width: 300px;
-		   // height: 500px;
-
+            font-size: 1.8rem;
+            width: 90%;
+            height: 500px;
         }
         .close_modal_window {
             color: rgb(235, 20, 20);
@@ -115,11 +113,11 @@ label.close {
     transition: transform 300ms ease;
     visibility: hidden;
 	z-index: 20;
-
+	
 	@include media-laptop {
 		top: 40%;
 	}
-
+	
 	@include media-tablet {
 		top: 40%;
 	}
@@ -146,7 +144,7 @@ label.close {
 			fill: #2ecc71;
 			transform: rotate(540deg);
 		}
-
+		
 	}
 
 
@@ -187,7 +185,7 @@ label.close {
 			@include media-laptop {
 				font-size: 2.5rem;
 				margin: 0 0 0 2rem;
-			}
+			} 
 			@include media-tablet {
 				font-size: 2.4rem;
 			}
@@ -236,7 +234,7 @@ label.close {
 				color: $color-2;
 			}
 		}
-
+	
 
 	.modal-content-wrapper {
 		position: relative;

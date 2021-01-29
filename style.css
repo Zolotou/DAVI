@@ -832,10 +832,11 @@ label.sign-in:hover {
   margin: 15% auto;
   padding: 20px;
   border: 1px solid #a5a1a1;
-  width: 500px;
+  width: 60%;
   z-index: 9999;
-  font-size: 1.7rem;
+  font-size: 2rem;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 400px;
   overflow-y: auto;
   text-align: left;
   color: #011D33;
@@ -847,14 +848,15 @@ label.sign-in:hover {
 @media (max-width: 768px) {
   .modal_content {
     margin-top: 120px;
-    width: 400px;
-    font-size: 1.4rem;
+    width: 80%;
+    height: 500px;
   }
 }
 @media (max-width: 526px) {
   .modal_content {
-    font-size: 1.2rem;
-    width: 300px;
+    font-size: 1.8rem;
+    width: 90%;
+    height: 500px;
   }
 }
 .modal_content .close_modal_window {
