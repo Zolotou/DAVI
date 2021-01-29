@@ -64,12 +64,14 @@
 
 }
 .nav-page{
+    text-align: center;
+    padding-left: 40px;
  @include media-tablet{
     display: flex;
     flex-direction: column;
     text-align: center;
     }
-    font-size: 2rem;
+    font-size: 1.4rem;
 }
 .user-area{
     margin-right: 25px;

@@ -15,6 +15,7 @@ for (let i = 0; i < linkModal.length; i++) {
   })
 }
 window.onclick = function (e) {
+
   if (e.target.hasAttribute('data-modal-window')) {
     let modals = document.querySelectorAll("*[data-modal-window]")
     for (let i = 0; i < modals.length; i++)
@@ -50,17 +51,23 @@ if (buttonsWrapper !== null) {
 
 //Scroll 
 const headerWrapperHeight = document.querySelector('.header-wrapper').offsetHeight;
-const anchors = document.querySelectorAll('.navigation a');
-const particlesBlockHeight = document.querySelector('#particles-js').offsetHeight; // высота блока с аницмацией
-const currentPosition = window.scrollY + headerWrapperHeight; // + высота фиксированного меню (можно указать offsetHeight меню в шапке)
 
+const laptopAnchors = document.querySelectorAll('.navigation a');
+const mobileAnchors = document.querySelectorAll('.mobile-navigation a');
+const hiddenMenuSwitch = document.querySelector('.hidden-menu-ticker');
+//const particlesBlockHeight = document.querySelector('#particles-js').offsetHeight; // высота блока с аницмацией
+const currentPosition = window.scrollY + headerWrapperHeight; // + высота фиксированного меню (можно указать offsetHeight меню в шапке)
+const anchors = [...laptopAnchors, ...mobileAnchors]; // объединим массивы со ссылками на пункту обоих меню
 //smoothScroll.onClick
 anchors.forEach(anchor => {
   anchor.addEventListener('click', (event) => {
+    hiddenMenuSwitch.checked = false;
+    //alert(`clicked an ${event.target.getAttribute('href').substr(1)}`)
     event.preventDefault();
     anchors.forEach(el => el.classList.remove('active')); // очистим все классы элементов меню от active
-    anchor.classList.add('active'); // добавим active к тому, по которому кликнули
-    const blockID = anchor.getAttribute('href').substr(1); // получим id блока, к которому будем скроллить
+    // добавим active к тому, по которому кликнули
+    anchor.classList.add('active');
+    const blockID = event.target.getAttribute('href').substr(1); // получим id блока, к которому будем скроллить
     const block = document.getElementById(blockID); // найдем узел нужного блока в DOM
     window.scrollTo({
       top: block.offsetTop - headerWrapperHeight,
@@ -70,21 +77,10 @@ anchors.forEach(anchor => {
 })
 
 //Changing the active point in menu while scrolling
-document.addEventListener('scroll', onScroll);
+/* document.addEventListener('scroll', onScroll);
 function onScroll(event) {
-  /*   if (window.scrollY < (particlesBlockHeight + headerWrapperHeight)) // если страницу прокрутили меньше, чем на высоту блока с частицами + высота меню
-    {
-      console.log("Scroll is smaller than blocks total height");
-      document.querySelector('.hidden-menu').style.top = `${particlesBlockHeight + headerWrapperHeight - window.scrollY}px`;
-    } else {
-      console.log("Scroll is bigget than blocks total height");
-      document.querySelector('.hidden-menu').style.top = "80px";
-    }
-    console.log(`${window.scrollY} < ${particlesBlockHeight + headerWrapperHeight} (${particlesBlockHeight} + ${headerWrapperHeight})`);
-    console.log(`TOP: ${particlesBlockHeight + headerWrapperHeight}`); */
 
   const sect = document.querySelectorAll('section');
-  // const link = document.querySelectorAll('.navigation a');
   sect.forEach((el) => {
     if (el.offsetTop <= currentPosition && el.offsetTop + el.offsetHeight > currentPosition) {
       anchors.forEach((a) => {
@@ -95,8 +91,9 @@ function onScroll(event) {
       })
     }
   })
-}
+} */
 
+// анимация карточек при скролле страницы
 const animItems = document.querySelectorAll('.activeItemanime')
 if (animItems.length > 0) {
   window.addEventListener('scroll', animOnScroll);
@@ -136,14 +133,6 @@ function offset(el) {
 
 // Живая линия для мобильного меню
 document.addEventListener('DOMContentLoaded', () => {
-  // mobile menu positioning fix
-  /*   if (particlesBlockHeight > window.scrollY) { // если страницу прокрутили меньше, чем на высоту блока с частицами
-      document.querySelector('.hidden-menu').style.top = `${(particlesBlockHeight + headerWrapperHeight) - window.scrollY}px`;
-    } else {
-      document.querySelector('.hidden-menu').style.top = "80px";
-    }
-   */
-
   let navline = document.querySelector('.nav_line');
   let navItem = document.querySelectorAll('.navigation__link');
   let headerNavigationBlock = document.querySelector('.header__navigation');
