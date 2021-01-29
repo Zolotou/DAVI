@@ -2470,33 +2470,8 @@ code {
   color: white;
   transition: 1s;
 }
-.modal-content .smash {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  height: 70%;
-}
-.modal-content .smash .welcome-smash1 {
-  height: 180px;
-  width: 220px;
-  background-image: url("./src/assets/smeharik1.jpg");
-  background-size: cover;
-}
-.modal-content .smash .welcome-smash1:hover {
-  cursor: pointer;
-  border: 5px solid black;
-  opacity: 0.8;
-}
-.modal-content .smash .welcome-smash2 {
-  width: 220px;
-  height: 180px;
-  background-image: url("./src/assets/smeh2.jpg");
-  background-size: cover;
-}
-.modal-content .smash .welcome-smash2:hover {
-  cursor: pointer;
-  border: 5px solid black;
-  opacity: 0.8;
+.modal-content .welcome-statistic span {
+  color: #E74C3C;
 }
 
 @keyframes visibility {
