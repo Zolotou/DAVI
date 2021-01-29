@@ -832,11 +832,10 @@ label.sign-in:hover {
   margin: 15% auto;
   padding: 20px;
   border: 1px solid #a5a1a1;
-  width: 60%;
+  width: 500px;
   z-index: 9999;
-  font-size: 2rem;
+  font-size: 1.7rem;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  height: 400px;
   overflow-y: auto;
   text-align: left;
   color: #011D33;
@@ -848,15 +847,14 @@ label.sign-in:hover {
 @media (max-width: 768px) {
   .modal_content {
     margin-top: 120px;
-    width: 80%;
-    height: 500px;
+    width: 400px;
+    font-size: 1.4rem;
   }
 }
 @media (max-width: 526px) {
   .modal_content {
-    font-size: 1.8rem;
-    width: 90%;
-    height: 500px;
+    font-size: 1.2rem;
+    width: 300px;
   }
 }
 .modal_content .close_modal_window {
@@ -1268,6 +1266,7 @@ input.welcome-input[type=text] {
 .footer-link {
   padding: 0 10px;
   margin: 10px;
+  width: 300px;
 }
 .footer-link > a {
   color: #F2F2F6;
@@ -1283,22 +1282,13 @@ input.welcome-input[type=text] {
 }
 
 .footer__navigation {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 500 px;
+  width: 500px;
   font-size: 2rem;
   margin: 0;
 }
-@media (max-width: 414px) {
-  .footer__navigation {
-    flex-direction: column;
-  }
-}
-
 .footer-photo {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
   width: 500px;
 }
@@ -1320,8 +1310,8 @@ input.welcome-input[type=text] {
 }
 
 .gitHub {
-  width: 53px;
-  height: 53px;
+  width: 55px;
+  height: 55px;
 }
 
 .linked {
@@ -1609,21 +1599,46 @@ input.welcome-input[type=text] {
   object-fit: scale-down;
 }
 
+.usefull_links-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
 .usefull_links {
   background: #F1F6FA;
 }
 .usefull_links .wrapper {
   display: block;
+  padding-top: 30px;
 }
 
 .usefull_links-item {
-  font-size: 2rem;
+  font-size: 1.6rem;
   text-decoration: none;
+}
+.usefull_links-item:hover {
+  text-decoration: underline;
 }
 
 .usefull_links-container {
+  padding-top: 15px;
   font-size: 2rem;
   margin-left: 20px;
+  padding-bottom: 30px;
+}
+
+.wrapper-news {
+  text-align: center;
+}
+@media (max-width: 1197px) {
+  .wrapper-news {
+    flex-direction: column-reverse;
+  }
+}
+
+.news_slider {
+  max-width: 50%;
 }
 
 .mySlides {
@@ -1679,9 +1694,15 @@ img {
 }
 
 .articleNews {
+  max-width: 500px;
   color: #f2f2f2;
   text-align: right;
   text-decoration: none;
+}
+@media (max-width: 1197px) {
+  .articleNews {
+    width: 100%;
+  }
 }
 
 /* The dots/bullets/indicators */
