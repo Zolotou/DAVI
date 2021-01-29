@@ -597,6 +597,31 @@ To group selectors, separate each selector with a comma.
 
         </div>
     </section>
+    <section class="Game">
+        <div class="wraper">
+            <div class="game-quiz section-card">
+                <div class="quiz-start">
+                    <h3 class="quiz-start-button">Start quiz!</h3>
+                    <h4 class="quiz-start-score"></h4>
+                </div>
+                <div class="quiz">
+                    <div class="quiz-question"></div>
+                    <div class="quiz-choices">
+                        <div id="0" class="answer"></div>
+                        <div id="1" class="answer"></div>
+                        <div id="2" class="answer"></div>
+                        <div id="3" class="answer"></div>
+                    </div>
+                    <div class="quiz-timer">
+                        <div class="quiz-timer-counter"></div>
+                        <div class="quiz-timer-progress">
+                            <div class=quiz-timer-currentProgress></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer class="footer">
         <div class="wrapper">
             <ul class="footer__navigation active">
@@ -623,9 +648,10 @@ To group selectors, separate each selector with a comma.
             </div>
             <p> 2020 Minsk (c) All Rights reseved Wild code school</p>
     </footer>
-    <script src="src/js/htmlSection.js"></script>
-    <script src="src/js/introductionHTMLsection.js"></script>
-    <script src="src/js/index.js"></script>
+    <!-- <script src="src/js/htmlSection.js"></script> -->
+    <script type="module" src="src/js/introductionHTMLsection.js"></script>
+    <!-- <script src="src/js/index.js"></script> -->
+    <script src="./src/js/quiz-game.js"></script>
 
 </body>
 
