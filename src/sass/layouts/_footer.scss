@@ -2,7 +2,7 @@
   background-color: $main-header-color;
 
  padding: 20px;
-  height: 200px;
+  height: 220px;
 
   @include media-laptop {
     height: auto;
@@ -14,6 +14,7 @@
   .wrapper {
     flex-direction: column;
     text-align: center;
+
 //     color: $color-light;
 //     height: 100%;
 //     display: flex;
@@ -106,5 +107,12 @@ border-radius: 50%;
 color: lightcyan;
 }
 .foot-im{
-margin-left: 20px;
+margin-left: 15px;
+margin-right: 15px;
+color: #ffffff;
+font-size: 1.2rem;
+p{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 }
