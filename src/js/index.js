@@ -61,8 +61,6 @@ const anchors = [...laptopAnchors, ...mobileAnchors]; // объединим ма
 anchors.forEach(anchor => {
   anchor.addEventListener('click', (event) => {
     const addr = document.location.pathname;
-
-
     if (addr === '/index.html' || addr === '/') {
       event.preventDefault();
     }
