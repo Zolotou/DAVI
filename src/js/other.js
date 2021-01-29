@@ -36,7 +36,6 @@ links.forEach(element => {
         let target = 'outPut-html__info ' + e.target.textContent.toLowerCase();
         for (let i = 0; i < outPutLinks.length; i++) {
             let name = outPutLinks[i].className
-            console.log(e.target.innerHTML)
 
             if (name == target) {
                 sessionStorage.setItem(e.target.innerHTML, true);
