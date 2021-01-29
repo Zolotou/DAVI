@@ -17,6 +17,7 @@ function createEl(type, identifier = '', classes = [], innerText = '') {
 
     return resultElement;
 }
+
 export default function welcome() {
     let welcomePopup;
     let inputPopup;
