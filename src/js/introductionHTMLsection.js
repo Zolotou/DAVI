@@ -1,4 +1,5 @@
 import user from './user.js';
+import welcome from './welcome_window.js';
 const contLinks = document.querySelector('.introduction-links');
 const links = document.querySelectorAll('.introduction-item');
 const outPutLinks = document.querySelectorAll('.outPut-html__info');
