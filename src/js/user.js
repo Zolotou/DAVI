@@ -3,17 +3,21 @@ function user () {
     const userPageDate = new Date();
 
     function pageProgress(){
-        if(localStorage.getItem(userPageProgress) === null){
-            localStorage.setItem(userPageProgress, 1);
+        if(localStorage.getItem(`${userPageProgress}Page`) === null){
+            localStorage.setItem(`${userPageProgress}Page`, 1);
         }
         else{
-            localStorage[userPageProgress] = parseInt(localStorage[userPageProgress]) + 1;
+            localStorage[`${userPageProgress}Page`] = parseInt(localStorage[`${userPageProgress}Page`]) + 1;
             localStorage.setItem(`${userPageProgress}Date`, userPageDate);
         }
     }
 
-    userSessionLoad();
+    if(document.getElementsByTagName("title")[0].innerHTML !== "Welcome page"){
+        userSessionLoad();
+    }else{
 
+    }
+    
     pageProgress();
 
 }
@@ -21,12 +25,12 @@ function user () {
 function userSessionLoad(){
     const links = document.querySelectorAll('.introduction-item');
     for (let i of links){
-        console.log(sessionStorage[i.innerHTML]);
         if(sessionStorage[i.innerHTML]){
             i.style.color = "orange";
         }
     }
-    
 }
+
+
 
 export default user;
