@@ -1237,36 +1237,32 @@ input.welcome-input[type=text] {
 */
 .footer {
   background-color: #011D33;
+  padding: 20px;
   height: 200px;
 }
-@media (max-width: 768px) {
-  .footer {
-    height: 200px;
-  }
-}
-@media (max-width: 414px) {
+@media (max-width: 1197px) {
   .footer {
     height: 300px;
   }
 }
 .footer .wrapper {
-  color: #F2F2F6;
-  height: 100%;
-  display: flex;
-  padding-top: 15px;
   flex-direction: column;
-  justify-content: space-between;
+  text-align: center;
 }
 
 .footer_content {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+@media (max-width: 1197px) {
+  .footer_content {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
 }
 
 .footer-link {
-  padding: 0 10px;
-  margin: 10px;
-  width: 300px;
+  margin-bottom: 10px;
 }
 .footer-link > a {
   color: #F2F2F6;
@@ -1274,18 +1270,21 @@ input.welcome-input[type=text] {
 }
 .footer-link > a:hover {
   color: aqua;
-}
-@media (max-width: 768px) {
-  .footer-link {
-    font-size: 1.5rem;
-  }
+  cursor: pointer;
 }
 
 .footer__navigation {
-  width: 500px;
+  margin-left: 10px;
+  width: 300px;
   font-size: 2rem;
   margin: 0;
 }
+@media (max-width: 1197px) {
+  .footer__navigation {
+    flex-direction: row;
+  }
+}
+
 .footer-photo {
   display: flex;
   flex-wrap: wrap;
@@ -1302,11 +1301,9 @@ input.welcome-input[type=text] {
 .icon_footer {
   display: flex;
   margin: 3px;
-  flex-direction: row;
   width: 60px;
   height: 60px;
   justify-content: space-around;
-  overflow: initial;
 }
 
 .gitHub {
@@ -1324,7 +1321,11 @@ input.welcome-input[type=text] {
 }
 
 .rights {
-  text-align: center;
+  color: lightcyan;
+}
+
+.foot-im {
+  margin-left: 10px;
 }
 
 * {

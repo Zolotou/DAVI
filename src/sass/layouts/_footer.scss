@@ -1,88 +1,89 @@
-.footer {
-  background-color: $main-header-color;
-  // position: relative;
+  .footer {
+    background-color: $main-header-color;
 
-  height: 200px;
-  @include media-tablet {
+   padding: 20px;
     height: 200px;
-  }
-  @include media-mobile {
-    height: 300px;
-  }
 
-  .wrapper {
-    color: $color-light;
-    height: 100%;
-    display: flex;
-    padding-top: 15px;
-    flex-direction: column;
-    justify-content: space-between;
-    // align-items: center;
-  }
-}
+    @include media-laptop {
+      height: 300px;
+   }
+//   @include media-mobile {
+//     height: 300px;
+ //  }
 
-.footer_content{
-  display: flex;
-  justify-content: space-around;
-}
-
-
-.footer-link {
-  padding: 0 10px;
-  margin: 10px;
-  width: 300px;
-  > a {
-    color: $color-light;
-    text-decoration: none;
-
-    &:hover {
-      color: aqua;
+    .wrapper {
+      flex-direction: column;
+      text-align: center;
+//     color: $color-light;
+//     height: 100%;
+//     display: flex;
+//     padding-top: 15px;
+//     flex-direction: column;
+//     justify-content: space-between;
+//     // align-items: center;
     }
   }
-  @include media-tablet {
-    font-size: 1.5rem;
+
+.footer_content {
+  display: flex;
+  justify-content: space-between;
+  @include media-laptop{
+    flex-direction: column-reverse;
+    text-align: center;
   }
 }
+
+  .footer-link {
+//   padding: 0 10px;
+    margin-bottom: 10px;
+//   width: 300px;
+    > a {
+     color: $color-light;
+      text-decoration: none;
+
+      &:hover {
+        color: aqua;
+        cursor: pointer;
+     }
+    }
+//   @include media-tablet {
+//     font-size: 1.5rem;
+//   }
+  }
 
 .footer__navigation {
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: space-around;
-  width: 500px;
+  margin-left: 10px;
+  width: 300px;
   font-size: 2rem;
-   margin: 0;
-  @include media-mobile {
-    // flex-direction: column;
+  margin: 0;
+  @include media-laptop{
+    flex-direction: row;
   }
 }
 
-.footer-photo{
+.footer-photo {
   display: flex;
-   flex-wrap: wrap;
-    justify-content: space-around;
-    width: 500px;
-    
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 500px;
 
-
-  .photo{
+  .photo {
     display: flex;
     flex-direction: column;
-     width: 60px;
+    width: 60px;
     height: 60px;
   }
-
-  
-
 }
 
 .icon_footer {
   display: flex;
+
   margin: 3px;
-  flex-direction: row;
+  //flex-direction: row;
   width: 60px;
   height: 60px;
   justify-content: space-around;
-  overflow: initial;
+  //overflow: initial;
 }
 
 .gitHub {
@@ -95,14 +96,14 @@
   height: 60px;
 }
 
-
-.circle{
+.circle {
   border-radius: 50%;
 }
 
-.rights{
-  text-align: center;
+  .rights {
+//   text-align: center;
+color: lightcyan;
+  }
+.foot-im{
+  margin-left: 10px;
 }
-
-
-
