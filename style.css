@@ -1776,6 +1776,10 @@ input[type=submit]:hover {
   padding: 20px;
 }
 
+.contactUs {
+  padding: 20px;
+}
+
 .wrapper-hello {
   flex-direction: column;
   align-items: center;
