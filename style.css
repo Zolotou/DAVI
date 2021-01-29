@@ -419,7 +419,7 @@ ul {
   box-sizing: border-box;
 }
 
-.navigation__link {
+.navigation__link, .navigation__link-page {
   transition: all 0.3s ease-out;
 }
 
@@ -1609,6 +1609,23 @@ input.welcome-input[type=text] {
   object-fit: scale-down;
 }
 
+.usefull_links {
+  background: #F1F6FA;
+}
+.usefull_links .wrapper {
+  display: block;
+}
+
+.usefull_links-item {
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.usefull_links-container {
+  font-size: 2rem;
+  margin-left: 20px;
+}
+
 .mySlides {
   display: none;
 }
@@ -1866,7 +1883,7 @@ input[type=submit]:hover {
 .section__text {
   color: #666060;
   text-align: left;
-  padding: 0px 10px 50px 10px;
+  padding: 10px 10px 50px 10px;
   font-size: 1.6rem;
   text-align: left;
 }
@@ -1911,7 +1928,7 @@ input[type=submit]:hover {
   font-size: 2.2rem;
   line-height: 2.3rem;
 }
-.navigation__link {
+.navigation__link, .navigation__link-page {
   color: #F2F2F6;
   text-decoration: none;
   list-style: none;
@@ -1920,8 +1937,12 @@ input[type=submit]:hover {
   text-transform: uppercase;
   cursor: pointer;
 }
-.navigation__link:hover {
+.navigation__link:hover, .navigation__link-page:hover {
   color: #2a9fda;
+}
+
+.navigation__link-page {
+  color: #011D33;
 }
 
 .header__navigation {
@@ -1954,9 +1975,11 @@ input[type=submit]:hover {
 }
 
 .nav-page {
+  padding-top: 20px;
+  padding-bottom: 20px;
   text-align: center;
   padding-left: 40px;
-  font-size: 1.4rem;
+  font-size: 1.7rem;
 }
 @media (max-width: 768px) {
   .nav-page {
@@ -2463,6 +2486,11 @@ code {
     opacity: 1;
   }
 }
+.wrapper-git {
+  background: #F1F6FA;
+  padding-bottom: 20px;
+}
+
 .didYouKnow-card {
   margin: 0 auto;
   padding: 10px;
@@ -2470,6 +2498,9 @@ code {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.didYouKnow-card h2 {
+  margin-top: 20px;
 }
 .didYouKnow-card .didYouKnow-choice {
   display: flex;
@@ -2487,6 +2518,7 @@ code {
 }
 .didYouKnow-card .didYouKnow-choice .didYouKnow-phrase {
   word-wrap: wrap;
+  font-weight: 400;
 }
 
 .game-quiz .quiz-start-button {
