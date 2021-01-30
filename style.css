@@ -2539,8 +2539,9 @@ code {
 }
 .didYouKnow-card .didYouKnow-choice .didYouKnow-button {
   margin: 0px 20px;
-  padding: 0px 20px;
+  padding: 10px 20px;
   font-size: 2rem;
+  text-align: center;
   text-decoration: none;
   color: white;
   background-color: #011D33;
@@ -2551,6 +2552,7 @@ code {
 .didYouKnow-card .didYouKnow-choice .didYouKnow-phrase {
   word-wrap: wrap;
   font-weight: 400;
+  padding-top: 10px;
 }
 
 .game-quiz .quiz-start-button {
@@ -2577,12 +2579,13 @@ code {
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
 }
 .game-quiz .quiz .quiz-choices .answer {
   min-width: 80px;
   padding: 20px;
-  margin: 0px 30px;
-  font-size: 2rem;
+  margin: 10px 30px;
+  font-size: 1.8rem;
   border: 2px solid #011D33;
   box-shadow: 1px 1px 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
