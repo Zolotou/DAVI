@@ -2448,8 +2448,7 @@ code {
   flex-direction: column;
   background-color: #ffffff;
   border-radius: 6%;
-  min-width: 280px;
-  max-width: 350px;
+  width: 320px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin: 9px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
