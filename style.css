@@ -967,21 +967,27 @@ label.close {
 @media (max-width: 768px) {
   .modal-container h2 {
     font-size: 2rem;
-    margin: 1em;
+    margin: 1rem;
   }
 }
 @media (max-width: 526px) {
   .modal-container h2 {
+    font-size: 1.8rem;
+    margin: 1em;
     top: 35%;
   }
 }
 @media (max-width: 414px) {
   .modal-container h2 {
+    font-size: 1.5rem;
+    margin: 1em;
     top: 35%;
   }
 }
 @media (max-width: 320px) {
   .modal-container h2 {
+    font-size: 1.2rem;
+    margin: 1em;
     top: 30%;
     min-width: 220px;
   }
@@ -1041,6 +1047,7 @@ h3 {
   h3 {
     font-size: 1.8rem;
     margin: 0 0 1rem;
+    line-height: 2rem;
   }
 }
 @media (max-width: 526px) {
@@ -1067,14 +1074,31 @@ h3 span {
   position: relative;
   margin: 0;
   padding: 0;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 1.75;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.modal-content-wrapper p {
-  margin-bottom: 5px;
+@media (max-width: 768px) {
+  .modal-content-wrapper {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 526px) {
+  .modal-content-wrapper {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 414px) {
+  .modal-content-wrapper {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 320px) {
+  .modal-content-wrapper {
+    font-size: 1rem;
+  }
 }
 
 .modal-footer {
@@ -1149,6 +1173,17 @@ h3 span {
 
 input.welcome-input[type=text] {
   width: 50%;
+}
+
+@media (max-width: 414px) {
+  .disclaimer {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 320px) {
+  .disclaimer {
+    font-size: 0.8rem;
+  }
 }
 
 .slider-track {
@@ -2504,7 +2539,7 @@ code {
   justify-content: center;
 }
 .modal-content .welcome-statistic div {
-  padding: 10px;
+  padding: 0 0 10px;
 }
 .modal-content .welcome-statistic span {
   color: #E74C3C;
