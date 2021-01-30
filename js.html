@@ -96,12 +96,13 @@
         <nav>
             <ul class="nav-page">
                 <a class="navigation__link-page" href="#introduction">Introduction</a>
-                <a class="navigation__link-page active" href="#workshop">Workshop</a>
-                <a class="navigation__link-page" href="index.html#other">Other</a>
+                <a class="navigation__link-page" href="#reference">reference</a>
+                <a class="navigation__link-page" href="#sandbox">Sandbox</a>
+                <a class="navigation__link-page" href="#quiz">Quiz</a>
             </ul>
         </nav>
     </div>
-    <section class="JS sectionBlue">
+    <section class="JS sectionBlue" id="introduction">
         <div class="wrapper">
             <div class="section-card">
                 <div>
@@ -125,8 +126,25 @@
                     <div class="linksList">
                     </div>
                 </div>
-                <div class="reference"></div>
-                <div class="jsPlayground">
+                <div class="reference">
+                    <h3>Adding JavaScript to Your Web Pages</h3>
+                    <p>There are typically three ways to add JavaScript to a web page:</p>
+                    <ul>
+                        <li>Embedding the JavaScript code between a pair of <code>&lt;script&gt;</code> and
+                            <code>&lt;/script&gt;</code> tag.
+                        </li>
+                        <li>Creating an external JavaScript file with the <code>.js</code> extension and then load
+                            it within the page through the <code>src</code> attribute of the
+                            <code>&lt;script&gt;</code> tag.
+                        </li>
+                        <li>Placing the JavaScript code directly inside an HTML tag using the special tag attributes
+                            such as <code>onclick</code>, <code>onmouseover</code>, <code>onkeypress</code>,
+                            <code>onload</code>, etc.
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="jsPlayground" id="sandbox">
                     <div class="source">
 
                         <input type="radio" name="radiotabs" id="jsEditor"><label for="jsEditor">JavaScript</label>
@@ -134,8 +152,8 @@
                             for="htmlEditor">HTML</label>
                         <input type="radio" name="radiotabs" id="cssEditor"><label for="cssEditor">CSS</label>
                         <textarea id="jsarea" class="js">test</textarea>
-                        <textarea id="htmlarea" class="html">Test</textarea>
-                        <textarea id="cssarea" class="css">test</textarea>
+                        <textarea id="htmlarea" class="html">test</textarea>
+                        <textarea id="cssarea" class="css">hello</textarea>
                     </div>
                     <div class="sandbox">
                         <button id="run">Run the code »</button>
@@ -148,7 +166,7 @@
             </div>
         </div>
     </section>
-    <section class="Game">
+    <section class="Game" id="quiz">
         <div class="wrapper">
             <div class="game-quiz section-card">
                 <div class="quiz-start">
