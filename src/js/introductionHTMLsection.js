@@ -17,9 +17,10 @@ links.forEach(element => {
         let target = 'outPut-html__info ' + e.target.textContent.toLowerCase();
         for (let i = 0; i < outPutLinks.length; i++) {
             let name = outPutLinks[i].className
-            console.log(e.target.innerHTML)
+
 
             if (name == target) {
+                e.target.style.color = "orange";
                 sessionStorage.setItem(e.target.innerHTML, true);
                 otputInfo.innerHTML = outPutLinks[i].outerHTML
                 outputTitle.innerText = e.target.innerText

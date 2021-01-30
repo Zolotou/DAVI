@@ -147,31 +147,22 @@
                         <li class="introduction-item">Commit</li>
                         <li class="introduction-item">Status</li>
                         <li class="introduction-item">Branch</li>
-                        <li class="introduction-item">Document validation</li>
+                        <li class="introduction-item">Push</li>
                     </ul>
                     <div class="output-container">
                         <div id="output-title"></div>
                         <div id="otPutInfo">
                             <p class="p-color">
-                                <b> HTML5 is not a continuation of the hypertext markup language, but a new open
-                                    platform designed to create web applications using audio, video, graphics, animation
-                                    and much more.</b>
+                                <b> Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency..</b>
                             <p></p>
                             </p>
                             <p>
-                                The basics of HTML contain the basic principles of the HTML language, a description of
-                                the structure of an HTML page, relationships in the structure of an HTML document
-                                between HTML elements.
+                                Git is easy to learn and has a tiny footprint with lightning fast performance. It outclasses SCM tools like Subversion, CVS, Perforce, and ClearCase with features like cheap local branching, convenient staging areas, and multiple workflows.
                             </p>
                             <p>
-                                An HTML document is a regular text document, it can be created both in a regular text
-                                editor (Notepad) and in a specialized one with code highlighting (Notepad ++, Visual
-                                Studio Code, etc.). HTML document has a .html extension.
-                            </p>
-                            <p>
-                                An HTML document consists of a tree of HTML elements and text. Each element is
-                                identified in the source document with a start (opening) and end (closing) tag (with
-                                rare exceptions).
+                                The Git feature that really makes it stand apart from nearly every other SCM out there is its branching model.
+
+Git allows and encourages you to have multiple local branches that can be entirely independent of each other. The creation, merging, and deletion of those lines of development takes seconds.
                             </p>
                         </div>
                     </div>
@@ -278,38 +269,17 @@
                         </div>
                         <div class="outPut-html__info status">
                             <p>
-                                Links are the backbone of hypertext documents and allow you to navigate from one web
-                                page to another. Their peculiarity is that the link itself can lead not only to HTML
-                                files, but also to a file of any type, and this file can be placed on a completely
-                                different site. The main thing is that the referenced document has access. In other
-                                words, if the path to the file can be specified in the address bar of the browser, and
-                                the file will be opened, then a link can be made to it.
+                                Displays paths that have differences between the index file and the current HEAD commit, paths that have differences between the working tree and the index file, and paths in the working tree that are not tracked by Git (and are not ignored by gitignore[5]). The first are what you would commit by running git commit; the second and third are what you could commit by running git add before running git commit
                             </p>
                             <p>
-                                To create a link, you must tell the browser what the link is, and also indicate the
-                                address of the document to which the link should be made. Both actions are performed
-                                using the a tag.
+                                The command checks the status and reports that there’s nothing to commit, meaning the repository stores the current state of the working directory, and there are no changes to record.
+
+                                We will use the git status command to keep monitoring the states of both the working directory and the repository.
                             </p>
                             <p>
-                                The href attribute defines a URL (Universal Resource Locator), in other words, the
-                                address of the document to navigate to, and the contents of container a> are a link. The
-                                text between the a> and / a> tags is blue and underlined by default.
-                            </p>
-                            <p>
-                                If a link is specified to a file that does not exist, for example, its name in the href
-                                attribute is typed with an error, then such a link is called broken. Broken links should
-                                be strictly avoided as they mislead website visitors.
-                            </p>
-                            <p>
-                                Naturally, such a message will differ in browsers, but the meaning remains the same -
-                                the document to which the link leads cannot be opened. To avoid such errors, test all
-                                links for their performance and immediately eliminate the existing errors.
-                            </p>
-                            <p>
-                                A linked file opens in a browser window only if the browser knows the type of document.
-                                However, since the link can be made to any type of file, the browser cannot always
-                                display the document. This displays a message on how to process the file - open it or
-                                save it to the specified folder.
+                                When in doubt, run git status. This is always a good idea. The git status command only outputs information, it won't modify commits or changes in your local repository.
+
+A useful feature of git status is that it will provide helpful information depending on your current situation.
                             </p>
                         </div>
                         <div class="outPut-html__info branch">
@@ -338,90 +308,24 @@
                                 error will occur.
                             </p>
                         </div>
-                        <div class="outPut-html__info document validation">
+                        <div class="outPut-html__info push">
                             <p>
-                                Validation will mean checking a document for compliance with web standards and
-                                identifying existing errors. Accordingly, a web document that has gone through a similar
-                                procedure and has no comments on the code is valid. The code of a web page must obey
-                                certain rules called a specification, which is developed by the W3 Consortium
-                                (www.w3c.org) with the support of the browser developers.
+                                The "push" command is used to publish new local commits on a remote server.
                             </p>
                             <p>
-                                At first glance, it seems that validation is necessary, because we are talking about
-                                reducing the number of developers' mistakes and writing "correct" code. In fact,
-                                everything is much more complicated, and around validation there is still heated debate
-                                about its relevance. In order to objectively reveal this issue, we will further consider
-                                the pros and cons of such a check.
+                                The source (i.e. which branch the data should be uploaded from) is always the currently checked out HEAD branch.
                             </p>
                             <p>
-                                <b> Pros of validation</b>
 
-                                Although HTML code has a fairly simple hierarchical structure, it is easy to get
-                                confused in the code as the size of the document grows, therefore, it is easy to make a
-                                mistake. Browsers, despite obviously incorrect code, will try to render the web page
-                                anyway. But since there is no single regulation on how a "crooked" document should be
-                                displayed, each browser tries to do it differently. And this, in turn, leads to the fact
-                                that the same document may look different in popular browsers. Correction of obvious
-                                mistakes and systematization of the code leads, as a rule, to a stable result.
-                            </p>
-                            <p>
-                                <b> Trends</b>
 
-                                The days when browser makers added unique features to their product contrary to all
-                                standards are starting to fade into the past. Each new version of the browser
-                                increasingly supports specifications and displays documents with minimal or no errors.
-                                Developers of sites that also adhere to the canons of web standards, thus comply with
-                                modern trends in the development of web technologies.
+                                The <b>target</b> (i.e. which branch the data should be uploaded to) can be specified in the command's options. These options can be omitted, however, if a tracking relationship with a remote branch is set up.
                             </p>
                             <p>
-                                Don't forget about XML (eXtensible Markup Language). This language is becoming the de
-                                facto standard for storing data and exchanging information between different
-                                applications. XML syntax is stricter than HTML and does not forgive the slightest
-                                mistakes. In a sense, XML is like programming languages in which the program won't
-                                compile until the code is debugged. HTML is the first step to learning XML, so by
-                                accustoming yourself to write code according to all the rules, it will be easier to move
-                                to the next stage of HTML development.
-                            </p>
-                            <p>
-                                <b>Indirect benefits</b>
+                                <b>Note that the "push" command can also be used to delete a remote branch </b>
 
-                                Compliance with standards provides many benefits, which show up in the smallest detail
-                                and become visible when a certain critical mass is reached. In particular, the amount of
-                                code becomes smaller, more compact, and more readable. Accordingly, the loading speed of
-                                the site as a whole increases for users.
+                                
                             </p>
-                            <p>
-                                <b>Cons of validation</b>
-
-                                Sites, of course, are made so that people visit them. It is the visitors who are the
-                                measure of the site's work, and they are interested in information and the way to obtain
-                                it. The user wants the site to display correctly in his favorite browser, load quickly
-                                and contain the materials he needs. Note that there is nothing in this list about the
-                                document code and its validity, visitors are simply not interested. Therefore, a
-                                completely invalid site, but made with soul, filled with interesting materials will
-                                attract more visitors than an empty resource, but made according to all the "rules".
-                            </p>
-                            <p>
-                                <b>Browsers</b>
-
-                                Browser developers do not always follow the specification and in some cases interpret
-                                the code not according to the given rules, but in their own way. Ultimately, this leads
-                                to the fact that a web page that is displayed correctly (that is, as intended by the
-                                developers) in one browser is displayed with errors in another. Following the
-                                specification in such cases is likely to scare off some browser users. For example,
-                                Internet Explorer (IE) currently holds the leading position among browsers, but it
-                                supports the HTML and CSS specification worse than Firefox and Opera. Obviously, IE
-                                users, when visiting a site made according to all standards, but not taking into account
-                                the specifics of this browser, will see an unsightly picture.
-                            </p>
-                            <p>
-                                Site customers, as well as their developers, do not like this situation, so when faced
-                                with a choice: standards or a browser, they mostly choose a browser.
-                            </p>
-                            It turns out a disappointing picture - there is no particular need to spend time debugging
-                            the code to comply with the specification. It is better to devote this time to making the
-                            document work without problems in different browsers - this is how web developers mostly
-                            think.
+                            
                         </div>
                         <p>
                             <b>Summary</b>

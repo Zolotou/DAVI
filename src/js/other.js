@@ -39,6 +39,7 @@ links.forEach(element => {
             let name = outPutLinks[i].className
 
             if (name == target) {
+                e.target.style.color = "orange";
                 sessionStorage.setItem(e.target.innerHTML, true);
                 otputInfo.innerHTML = outPutLinks[i].outerHTML
                 outputTitle.innerText = e.target.innerText
